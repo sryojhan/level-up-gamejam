@@ -88,7 +88,7 @@ public class PlayerController : Singleton<PlayerController>
     /* Start */
     private void InitialiseCameraController()
     {
-        CameraController.InitialiseCameraController();
+        CameraController.InitialiseCameraController(transform.position);
     }
 
 

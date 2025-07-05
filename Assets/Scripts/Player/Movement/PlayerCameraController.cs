@@ -48,9 +48,13 @@ public class PlayerCameraController : MonoBehaviour
     private Transform parentTransform;
     private Transform cameraTransform;
 
-    public void InitialiseCameraController()
+    public void InitialiseCameraController(Vector2 playerOrigin)
     {
         cameraTransform = Camera.main.transform;
+
+        if (useCameraBounds) playerOrigin = AdjustToCameraBounds(playerOrigin); 
+
+        cameraTransform.position = AdjustCameraZpos(playerOrigin);
 
         parentTransform = new GameObject("Camera parent").transform;
         parentTransform.position = cameraTransform.position;
