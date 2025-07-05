@@ -12,7 +12,7 @@ public class PlayerController : Singleton<PlayerController>
     public PlayerMovement Movement { get; private set; }
     public PlayerAnimationController AnimationController { get; private set; }
     public PlayerInputManager InputManager { get; private set; }
-
+    public PlayerCameraController CameraController { get; private set; }
 
     public PlayerSockLauncher SockLauncher { get; private set; }
 
@@ -48,6 +48,11 @@ public class PlayerController : Singleton<PlayerController>
         UpdateAnimation();
     }
 
+    private void LateUpdate()
+    {
+        UpdateCameraPosition();
+    }
+
     private void FixedUpdate()
     {
         ManageMovement();
@@ -75,7 +80,7 @@ public class PlayerController : Singleton<PlayerController>
         Movement = GetComponentInChildren<PlayerMovement>();
         AnimationController = GetComponentInChildren<PlayerAnimationController>();
         InputManager = GetComponentInChildren<PlayerInputManager>();
-
+        CameraController = GetComponentInChildren<PlayerCameraController>();
 
         SockLauncher = GetComponentInChildren<PlayerSockLauncher>();
     }
@@ -83,7 +88,7 @@ public class PlayerController : Singleton<PlayerController>
     /* Start */
     private void InitialiseCameraController()
     {
-
+        CameraController.InitialiseCameraController();
     }
 
 
@@ -138,6 +143,6 @@ public class PlayerController : Singleton<PlayerController>
 
     private void UpdateCameraPosition()
     {
-
+        CameraController.UpdateCameraPosition(transform.position, InputManager.GetLeftStick());
     }
 }
