@@ -16,8 +16,12 @@ public class WorldConnector : MonoBehaviour
     {
         if (other.gameObject != PlayerController.instance.gameObject) return;
 
+
+        PlayerController.instance.Movement.enabled = false;
+
         PersistentData.connection_id = connects_with;
-        SceneManager.LoadScene(scene);
+
+        SceneTransition.SceneTransitionManager.instance.ChangeScene(scene);
     }
 
     private void OnDrawGizmosSelected()

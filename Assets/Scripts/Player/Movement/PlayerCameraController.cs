@@ -52,9 +52,10 @@ public class PlayerCameraController : MonoBehaviour
     {
         cameraTransform = Camera.main.transform;
 
-        if (useCameraBounds) playerOrigin = AdjustToCameraBounds(playerOrigin); 
+        if (useCameraBounds) playerOrigin = AdjustToCameraBounds(playerOrigin);
 
-        cameraTransform.position = AdjustCameraZpos(playerOrigin);
+        if (smoothFollow)
+            cameraTransform.position = AdjustCameraZpos(playerOrigin);
 
         parentTransform = new GameObject("Camera parent").transform;
         parentTransform.position = cameraTransform.position;
