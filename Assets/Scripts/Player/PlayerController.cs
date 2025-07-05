@@ -1,3 +1,4 @@
+using SceneTransition;
 using UnityEngine;
 
 [AddComponentMenu("Player/Top down Controller")]
@@ -33,6 +34,7 @@ public class PlayerController : Singleton<PlayerController>
     private void Start()
     {
         InitialiseCameraController();
+        DisableCharacterControllerOnTransition();
     }
 
     private void Update()
@@ -91,6 +93,19 @@ public class PlayerController : Singleton<PlayerController>
         CameraController.InitialiseCameraController(transform.position);
     }
 
+    private void DisableCharacterControllerOnTransition()
+    {
+        if (!SceneTransitionManager.instance.IsTransitionComplete()) {
+
+            void ReEnableMovement()
+            {
+                Movement.enabled = true;
+            }
+
+            Movement.enabled = false;
+            SceneTransitionManager.instance.onTransitionEndOnce += ReEnableMovement;
+        }
+    }
 
     /* Update */
     private void UpdatePlayerInput()

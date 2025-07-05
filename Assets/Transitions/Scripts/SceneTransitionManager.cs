@@ -1,9 +1,9 @@
 using EasyButtons;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 namespace SceneTransition
 {
@@ -13,12 +13,17 @@ namespace SceneTransition
         protected override bool DestroyOnLoad => false;
 
         public Material material;
-
         public Transition transition;
+        public RawImage image;
 
 
         private bool inTransition;
 
+
+        public delegate void OnTransitionEnd();
+
+        public OnTransitionEnd onTransitionEndOnce;
+        public OnTransitionEnd onTransitionEndAlways;
 
         private void Start()
         {
@@ -45,12 +50,7 @@ namespace SceneTransition
             return inTransition;
         }
 
-        //TODO: mejorar la forma de indexar las escenas
-        //public void ChangeScene(SceneIndex sceneIndex)
-        //{
-        //    ChangeScene((int)sceneIndex);
-        //}
-
+        
         public void ChangeScene(string sceneName)
         {
             if (inTransition)
@@ -76,7 +76,7 @@ namespace SceneTransition
         {
             inTransition = true;
 
-            material.SetTexture("_background", transition.background);
+            image.texture = transition.background;
             material.SetColor("_backgroundColor", transition.backgroundColor);
             material.SetTexture("_transitionGradient", transition.In.gradientMask);
 
@@ -116,6 +116,11 @@ namespace SceneTransition
 
             material.SetFloat("_time", 0);
 
+
+            onTransitionEndAlways?.Invoke();
+            onTransitionEndOnce?.Invoke();
+
+            onTransitionEndOnce = () => { };
 
             inTransition = false;
         }
