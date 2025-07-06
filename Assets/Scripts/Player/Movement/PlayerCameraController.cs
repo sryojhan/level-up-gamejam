@@ -117,8 +117,13 @@ public class PlayerCameraController : MonoBehaviour
         Vector2 minPossibleValue = minPosition + new Vector2(hCameraWidth, hCameraHeight);
         Vector2 maxPossibleValue = maxPosition - new Vector2(hCameraWidth, hCameraHeight);
 
-        position.x = Mathf.Clamp(position.x, minPossibleValue.x, maxPossibleValue.x);
-        position.y = Mathf.Clamp(position.y, minPossibleValue.y, maxPossibleValue.y);
+        if (maxPosition.x - minPosition.x > hCameraWidth * 2)
+            position.x = Mathf.Clamp(position.x, minPossibleValue.x, maxPossibleValue.x);
+        else position.x = minPosition.x;
+
+        if (maxPosition.y - minPosition.y > hCameraHeight * 2)
+            position.y = Mathf.Clamp(position.y, minPossibleValue.y, maxPossibleValue.y);
+        else position.y = minPosition.y;
 
         return position;
     }

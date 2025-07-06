@@ -48,6 +48,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Kitchen/Kitchen Single 4.unity
     guid: f2b874781c6d9a94fbc251eec9324b8e
   - enabled: 1
+    path: Assets/Scenes/Terrace/Terrace Single 3.unity
+    guid: 169a8f0395060884cb62c0f24d78a530
+  - enabled: 1
     path: Assets/Scenes/HUB.unity
     guid: eecb1ca2cf1e1d14ca60798a93e6013c
   - enabled: 1

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [DefaultExecutionOrder(-1001)]
 
@@ -21,7 +22,13 @@ public class WorldConnectionManager : Singleton<WorldConnectionManager>
             WorldConnector connector = connectorTr.GetComponent<WorldConnector>();
 
             if (connector)
-                connectors.Add(connector.connection_id, connector.spawnPoint);
+            {
+                if (connectors.ContainsKey(connector.connection_id))
+                {
+                    Debug.LogError("This level connectors are wrong!! " + SceneManager.GetActiveScene().name);
+                }
+                else connectors.Add(connector.connection_id, connector.spawnPoint);
+            }
         }
 
         if (!connectors.ContainsKey(connection_id)) return;

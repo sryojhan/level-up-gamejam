@@ -37,6 +37,33 @@ public class WorldConnector : MonoBehaviour
             new (c("Bathroom Main", 1), c("Bathroom Single 2", 0) ),
             new (c("Bathroom Main", 2), c("Bathroom Laundry", 0) ),
 
+            new (c("Bedroom Single 2", 0), c("Livingroom Single 1", 1)),
+            new (c("Livingroom Single 2", 1), c("Livingroom Single 1", 0)),
+
+            new (c("Livingroom Main", 0), c("Livingroom Single 7", 1) ),
+            new (c("Livingroom Main", 1), c("Livingroom Single 6", 0) ),
+            new (c("Livingroom Main", 2), c("Livingroom Single 3", 0) ),
+            new (c("Livingroom Main", 3), c("Livingroom Single 2", 0) ),
+
+            new (c("Livingroom Single 3", 1), c("Livingroom Single 4", 0)),
+            new (c("Livingroom Single 4", 1), c("Livingroom Single 5", 0)),
+
+            new (c("Livingroom Main 2", 0), c("Livingroom Single 5", 1) ),
+            new (c("Livingroom Main 2", 1), c("Livingroom Laundry", 0) ),
+
+            new (c("Livingroom Single 7", 0), c("Kitchen Single 1", 1)),
+            new (c("Kitchen Single 1", 0), c("Kitchen Single 2", 1)),
+
+            new (c("Kitchen Main", 0), c("Kitchen Single 3", 0) ),
+            new (c("Kitchen Main", 1), c("Kitchen Single 2", 0) ),
+            new (c("Kitchen Main", 2), c("Kitchen Single 4", 1) ),
+
+            new (c("Kitchen Single 4", 0), c("Terrace Single 1", 0)),
+            new (c("Terrace Single 1", 1), c("Terrace Single 2", 0)),
+
+            new (c("Terrace Main", 0), c("Terrace Single 3", 0) ),
+            new (c("Terrace Main", 1), c("Terrace Single 2", 1) ),
+            new (c("Terrace Main", 2), c("Terrace Laundry", 0) ),
 
         };
 
@@ -66,10 +93,15 @@ public class WorldConnector : MonoBehaviour
 
         if (connectionDictionary == null) InitialiseDictionary();
 
-        string currentScene = SceneManager.GetActiveScene().name;
+        string connectionUID = new Connection { id = connection_id, scene = SceneManager.GetActiveScene().name }.CreateConnectionUID();
 
+        if (!connectionDictionary.ContainsKey(connectionUID))
+        {
+            Debug.LogError("Tried to access an inexistent connection: " + connectionUID);
+            return;
+        }
 
-        Connection connection = connectionDictionary[new Connection { id = connection_id, scene = currentScene }.CreateConnectionUID()];
+        Connection connection = connectionDictionary[connectionUID];
 
         PersistentData.connection_id = connection.id;
         SceneTransition.SceneTransitionManager.instance.ChangeScene(connection.scene);
