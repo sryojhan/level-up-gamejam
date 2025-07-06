@@ -6,11 +6,95 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Initial room.unity
+    guid: 8a52484b4132ab443bf6e3a31c18a8e3
+  - enabled: 1
+    path: Assets/Scenes/Bedroom/Bedroom Main.unity
+    guid: ffffb33decf06eb479deef958ebc5195
+  - enabled: 1
+    path: Assets/Scenes/Bedroom/Bedroom Single 1.unity
+    guid: f9038420359f6b0488d036594907a210
+  - enabled: 1
+    path: Assets/Scenes/Bedroom/Bedroom Single 2.unity
+    guid: fa4dac51383d9ed46a9eb95afe9bce08
+  - enabled: 1
+    path: Assets/Scenes/Bedroom/Bedroom Single 3.unity
+    guid: a70a87ecaefb380439c8bf22e8472562
+  - enabled: 1
+    path: Assets/Scenes/Bathroom/Bathroom Laundry.unity
+    guid: 7db0a64f1583b5c478e43c51ebdf3573
+  - enabled: 1
+    path: Assets/Scenes/Bathroom/Bathroom Main.unity
+    guid: b24d2f7fd287ef646809ffabba1b19d8
+  - enabled: 1
+    path: Assets/Scenes/Bathroom/Bathroom Single 1.unity
+    guid: 5be239fa1309aa846b94524ea704ac22
+  - enabled: 1
+    path: Assets/Scenes/Bathroom/Bathroom Single 2.unity
+    guid: 817dae3d3d9765045b2df2ce03eafa3e
+  - enabled: 1
+    path: Assets/Scenes/Kitchen/Kitchen Main.unity
+    guid: a13ff34ce0a481749a254789ecc4cfb9
+  - enabled: 1
+    path: Assets/Scenes/Kitchen/Kitchen Single 1.unity
+    guid: cea7dfccee254bf47865828cc1055ff6
+  - enabled: 1
+    path: Assets/Scenes/Kitchen/Kitchen Single 2.unity
+    guid: cb915d14aa650724fb005cad979c8192
+  - enabled: 1
+    path: Assets/Scenes/Kitchen/Kitchen Single 3.unity
+    guid: dc7d1fdd88cd30343afd9bd49d7c3752
+  - enabled: 1
+    path: Assets/Scenes/Kitchen/Kitchen Single 4.unity
+    guid: f2b874781c6d9a94fbc251eec9324b8e
+  - enabled: 1
     path: Assets/Scenes/HUB.unity
     guid: eecb1ca2cf1e1d14ca60798a93e6013c
   - enabled: 1
     path: Assets/Scenes/HUB 1.unity
     guid: 2e487c810232de644abe142b1d5f0ec7
+  - enabled: 1
+    path: Assets/Scenes/Livingroom/Livingroom Laundry.unity
+    guid: b291382b51433cc4f9c0421a7e0b4f16
+  - enabled: 1
+    path: Assets/Scenes/Livingroom/Livingroom Main.unity
+    guid: 4864ad10b1b6fe4408d80d08fa73ec27
+  - enabled: 1
+    path: Assets/Scenes/Livingroom/Livingroom Main 2.unity
+    guid: bf43e9589ca6efe488c4956fe3ed3bc1
+  - enabled: 1
+    path: Assets/Scenes/Livingroom/Livingroom Single 1.unity
+    guid: 3ee0c354719e59b4ca8051475ef3d08f
+  - enabled: 1
+    path: Assets/Scenes/Livingroom/Livingroom Single 2.unity
+    guid: 36830a238d61cb64da57690f2700b209
+  - enabled: 1
+    path: Assets/Scenes/Livingroom/Livingroom Single 3.unity
+    guid: 45e0ee7bbc6963d4caaddee6e0ae43b8
+  - enabled: 1
+    path: Assets/Scenes/Livingroom/Livingroom Single 4.unity
+    guid: 79f344a51a21ada4eafcabf2408d8237
+  - enabled: 1
+    path: Assets/Scenes/Livingroom/Livingroom Single 5.unity
+    guid: cfa84a07ce1c77b48a1959afca8fe39a
+  - enabled: 1
+    path: Assets/Scenes/Livingroom/Livingroom Single 6.unity
+    guid: 642e363a27ac71845a048df124e09cbc
+  - enabled: 1
+    path: Assets/Scenes/Livingroom/Livingroom Single 7.unity
+    guid: d83f3eb63aa821b40961e067c301e06b
+  - enabled: 1
+    path: Assets/Scenes/Terrace/Terrace Laundry.unity
+    guid: 4f08f3dbd8c81c9458f6daeaa272c062
+  - enabled: 1
+    path: Assets/Scenes/Terrace/Terrace Main.unity
+    guid: f2313fe037fe5e245b8328e816a067a0
+  - enabled: 1
+    path: Assets/Scenes/Terrace/Terrace Single 1.unity
+    guid: 6eab6d18d1a146a41a481c95a7640fac
+  - enabled: 1
+    path: Assets/Scenes/Terrace/Terrace Single 2.unity
+    guid: 1cc82b15d364a5b4e8ee523122d7130d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

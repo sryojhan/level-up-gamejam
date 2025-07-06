@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class WorldConnectionManager : Singleton<WorldConnectionManager>
 {
+
+
     private void Start()
     {
         if (PersistentData.connection_id < 0) return;

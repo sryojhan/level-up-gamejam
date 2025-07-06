@@ -136,7 +136,7 @@ public class PlayerCameraController : MonoBehaviour
         maxPosition = Camera.main.transform.position + new Vector3(10, 10);
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
         if (!useCameraBounds) return;
 
