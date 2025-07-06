@@ -17,7 +17,7 @@ public class CoroutineAnimation
     private float progress = 0;
     private Coroutine coroutine = null;
 
-    public virtual void Play(MonoBehaviour behaviour, OnValueUpdate update = null, Callback begin = null, Callback end = null)
+    public virtual void Play(MonoBehaviour behaviour, OnValueUpdate onUpdate = null, Callback onBegin = null, Callback onEnd = null)
     {
         if(coroutine != null)
         {
@@ -25,7 +25,7 @@ public class CoroutineAnimation
             coroutine = null;
         }
 
-        coroutine = behaviour.StartCoroutine(Coroutine(update, begin, end));
+        coroutine = behaviour.StartCoroutine(Coroutine(onUpdate, onBegin, onEnd));
     }
 
     public IEnumerator Coroutine(OnValueUpdate update, Callback begin, Callback onFinish)
