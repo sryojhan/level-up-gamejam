@@ -66,8 +66,6 @@ public class CoroutineAnimation
     {
         if(coroutine != null)
         {
-            Debug.Log("Detenido el movimiento");
-
             behaviour.StopCoroutine(coroutine);
             coroutine = null;
         }
@@ -84,7 +82,7 @@ public class CoroutineAnimation
 
         void OnUpdate(float i)
         {
-            tr.anchoredPosition = Vector2.Lerp(initialPosition, finalPosition, i);
+            tr.anchoredPosition = Vector2.LerpUnclamped(initialPosition, finalPosition, i);
 
             onUpdate?.Invoke(i);
         }
@@ -100,9 +98,9 @@ public class CoroutineAnimation
         void OnUpdate(float i)
         {
             if(local)
-                tr.localPosition = Vector3.Lerp(initialPosition, finalPosition, i);
+                tr.localPosition = Vector3.LerpUnclamped(initialPosition, finalPosition, i);
             else
-                tr.position = Vector3.Lerp(initialPosition, finalPosition, i);
+                tr.position = Vector3.LerpUnclamped(initialPosition, finalPosition, i);
 
             onUpdate?.Invoke(i);
         }

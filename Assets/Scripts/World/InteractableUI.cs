@@ -9,49 +9,40 @@ public class InteractableUI : Singleton<InteractableUI>
     public CoroutineAnimation revealCoroutine;
     public CoroutineAnimation hideCoroutine;
 
+
+    public Vector2 hiddenPosition;
+    public Vector2 visiblePosition;
+
+
     private void Start()
     {
         text.text = "";
+
+        visiblePosition = text.rectTransform.anchoredPosition;
+        text.rectTransform.anchoredPosition = hiddenPosition;
     }
     public void Reveal(string message)
     {
         hideCoroutine.Stop(this);
 
+        text.rectTransform.anchoredPosition = hiddenPosition;
+        text.text = message;
 
-        void OnUpdate(float i)
-        {
-            text.text = message[..Mathf.RoundToInt(i * message.Length)];
-        }
 
-        void OnEnd()
-        {
-            text.text = message;
-        }
-
-        revealCoroutine.Play(this, onUpdate: OnUpdate, onEnd: OnEnd);
-
+        revealCoroutine.Play(this, text.rectTransform, visiblePosition);
     }
 
     public void Hide()
     {
         revealCoroutine.Stop(this);
 
-        string initialString = text.text;
-
-        void OnUpdate(float i)
-        {
-            i = 1 - i;
-
-            text.text = initialString[..Mathf.RoundToInt(i * initialString.Length)];
-        }
-
-        void OnEnd()
-        {
-            text.text = "";
-        }
-
-        hideCoroutine.Play(this, onUpdate: OnUpdate, onEnd: OnEnd);
+        hideCoroutine.Play(this, text.rectTransform, hiddenPosition);
     }
 
 
+    [EasyButtons.Button]
+    public void SaveHiddenPosition()
+    {
+        hiddenPosition = text.rectTransform.anchoredPosition;
+    }
 }
