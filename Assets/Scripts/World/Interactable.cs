@@ -19,6 +19,7 @@ public class Interactable : MonoBehaviour
         mpb = new MaterialPropertyBlock();
     }
 
+    public CoroutineAnimation thicknessAnimation;
 
     private string GetTypeMessage()
     {
@@ -40,10 +41,24 @@ public class Interactable : MonoBehaviour
 
         InteractableUI.instance.Reveal(GetTypeMessage());
 
+        void onBegin()
+        {
+            spriteRenderer.GetPropertyBlock(mpb);
+            mpb.SetFloat("_useOutline", 1);
+            spriteRenderer.SetPropertyBlock(mpb);
+        }
 
-        spriteRenderer.GetPropertyBlock(mpb);
-        mpb.SetFloat("_useOutline", 1);
-        spriteRenderer.SetPropertyBlock(mpb);
+        void onUpdate(float i)
+        {
+            float targetThickness = 0.01f;
+
+            spriteRenderer.GetPropertyBlock(mpb);
+            mpb.SetFloat("_thickness", targetThickness * i);
+            spriteRenderer.SetPropertyBlock(mpb);
+        }
+
+        thicknessAnimation.Play(this, onUpdate: onUpdate, onBegin: onBegin);
+
     }
 
 
@@ -51,13 +66,31 @@ public class Interactable : MonoBehaviour
     {
         if (collision.gameObject != PlayerController.instance.gameObject) return;
 
-        if(InteractableUI.IsInitialised())
+        if (InteractableUI.IsInitialised())
             InteractableUI.instance.Hide();
 
 
-        spriteRenderer.GetPropertyBlock(mpb);
-        mpb.SetFloat("_useOutline", 0);
-        spriteRenderer.SetPropertyBlock(mpb);
+
+        void onUpdate(float i)
+        {
+            i = 1 - i;
+
+            float targetThickness = 0.01f;
+
+            spriteRenderer.GetPropertyBlock(mpb);
+            mpb.SetFloat("_thickness", targetThickness * i);
+            spriteRenderer.SetPropertyBlock(mpb);
+        }
+
+        void onEnd()
+        {
+            spriteRenderer.GetPropertyBlock(mpb);
+            mpb.SetFloat("_useOutline", 0);
+            spriteRenderer.SetPropertyBlock(mpb);
+        }
+
+        thicknessAnimation.Play(this, onUpdate: onUpdate, onEnd: onEnd);
+
     }
 
     public UnityAction onInteractionBegin;
