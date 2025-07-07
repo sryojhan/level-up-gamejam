@@ -42,12 +42,12 @@ public class Localization : Singleton<Localization>
         CreateEntry("debug_3", "go ahead and kill the washing machine already", "A que esperas? Ves de una vez a matar a la lavadora", "AJDSAJDJASKDJASDALSD");
 
 
-        CreateEntry("interact", "Press E to interact", "Pulsa la E para interactuar", "Algo en catalan");
-        CreateEntry("read", "Press E to read", "Pulsa la E para leer", "Algo en catalan");
-        CreateEntry("inspect", "Press E to inspect", "Pulsa la E para inspeccionar", "Algo en catalan");
-        CreateEntry("talk", "Press E to talk", "Pulsa la E para hablar", "Algo en catalan");
-        CreateEntry("pick_key", "Press E to pick the key", "Pulsa la E para coger la llave", "Algo en catalan");
-        CreateEntry("pick_coin", "Press E to pick the coin", "Pulsa la E para coger la moneda", "Algo en catalan");
+        CreateEntry("interact", "Press <interact> to interact", "Pulsa <interact> para interactuar", "Algo en catalan");
+        CreateEntry("read", "Press <interact> to read", "Pulsa <interact> para leer", "Algo en catalan");
+        CreateEntry("inspect", "Press <interact> to inspect", "Pulsa <interact> para inspeccionar", "Algo en catalan");
+        CreateEntry("talk", "Press <interact> to talk", "Pulsa <interact> para hablar", "Algo en catalan");
+        CreateEntry("pick_key", "Press <interact> to pick the key", "Pulsa <interact> para coger la llave", "Algo en catalan");
+        CreateEntry("pick_coin", "Press <interact> to pick the coin", "Pulsa <interact> para coger la moneda", "Algo en catalan");
     }
 
     public static string GetText(string id)
@@ -58,13 +58,15 @@ public class Localization : Singleton<Localization>
             return id;
         }
 
-        return instance.currentLanguage switch
+        string translation = instance.currentLanguage switch
         {
             Language.English => instance.englishDic[id],
             Language.Spanish => instance.spanishDic[id],
             Language.Catalonian => instance.catalonianDic[id],
             _ => id,
         };
+
+        return PlatformButtonTranslator.ProcessString(translation); ;
     }
 
 }

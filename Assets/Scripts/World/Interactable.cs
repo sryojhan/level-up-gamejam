@@ -51,7 +51,8 @@ public class Interactable : MonoBehaviour
     {
         if (collision.gameObject != PlayerController.instance.gameObject) return;
 
-        InteractableUI.instance.Hide();
+        if(InteractableUI.IsInitialised())
+            InteractableUI.instance.Hide();
 
 
         spriteRenderer.GetPropertyBlock(mpb);

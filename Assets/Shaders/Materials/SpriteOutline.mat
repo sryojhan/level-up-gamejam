@@ -57,8 +57,9 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _checkerboardScale: 10
-    - _scrollSpeed: 0.1
+    - _checkerboardScale: 15
+    - _scrollSpeed: 0.05
+    - _scrollSpeedVertical: 0.01
     - _thickness: 0.01
     - _useOutline: 0
     m_Colors: []

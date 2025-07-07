@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [AddComponentMenu("Player/Input controller")]
 public class PlayerInputManager : MonoBehaviour

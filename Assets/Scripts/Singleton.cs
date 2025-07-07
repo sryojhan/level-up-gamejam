@@ -39,7 +39,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     /// <returns>Returns true if the singleton has been initialised</returns>
     public static bool IsInitialised()
     {
-        return _instance == null;
+        return _instance != null;
     }
 
     public static T EnsureInitialised()
