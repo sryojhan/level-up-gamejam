@@ -36,4 +36,9 @@ public class PlayerInputManager : MonoBehaviour
     {
         return inputMap.Player.DownButton.WasPressedThisFrame();
     }
+
+    public bool WantsToAttack()
+    {
+        return inputMap.Player.RightButton.WasPressedThisFrame();
+    }
 }

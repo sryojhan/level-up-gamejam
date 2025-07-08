@@ -17,6 +17,7 @@ public class PlayerController : Singleton<PlayerController>
     public PlayerInteractions Interactions { get; private set; }
     public PlayerSockLauncher SockLauncher { get; private set; }
 
+    public PlayerMeleeWeapon MeleeWeapon { get; private set; }
 
     /* Component references */
     public BoxCollider2D BoxColliderComponent { get; private set; }
@@ -43,6 +44,8 @@ public class PlayerController : Singleton<PlayerController>
 
         ManagePlayerSockLauncher();
         ManageInteractions();
+
+        ManagePlayerMeleeAtack();
 
         UpdateCurrentCharacterState();
         UpdateCharacterDirection();
@@ -86,6 +89,7 @@ public class PlayerController : Singleton<PlayerController>
         Interactions = GetComponentInChildren<PlayerInteractions>();
 
         SockLauncher = GetComponentInChildren<PlayerSockLauncher>();
+        MeleeWeapon = GetComponentInChildren<PlayerMeleeWeapon>();
     }
 
     /* Start */
@@ -156,6 +160,11 @@ public class PlayerController : Singleton<PlayerController>
         }
     }
 
+    private void ManagePlayerMeleeAtack()
+    {
+        MeleeWeapon.BeginAttack(InputManager.WantsToAttack(), direction);
+        MeleeWeapon.UpdateAttack();
+    }
 
     /* Fixed Update */
     private void ManageMovement()
