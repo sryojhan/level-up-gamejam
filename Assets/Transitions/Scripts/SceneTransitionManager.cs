@@ -12,8 +12,10 @@ namespace SceneTransition
     {
         protected override bool DestroyOnLoad => false;
 
+        public int forceTransition = -1;
+
         public Material material;
-        public Transition transition;
+        public Transition[] transitions;
         public RawImage image;
 
 
@@ -74,6 +76,8 @@ namespace SceneTransition
 
         private IEnumerator SceneSwap(string sceneName)
         {
+            Transition transition = forceTransition >= 0 ? transitions[forceTransition] : transitions[Random.Range(0, transitions.Length)];
+
             inTransition = true;
 
             image.texture = transition.background;
@@ -107,6 +111,10 @@ namespace SceneTransition
             //Wait screen
 
             //Fade out
+
+            material.SetFloat("_invert", transition.Out.invert ? 1 : 0);
+
+
             if (transition.Out.enabled)
                 for (float i = transition.Out.duration; i > 0; i -= Time.deltaTime)
                 {
