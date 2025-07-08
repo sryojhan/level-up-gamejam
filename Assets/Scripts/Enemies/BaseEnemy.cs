@@ -24,6 +24,7 @@ public class BaseEnemy : MonoBehaviour
 
     public virtual void CheckPlayerInRange() { }
     public virtual void CheckIfIdle() { }
+    public virtual void TakeDamage(int damage) { }
     public virtual void OwnKnockback(Vector2 playerDirection, float force) { }
     public void ChangeState(EnemyState state)
     {

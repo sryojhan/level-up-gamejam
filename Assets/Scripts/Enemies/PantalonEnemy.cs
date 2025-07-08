@@ -71,4 +71,13 @@ public class PantalonEnemy : BaseEnemy
     {
         ownRigidbody.linearVelocity = ((Vector2)transform.position - playerDirection).normalized * force;
     }
+
+    public override void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Destroy(gameObject, 2f);
+        }
+    }
 }
