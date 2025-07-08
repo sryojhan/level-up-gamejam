@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: d79766617111d5a4fa84c841f3560a26
+guid: 8f7d5f639bc051b45927d680f87be200
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2317328310562768060
-    second: realistic photo_0
+      213: -872878230518872909
+    second: Animacion_Pocha_correr_0
+  - first:
+      213: 6350138070192303738
+    second: Animacion_Pocha_correr_1
+  - first:
+      213: -4390614282979308308
+    second: Animacion_Pocha_correr_2
+  - first:
+      213: 6857992985440977909
+    second: Animacion_Pocha_correr_3
+  - first:
+      213: 3141772950479066038
+    second: Animacion_Pocha_correr_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: realistic photo_0
+      name: Animacion_Pocha_correr_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 490
-        height: 626
+        x: 9
+        y: 55
+        width: 121
+        height: 185
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb4cc0b12ddc82020800000000000000
-      internalID: 2317328310562768060
+      spriteID: 3b440c1cfd9e2e3f0800000000000000
+      internalID: -872878230518872909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion_Pocha_correr_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 64
+        width: 112
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e2f7c2ee8302850800000000000000
+      internalID: 6350138070192303738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion_Pocha_correr_2
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 62
+        width: 77
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec034572976113c0800000000000000
+      internalID: -4390614282979308308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion_Pocha_correr_3
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 64
+        width: 83
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f38459f84c7c2f50800000000000000
+      internalID: 6857992985440977909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion_Pocha_correr_4
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 62
+        width: 68
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b35c364ad1d99b20800000000000000
+      internalID: 3141772950479066038
       vertices: []
       indices: 
       edges: []
@@ -134,8 +234,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      realistic photo_0: 2317328310562768060
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
