@@ -1,4 +1,3 @@
-using EasyButtons;
 using System;
 using UnityEngine;
 
@@ -10,18 +9,23 @@ public class UID : MonoBehaviour
     {
         if (string.IsNullOrEmpty(uid))
         {
-            uid = Guid.NewGuid().ToString();
+            RegenerateUID();
         }
     }
 
 #if UNITY_EDITOR
     private void OnValidate()
     {
-        if (string.IsNullOrEmpty(uid))
-        {
-            uid = Guid.NewGuid().ToString();
-        }
+        if(!Application.isPlaying)
+            RegenerateUID();
     }
 
+
 #endif
+
+    [EasyButtons.Button]
+    public void RegenerateUID()
+    {
+        uid = Guid.NewGuid().ToString();
+    }
 }

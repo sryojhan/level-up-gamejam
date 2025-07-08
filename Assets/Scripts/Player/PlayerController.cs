@@ -14,7 +14,7 @@ public class PlayerController : Singleton<PlayerController>
     public PlayerAnimationController AnimationController { get; private set; }
     public PlayerInputManager InputManager { get; private set; }
     public PlayerCameraController CameraController { get; private set; }
-
+    public PlayerInteractions Interactions { get; private set; }
     public PlayerSockLauncher SockLauncher { get; private set; }
 
 
@@ -42,7 +42,7 @@ public class PlayerController : Singleton<PlayerController>
         UpdatePlayerInput();
 
         ManagePlayerSockLauncher();
-
+        ManageInteractions();
 
         UpdateCurrentCharacterState();
         UpdateCharacterDirection();
@@ -83,6 +83,7 @@ public class PlayerController : Singleton<PlayerController>
         AnimationController = GetComponentInChildren<PlayerAnimationController>();
         InputManager = GetComponentInChildren<PlayerInputManager>();
         CameraController = GetComponentInChildren<PlayerCameraController>();
+        Interactions = GetComponentInChildren<PlayerInteractions>();
 
         SockLauncher = GetComponentInChildren<PlayerSockLauncher>();
     }
@@ -147,6 +148,14 @@ public class PlayerController : Singleton<PlayerController>
         }
     }
 
+    private void ManageInteractions()
+    {
+        if (Interactions.CanInteract(InputManager.WantsToInteract())){
+
+            Interactions.Interact();
+        }
+    }
+
 
     /* Fixed Update */
     private void ManageMovement()
@@ -159,5 +168,12 @@ public class PlayerController : Singleton<PlayerController>
     private void UpdateCameraPosition()
     {
         CameraController.UpdateCameraPosition(transform.position, InputManager.GetLeftStick());
+    }
+
+
+    public void SetAllControls(bool value)
+    {
+        Movement.enabled = value;
+        SockLauncher.enabled = value;
     }
 }

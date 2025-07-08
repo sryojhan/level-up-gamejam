@@ -62,6 +62,8 @@ Material:
     - _scrollSpeedVertical: 0.01
     - _thickness: 0.01
     - _useOutline: 0
-    m_Colors: []
+    m_Colors:
+    - _Checkerboard_dark: {r: 0.4758478, g: 1.4980394, b: 1.3922955, a: 1}
+    - _Checkerboard_light: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

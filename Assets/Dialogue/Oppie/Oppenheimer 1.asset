@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1bc94d5aaac94846ab65c38edede396, type: 3}
-  m_Name: DEBUG_dialogue
+  m_Name: Oppenheimer 1
   m_EditorClassIdentifier: 
-  speaker: Sockrates
+  speakerSprite: {fileID: 2317328310562768060, guid: d79766617111d5a4fa84c841f3560a26, type: 3}
+  speaker: J. Robbert Oppenhimer
   content:
-  - HOla
-  - Que tal
-  - "Como estamos me llamo Sockrates y tu que tal est\xE1s?"
+  - Hello it's me J. Robert Oppenheimer
+  - I've been turned into a cow, and I am currently working on fixing this situation

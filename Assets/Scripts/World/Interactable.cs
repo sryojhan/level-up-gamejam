@@ -59,6 +59,8 @@ public class Interactable : MonoBehaviour
 
         thicknessAnimation.Play(this, onUpdate: onUpdate, onBegin: onBegin);
 
+
+        PlayerController.instance.Interactions.ApproachInteractable(this);
     }
 
 
@@ -68,8 +70,6 @@ public class Interactable : MonoBehaviour
 
         if (InteractableUI.IsInitialised())
             InteractableUI.instance.Hide();
-
-
 
         void onUpdate(float i)
         {
@@ -91,8 +91,28 @@ public class Interactable : MonoBehaviour
 
         thicknessAnimation.Play(this, onUpdate: onUpdate, onEnd: onEnd);
 
+        PlayerController.instance.Interactions.LeaveInteractable();
     }
 
-    public UnityAction onInteractionBegin;
-    public UnityAction onInteractionEnd;
+
+    private bool inInteraction = false;
+
+    public void BeginInteraction()
+    {
+        if (inInteraction) return;
+
+        inInteraction = true;
+
+        onInteractionBegin?.Invoke();
+    }
+
+    public void EndInteraction()
+    {
+        inInteraction = false;
+
+        onInteractionEnd?.Invoke();
+    }
+
+    public UnityEvent onInteractionBegin;
+    public UnityEvent onInteractionEnd;
 }
