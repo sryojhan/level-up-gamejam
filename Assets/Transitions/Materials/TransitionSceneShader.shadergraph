@@ -1118,8 +1118,8 @@
     "m_ObjectId": "43fc98b0c65e4ffa9845164d0b0fdbea",
     "m_Title": "Remap Mask value ",
     "m_Position": {
-        "x": 1001.9998779296875,
-        "y": -1147.0
+        "x": 1002.0,
+        "y": -1147.0003662109375
     }
 }
 
@@ -1735,8 +1735,8 @@
     "m_ObjectId": "6fd8fb733eab48e7aa5e7417c727b9ac",
     "m_Title": "Transition background color",
     "m_Position": {
-        "x": 1350.9998779296875,
-        "y": -1739.0
+        "x": 1351.0001220703125,
+        "y": -1739.0003662109375
     }
 }
 
