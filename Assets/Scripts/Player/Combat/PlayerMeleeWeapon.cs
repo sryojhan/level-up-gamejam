@@ -38,8 +38,6 @@ public class PlayerMeleeWeapon : MonoBehaviour
 
             pillowPivot.transform.parent.localRotation = Quaternion.Euler(0, 0, Mathf.Atan2(attackDirection.y, attackDirection.x) * Mathf.Rad2Deg);
 
-            print(direction.GetVectorDirection().ToString() + " " + Mathf.Atan2(attackDirection.y, attackDirection.x) * Mathf.Rad2Deg);
-
             switch (direction.direction)
             {
                 case PlayerDirection.Direction.Down:
