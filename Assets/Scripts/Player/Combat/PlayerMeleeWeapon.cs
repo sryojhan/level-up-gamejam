@@ -111,7 +111,7 @@ public class PlayerMeleeWeapon : MonoBehaviour
 
     private float UpdateTimerState(float maxValue)
     {
-        attackTimer += Time.deltaTime;
+        attackTimer += Time.fixedDeltaTime;
 
         return attackTimer / maxValue;
     }
@@ -133,7 +133,7 @@ public class PlayerMeleeWeapon : MonoBehaviour
     {
         if (duringFreezeFrame)
         {
-            freezeFrameTimer += Time.deltaTime;
+            freezeFrameTimer += Time.fixedDeltaTime;
 
             if(freezeFrameTimer > freezeFrameDuration)
             {

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8702178891420171034}
   - component: {fileID: 4457139742249057854}
+  - component: {fileID: 2720077683103492686}
   - component: {fileID: 2610580593765697997}
   m_Layer: 8
   m_Name: Pillow Collider
@@ -81,6 +82,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.2782215, y: 0.59638286}
   m_EdgeRadius: 0
+--- !u!50 &2720077683103492686
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6984758462448284}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
 --- !u!114 &2610580593765697997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5005,8 +5033,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 648249491
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -5174,6 +5202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4882578373810886497}
   - component: {fileID: 999139719748470144}
+  - component: {fileID: 2983611609121559186}
   m_Layer: 8
   m_Name: Pillow Visual
   m_TagString: Untagged
@@ -5237,8 +5266,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1959799611
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 2876913794461772849, guid: 9486adfee8ab46f448911fb430748e46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5251,6 +5280,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2983611609121559186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5896740644255500244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63eac84a1ae967448bbb823f5b67f552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canMove: 1
 --- !u!1 &7773404479651901789
 GameObject:
   m_ObjectHideFlags: 0
