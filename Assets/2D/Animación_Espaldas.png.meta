@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: a58567a44c19029469b62217937285c0
+guid: 2cb8113645caeaa43b51ff7b66c1f038
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4738042437726281635
-    second: Tilled_Dirt_Wide_0
+      213: -7783048189551779864
+    second: "Animaci\xF3n_Espaldas_0"
   - first:
-      213: 3787442873512086713
-    second: Tilled_Dirt_Wide_1
+      213: 1807066472414928313
+    second: "Animaci\xF3n_Espaldas_1"
   - first:
-      213: -4111638827065750665
-    second: Tilled_Dirt_Wide_2
+      213: -6197695427695407854
+    second: "Animaci\xF3n_Espaldas_2"
   - first:
-      213: -6575535092594631673
-    second: Tilled_Dirt_Wide_3
+      213: -3342524409887327756
+    second: "Animaci\xF3n_Espaldas_3"
   - first:
-      213: 1623189452351479334
-    second: Tilled_Dirt_Wide_4
+      213: -6507390392616277239
+    second: "Animaci\xF3n_Espaldas_4"
   - first:
-      213: -6887945415062894109
-    second: Tilled_Dirt_Wide_5
+      213: 5213086909799630736
+    second: "Animaci\xF3n_Espaldas_5"
   - first:
-      213: -1367193069698553581
-    second: Tilled_Dirt_Wide_6
+      213: -2558682834669874161
+    second: "Animaci\xF3n_Espaldas_6"
   - first:
-      213: 4039156658280377815
-    second: Tilled_Dirt_Wide_7
-  - first:
-      213: -6401986886371797740
-    second: Tilled_Dirt_Wide_8
-  - first:
-      213: -7593038466982638092
-    second: Tilled_Dirt_Wide_9
+      213: 1221363972299979365
+    second: "Animaci\xF3n_Espaldas_7"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 370
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -102,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,221 +121,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tilled_Dirt_Wide_0
+      name: "Animaci\xF3n_Espaldas_0"
       rect:
         serializedVersion: 2
-        x: 2
+        x: 101
+        y: 68
+        width: 271
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8efd40078ee0df390800000000000000
+      internalID: -7783048189551779864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Espaldas_1"
+      rect:
+        serializedVersion: 2
+        x: 447
         y: 66
-        width: 44
-        height: 44
+        width: 273
+        height: 376
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d50699091871f3eb0800000000000000
-      internalID: -4738042437726281635
+      spriteID: 9bd5fc5e16df31910800000000000000
+      internalID: 1807066472414928313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_Wide_1
+      name: "Animaci\xF3n_Espaldas_2"
       rect:
         serializedVersion: 2
-        x: 50
+        x: 850
+        y: 65
+        width: 250
+        height: 368
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d072668dc5df9a0800000000000000
+      internalID: -6197695427695407854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Espaldas_3"
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 68
+        width: 275
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9f79732c7fc91d0800000000000000
+      internalID: -3342524409887327756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Espaldas_4"
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 67
+        width: 262
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b21516aea11b5a0800000000000000
+      internalID: -6507390392616277239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Animaci\xF3n_Espaldas_5"
+      rect:
+        serializedVersion: 2
+        x: 1943
         y: 66
-        width: 12
-        height: 44
+        width: 253
+        height: 361
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9bcc5ca0a33bf8430800000000000000
-      internalID: 3787442873512086713
+      spriteID: 09788d1acea985840800000000000000
+      internalID: 5213086909799630736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_Wide_2
+      name: "Animaci\xF3n_Espaldas_6"
       rect:
         serializedVersion: 2
-        x: 66
-        y: 50
-        width: 60
-        height: 60
+        x: 2252
+        y: 66
+        width: 295
+        height: 371
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77bca0c654680f6c0800000000000000
-      internalID: -4111638827065750665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_Wide_3
-      rect:
-        serializedVersion: 2
-        x: 127
-        y: 47
-        width: 49
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70c18c50ca10fb4a0800000000000000
-      internalID: -6575535092594631673
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_Wide_4
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 50
-        width: 44
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 62e1296f43ab68610800000000000000
-      internalID: 1623189452351479334
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_Wide_5
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 50
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e945ee832a1960a0800000000000000
-      internalID: -6887945415062894109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_Wide_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 62
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 319ed359521c60de0800000000000000
-      internalID: -1367193069698553581
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_Wide_7
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 31
-        width: 60
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7dda4f09497fd0830800000000000000
-      internalID: 4039156658280377815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_Wide_8
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 1
-        width: 50
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 415991598d29727a0800000000000000
-      internalID: -6401986886371797740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_Wide_9
-      rect:
-        serializedVersion: 2
-        x: 127
-        y: 0
-        width: 32
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4fd8f917ebb10a690800000000000000
-      internalID: -7593038466982638092
+      spriteID: f04dc92b48bbd7cd0800000000000000
+      internalID: -2558682834669874161
       vertices: []
       indices: 
       edges: []
@@ -350,7 +278,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cc4cf39062d1a364da55b6f1d05d7907
     internalID: 0
     vertices: []
     indices: 
@@ -360,16 +288,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tilled_Dirt_Wide_0: -4738042437726281635
-      Tilled_Dirt_Wide_1: 3787442873512086713
-      Tilled_Dirt_Wide_2: -4111638827065750665
-      Tilled_Dirt_Wide_3: -6575535092594631673
-      Tilled_Dirt_Wide_4: 1623189452351479334
-      Tilled_Dirt_Wide_5: -6887945415062894109
-      Tilled_Dirt_Wide_6: -1367193069698553581
-      Tilled_Dirt_Wide_7: 4039156658280377815
-      Tilled_Dirt_Wide_8: -6401986886371797740
-      Tilled_Dirt_Wide_9: -7593038466982638092
+      "Animaci\xF3n_Espaldas_0": -7783048189551779864
+      "Animaci\xF3n_Espaldas_1": 1807066472414928313
+      "Animaci\xF3n_Espaldas_2": -6197695427695407854
+      "Animaci\xF3n_Espaldas_3": -3342524409887327756
+      "Animaci\xF3n_Espaldas_4": -6507390392616277239
+      "Animaci\xF3n_Espaldas_5": 5213086909799630736
+      "Animaci\xF3n_Espaldas_6": -2558682834669874161
+      "Animaci\xF3n_Espaldas_7": 1221363972299979365
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

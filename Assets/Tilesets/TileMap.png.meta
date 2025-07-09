@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 0c9e4661c2826f04fb8a422c8b2e6024
+guid: a9d0dce63573fe242baf092d0d16de37
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8383326178229461986
-    second: Wooden_House_Walls_Tilset_0
+      213: 8537651536920830917
+    second: TileMap_0
   - first:
-      213: -5558002514471396697
-    second: Wooden_House_Walls_Tilset_1
+      213: 2097702617349663825
+    second: TileMap_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -77,8 +77,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wooden_House_Walls_Tilset_0
+      name: TileMap_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 0
-        width: 28
-        height: 48
+        x: 497
+        y: 2998
+        width: 1504
+        height: 1503
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1c5666f14178ab80800000000000000
-      internalID: -8383326178229461986
+      spriteID: 5c3eb32a6d4db7670800000000000000
+      internalID: 8537651536920830917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wooden_House_Walls_Tilset_1
+      name: TileMap_1
       rect:
         serializedVersion: 2
-        x: 47
-        y: 0
-        width: 33
-        height: 48
+        x: 2499
+        y: 2998
+        width: 1504
+        height: 1503
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7aa543029220ed2b0800000000000000
-      internalID: -5558002514471396697
+      spriteID: 15ca8879a698c1d10800000000000000
+      internalID: 2097702617349663825
       vertices: []
       indices: 
       edges: []
@@ -159,9 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Wooden_House_Walls_Tilset_0: -8383326178229461986
-      Wooden_House_Walls_Tilset_1: -5558002514471396697
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 0c9e4661c2826f04fb8a422c8b2e6024
+guid: bf91dabf1a10441429b6c020cac21122
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8383326178229461986
-    second: Wooden_House_Walls_Tilset_0
+      213: 7292168437988616927
+    second: Socky_0
   - first:
-      213: -5558002514471396697
-    second: Wooden_House_Walls_Tilset_1
+      213: 6051459861066024876
+    second: Socky_1
+  - first:
+      213: -1862689128972699051
+    second: Socky_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -77,8 +80,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wooden_House_Walls_Tilset_0
+      name: Socky_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 0
-        width: 28
-        height: 48
+        x: 289
+        y: 245
+        width: 1480
+        height: 1600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1c5666f14178ab80800000000000000
-      internalID: -8383326178229461986
+      spriteID: fda60ac0f8cf23560800000000000000
+      internalID: 7292168437988616927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wooden_House_Walls_Tilset_1
+      name: Socky_1
       rect:
         serializedVersion: 2
-        x: 47
-        y: 0
-        width: 33
-        height: 48
+        x: 1771
+        y: 823
+        width: 13
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +143,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7aa543029220ed2b0800000000000000
-      internalID: -5558002514471396697
+      spriteID: ca7006f7eaa1bf350800000000000000
+      internalID: 6051459861066024876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Socky_2
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 760
+        width: 64
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ab99c2b166626e0800000000000000
+      internalID: -1862689128972699051
       vertices: []
       indices: 
       edges: []
@@ -159,9 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Wooden_House_Walls_Tilset_0: -8383326178229461986
-      Wooden_House_Walls_Tilset_1: -5558002514471396697
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

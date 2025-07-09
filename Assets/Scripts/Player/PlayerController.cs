@@ -141,7 +141,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private void UpdateAnimation()
     {
-        AnimationController.UpdateAnimation(AnimatorComponent, stateMachine, direction);
+        AnimationController.UpdateAnimation(AnimatorComponent, SpriteRendererComponent, stateMachine, direction);
     }
 
     private void ManagePlayerSockLauncher()

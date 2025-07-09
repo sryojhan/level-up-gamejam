@@ -52,24 +52,11 @@ public class PlayerMeleeWeapon : MonoBehaviour
 
             Vector2 attackDirection = direction.GetVectorDirection();
 
-            pillowPivot.transform.parent.localRotation = Quaternion.Euler(0, 0, Mathf.Atan2(attackDirection.y, attackDirection.x) * Mathf.Rad2Deg);
-
-            switch (direction.direction)
-            {
-                case PlayerDirection.Direction.Down:
-                    pillowPivot.transform.parent.localPosition = handVerticalPosition;
-                    break;
-                case PlayerDirection.Direction.Left:
-                    pillowPivot.transform.parent.localPosition = new Vector2(-handHorizontalPosition.x, handHorizontalPosition.y);
-                    break;
-                case PlayerDirection.Direction.Up:
-                    pillowPivot.transform.parent.localPosition = new Vector2(handVerticalPosition.x, -handVerticalPosition.y);
-                    break;
-                case PlayerDirection.Direction.Right:
-                    pillowPivot.transform.parent.localPosition = handHorizontalPosition;
-                    break;
-            }
-
+            
+            pillowPivot.transform.parent.SetLocalPositionAndRotation(
+                attackDirection * handHorizontalPosition, 
+                Quaternion.Euler(0, 0, Mathf.Atan2(attackDirection.y, attackDirection.x) * Mathf.Rad2Deg)
+                );
 
             ChangeState(AttackState.Anticipation);
 

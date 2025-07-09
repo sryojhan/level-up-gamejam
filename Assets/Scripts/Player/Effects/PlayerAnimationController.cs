@@ -3,13 +3,21 @@ using UnityEngine;
 [AddComponentMenu("Player/Animation controller")]
 public class PlayerAnimationController : MonoBehaviour
 {
-    public void UpdateAnimation(Animator animator, PlayerStateMachine playerState, PlayerDirection direction)
+
+    public TMPro.TextMeshProUGUI aux;
+
+    public void UpdateAnimation(Animator animator, SpriteRenderer sprRenderer, PlayerStateMachine playerState, PlayerDirection direction)
     {
         if (!playerState.HasChanged() && !direction.HasChanged()) return;
 
         var state = playerState.state;
 
-        string dir = direction.GetDirectionString();
+
+        (bool south, bool east) = direction.IsSouthAndEastBooleanRepresentation();
+
+        string dir = south ? "front" : "back";
+
+        sprRenderer.flipX = south ? east : !east;
 
         string animationName = "";
 
@@ -22,9 +30,7 @@ public class PlayerAnimationController : MonoBehaviour
             case PlayerStateMachine.State.Run:
                 animationName = "Run";
                 break;
-            case PlayerStateMachine.State.Roll:
-                break;
-            case PlayerStateMachine.State.Stun:
+            case PlayerStateMachine.State.Attack:
                 break;
             case PlayerStateMachine.State.None:
                 break;
@@ -32,6 +38,8 @@ public class PlayerAnimationController : MonoBehaviour
                 break;
         }
 
+
+        aux.text = CombineAnimationName(animationName, dir) + " " + (sprRenderer.flipX ? "Flip" : "no flip");
 
         animator.Play(CombineAnimationName(animationName, dir));
 

@@ -49,27 +49,31 @@ public class PlayerMovement : MonoBehaviour
 
     public void UpdateMovementDirection(PlayerDirection playerDirection)
     {
+        (bool south, bool east) = playerDirection.IsSouthAndEastBooleanRepresentation();
 
         if (input != Vector2.zero)
         {
+
             if (input.y > 0.01)
             {
-                playerDirection.direction = PlayerDirection.Direction.Up;
+                south = false;
             }
             else if (input.y < -0.01)
             {
-                playerDirection.direction = PlayerDirection.Direction.Down;
+                south = true;
             }
 
             else if (input.x > 0.01)
             {
-                playerDirection.direction = PlayerDirection.Direction.Right;
+                east = true;
             }
             else if (input.x < -0.01)
             {
-                playerDirection.direction = PlayerDirection.Direction.Left;
+                east = false;
             }
-            
+
+
+            playerDirection.UpdateWithSouthAndEastBooleanRepresentation(south, east);
         }
     }
 
