@@ -15,4 +15,9 @@ public class RoombaEnemy : BaseEnemy
         ownRigidbody.linearVelocity = ((Vector2)target.position - (Vector2)transform.position) * moveSpeed;
     }
 
+    public override void OwnKnockback(Vector2 playerDirection, float force)
+    {
+        transform.position = ((Vector2)transform.position - playerDirection).normalized * force;
+    }
+
 }
