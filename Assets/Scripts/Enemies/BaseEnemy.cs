@@ -5,7 +5,8 @@ public enum EnemyState
     idle, 
     walk,
     attack,
-    stagger
+    stagger, 
+    cooldown
 }
 public class BaseEnemy : MonoBehaviour
 {
@@ -14,18 +15,32 @@ public class BaseEnemy : MonoBehaviour
     public int health;
     public string enemyName;
     public int baseAttack;
+    public float alertRadius;
     public float moveSpeed;
-    public float chaseRadius;
-    protected Rigidbody2D ownRigidbody;
 
-    //Enemy position references
+    protected Rigidbody2D ownRigidbody;
     protected Transform target;
     protected Vector2 spawnPositionCoordinates;
 
+    public virtual void CustomStart()
+    {
+        currentState = EnemyState.idle;
+        ownRigidbody = GetComponent<Rigidbody2D>();
+        target = PlayerController.instance.transform;
+        spawnPositionCoordinates = transform.position;
+    }
     public virtual void CheckPlayerInRange() { }
     public virtual void CheckIfIdle() { }
-    public virtual void TakeDamage(int damage) { }
+
     public virtual void OwnKnockback(Vector2 playerDirection, float force) { }
+    public virtual void TakeDamage(int damage) 
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Destroy(gameObject, 2f);
+        }
+    }
     public void ChangeState(EnemyState state)
     {
         if (currentState != state)
