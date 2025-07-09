@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Animacion_Correr_Color_0: 6655915061125045781
+      Animacion_Correr_Color_1: 4493974817481485519
+      Animacion_Correr_Color_10: 6768186745519148467
+      Animacion_Correr_Color_11: -2395504165106722917
+      Animacion_Correr_Color_12: -1559193266368829735
+      Animacion_Correr_Color_13: 4333641895232349578
+      Animacion_Correr_Color_2: -8906441367775487430
+      Animacion_Correr_Color_3: -2259736574036044521
+      Animacion_Correr_Color_4: -5852855222440810551
+      Animacion_Correr_Color_5: -5660634000948809123
+      Animacion_Correr_Color_6: -3848294464045409068
+      Animacion_Correr_Color_7: 6632218962568020178
+      Animacion_Correr_Color_8: 1979129985533065632
+      Animacion_Correr_Color_9: 4325234074349353397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
