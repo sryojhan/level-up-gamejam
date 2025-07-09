@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
                 south = true;
             }
 
-            else if (input.x > 0.01)
+            if (input.x > 0.01)
             {
                 east = true;
             }

@@ -20,7 +20,7 @@ public class PlayerController : Singleton<PlayerController>
     public PlayerMeleeWeapon MeleeWeapon { get; private set; }
 
     /* Component references */
-    public BoxCollider2D BoxColliderComponent { get; private set; }
+    public Collider2D ColliderComponent { get; private set; }
     public Rigidbody2D RigidBodyComponent { get; private set; }
     public Animator AnimatorComponent { get; private set; }
     public SpriteRenderer SpriteRendererComponent { get; private set; }
@@ -73,7 +73,7 @@ public class PlayerController : Singleton<PlayerController>
     private void FetchUnityComponentes()
     {
         /* Initialise components */
-        BoxColliderComponent = GetComponentInChildren<BoxCollider2D>();
+        ColliderComponent = GetComponentInChildren<Collider2D>();
         RigidBodyComponent = GetComponentInChildren<Rigidbody2D>();
         AnimatorComponent = GetComponentInChildren<Animator>();
         SpriteRendererComponent = GetComponentInChildren<SpriteRenderer>();

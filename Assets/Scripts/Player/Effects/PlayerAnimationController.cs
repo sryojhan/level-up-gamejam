@@ -3,9 +3,6 @@ using UnityEngine;
 [AddComponentMenu("Player/Animation controller")]
 public class PlayerAnimationController : MonoBehaviour
 {
-
-    public TMPro.TextMeshProUGUI aux;
-
     public void UpdateAnimation(Animator animator, SpriteRenderer sprRenderer, PlayerStateMachine playerState, PlayerDirection direction)
     {
         if (!playerState.HasChanged() && !direction.HasChanged()) return;
@@ -39,7 +36,6 @@ public class PlayerAnimationController : MonoBehaviour
         }
 
 
-        aux.text = CombineAnimationName(animationName, dir) + " " + (sprRenderer.flipX ? "Flip" : "no flip");
 
         animator.Play(CombineAnimationName(animationName, dir));
 
