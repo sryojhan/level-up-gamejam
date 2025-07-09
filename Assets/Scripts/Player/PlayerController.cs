@@ -45,7 +45,7 @@ public class PlayerController : Singleton<PlayerController>
         ManagePlayerSockLauncher();
         ManageInteractions();
 
-        ManagePlayerMeleeAtack();
+        PlayerBeginAttack();
 
         UpdateCurrentCharacterState();
         UpdateCharacterDirection();
@@ -60,6 +60,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private void FixedUpdate()
     {
+        ManagePlayerMeleeAtack();
         ManageMovement();
     }
 
@@ -160,9 +161,14 @@ public class PlayerController : Singleton<PlayerController>
         }
     }
 
-    private void ManagePlayerMeleeAtack()
+
+    private void PlayerBeginAttack()
     {
         MeleeWeapon.BeginAttack(InputManager.WantsToAttack(), direction);
+    }
+
+    private void ManagePlayerMeleeAtack()
+    {
         MeleeWeapon.UpdateAttack();
     }
 
