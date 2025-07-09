@@ -6,10 +6,7 @@ public class PantalonEnemy : BaseEnemy
 
     void Start()
     {
-        currentState = EnemyState.idle;
-        ownRigidbody = GetComponent<Rigidbody2D>();
-        target = PlayerController.instance.transform;
-        spawnPositionCoordinates = transform.position;
+        base.CustomStart();
     }
 
     void FixedUpdate()
@@ -21,7 +18,7 @@ public class PantalonEnemy : BaseEnemy
     override public void CheckPlayerInRange()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, target.position);
-        if (distanceToPlayer <= chaseRadius)
+        if (distanceToPlayer <= alertRadius)
         {
             Vector2 direction = (target.position - transform.position).normalized;
 
@@ -33,7 +30,7 @@ public class PantalonEnemy : BaseEnemy
 
             ChangeState(EnemyState.attack);
         }
-        else if (distanceToPlayer > chaseRadius && currentState != EnemyState.idle) 
+        else if (distanceToPlayer > alertRadius && currentState != EnemyState.idle) 
         {
             Vector2 direction = (spawnPositionCoordinates - (Vector2)transform.position).normalized;
 
@@ -70,14 +67,5 @@ public class PantalonEnemy : BaseEnemy
     public override void OwnKnockback(Vector2 playerDirection, float force)
     {
         ownRigidbody.linearVelocity = ((Vector2)transform.position - playerDirection).normalized * force;
-    }
-
-    public override void TakeDamage(int damage)
-    {
-        health -= damage;
-        if (health <= 0)
-        {
-            Destroy(gameObject, 2f);
-        }
     }
 }
