@@ -2,7 +2,7 @@ public class PlayerStateMachine
 {
     public enum State
     {
-        Iddle, Run, Roll, Stun, 
+        Iddle, Run, Attack,
         
         None
     }
