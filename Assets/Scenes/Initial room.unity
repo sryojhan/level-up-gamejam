@@ -939,6 +939,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: af3bec950ede711489a36e3f52fe915b, type: 2}
+    - target: {fileID: 6508207694059361325, guid: cff180c1430a8ab4c862a0bb7bde8dec, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8048598601805346793, guid: 081c5e66b005ed84a8705e31327895c7, type: 3}
     - target: {fileID: 8601570491069760365, guid: cff180c1430a8ab4c862a0bb7bde8dec, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1520,7 +1524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: 290b39b3-68ae-4124-a4ad-0510bff88bd3
+  uid: c186a6c9-c0bd-425e-8593-0c6c574c700e
 --- !u!114 &891760448
 MonoBehaviour:
   m_ObjectHideFlags: 0
