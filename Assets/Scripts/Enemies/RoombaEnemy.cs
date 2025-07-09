@@ -17,7 +17,6 @@ public class RoombaEnemy : BaseEnemy
 
     public override void OwnKnockback(Vector2 playerDirection, float force)
     {
-        transform.position = ((Vector2)transform.position - playerDirection).normalized * force;
+        transform.position = (Vector2)transform.position + ((Vector2)transform.position - playerDirection).normalized * force;
     }
-
 }
