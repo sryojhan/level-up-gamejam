@@ -79,7 +79,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Shadow_pattern:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 3c407baa6aff3a840892df2e1fc3ae62, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -130,7 +130,7 @@ Material:
     - _Rim_cutoff: 0.5
     - _Shadow_cutoff: 0.5
     - _Shadow_cutoff_fade: 0.1
-    - _Shadow_pattern_scale: 1
+    - _Shadow_pattern_scale: 0.11
     - _Shine_intensity: 0.8
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0

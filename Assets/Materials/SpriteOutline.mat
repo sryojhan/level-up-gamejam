@@ -60,7 +60,7 @@ Material:
     - _checkerboardScale: 15
     - _scrollSpeed: 0.05
     - _scrollSpeedVertical: 0.01
-    - _thickness: 0.01
+    - _thickness: 0.015
     - _useOutline: 0
     m_Colors:
     - _Checkerboard_dark: {r: 0.4758478, g: 1.4980394, b: 1.3922955, a: 1}

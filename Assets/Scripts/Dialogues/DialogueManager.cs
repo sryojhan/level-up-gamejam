@@ -36,7 +36,6 @@ public class DialogueManager : Singleton<DialogueManager>
 
     private IEnumerator DialogueCoroutine(DialogueContent dialogue, OnDialogueEnd onEnd)
     {
-        PlayerController.instance.SetAllControls(false);
 
         if (string.IsNullOrEmpty(dialogue.speaker))
         {
@@ -98,7 +97,6 @@ public class DialogueManager : Singleton<DialogueManager>
         onEnd();
         dialogueParent.SetActive(false);
 
-        PlayerController.instance.SetAllControls(true);
     }
 
 }

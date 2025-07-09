@@ -12,11 +12,16 @@ public class Interactable : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private MaterialPropertyBlock mpb;
+
+    private float materialThickness;
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         mpb = new MaterialPropertyBlock();
+
+        materialThickness = spriteRenderer.material.GetFloat("_thickness");
     }
 
     public CoroutineAnimation thicknessAnimation;
@@ -50,10 +55,9 @@ public class Interactable : MonoBehaviour
 
         void onUpdate(float i)
         {
-            float targetThickness = 0.01f;
 
             spriteRenderer.GetPropertyBlock(mpb);
-            mpb.SetFloat("_thickness", targetThickness * i);
+            mpb.SetFloat("_thickness", materialThickness * i);
             spriteRenderer.SetPropertyBlock(mpb);
         }
 
@@ -75,7 +79,7 @@ public class Interactable : MonoBehaviour
         {
             i = 1 - i;
 
-            float targetThickness = 0.01f;
+            float targetThickness = mpb.GetFloat("_thickness");
 
             spriteRenderer.GetPropertyBlock(mpb);
             mpb.SetFloat("_thickness", targetThickness * i);
@@ -103,14 +107,15 @@ public class Interactable : MonoBehaviour
 
         inInteraction = true;
 
+        PlayerController.instance.SetAllControls(false);
         onInteractionBegin?.Invoke();
     }
 
     public void EndInteraction()
     {
         inInteraction = false;
-
         onInteractionEnd?.Invoke();
+        PlayerController.instance.SetAllControls(true);
     }
 
     public UnityEvent onInteractionBegin;
