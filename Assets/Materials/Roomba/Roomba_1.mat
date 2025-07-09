@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ToonShade 1
+  m_Name: Roomba_1
   m_Shader: {fileID: -6465566751694194690, guid: 02d2323574adf904cbafb16f57852355, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -105,10 +105,10 @@ Material:
     - _shadowTreshold: 0.5
     m_Colors:
     - Toon_Ramp_Tint: {r: 0, g: 0, b: 0, a: 1}
-    - _Bases_color: {r: 1, g: 0.3066038, b: 0.84314215, a: 1}
+    - _Bases_color: {r: 0.6236205, g: 0.9245283, b: 0.8059347, a: 1}
     - _Color: {r: 0.9433962, g: 0.37824848, b: 0.37824848, a: 1}
-    - _HighlightColor: {r: 9.082412, g: 3.5558503, b: 3.7102633, a: 1}
-    - _Shadow_color: {r: 0.381128, g: 0, b: 0.3962264, a: 1}
+    - _HighlightColor: {r: 3.3069923, g: 5.9921575, b: 3.4686491, a: 1}
+    - _Shadow_color: {r: 0.26517445, g: 0.5566038, b: 0.32682452, a: 1}
     - _Shadow_pattern_color: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

@@ -3,7 +3,17 @@ guid: e63408b5e9209fd40976ba390c0db671
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: negro
+    second: {fileID: 2100000, guid: 2ccdecd5b91d392478a9ca5363f9c9f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pantalon
+    second: {fileID: 2100000, guid: 9311871a0af246d47a4ac5cafc3af6da, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

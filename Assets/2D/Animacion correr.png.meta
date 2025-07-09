@@ -1,22 +1,43 @@
 fileFormatVersion: 2
-guid: 8f7d5f639bc051b45927d680f87be200
+guid: 081c5e66b005ed84a8705e31327895c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -872878230518872909
-    second: Animacion_Pocha_correr_0
+      213: 9090066745459405277
+    second: Animacion correr_0
   - first:
-      213: 6350138070192303738
-    second: Animacion_Pocha_correr_1
+      213: -4220058698431120659
+    second: Animacion correr_1
   - first:
-      213: -4390614282979308308
-    second: Animacion_Pocha_correr_2
+      213: 1615468076721557784
+    second: Animacion correr_2
   - first:
-      213: 6857992985440977909
-    second: Animacion_Pocha_correr_3
+      213: 6223172221716189336
+    second: Animacion correr_3
   - first:
-      213: 3141772950479066038
-    second: Animacion_Pocha_correr_4
+      213: 8678825134886600916
+    second: Animacion correr_4
+  - first:
+      213: -1611351796055520059
+    second: Animacion correr_5
+  - first:
+      213: 8048598601805346793
+    second: Animacion correr_6
+  - first:
+      213: 5548475984161122765
+    second: Animacion correr_7
+  - first:
+      213: -3599640424033008641
+    second: Animacion correr_8
+  - first:
+      213: -3770089280110571368
+    second: Animacion correr_9
+  - first:
+      213: -8256484428154147228
+    second: Animacion correr_10
+  - first:
+      213: 551161047776628177
+    second: Animacion correr_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 370
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -86,7 +107,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -112,111 +133,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Animacion_Pocha_correr_0
+      name: Animacion correr_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 55
-        width: 121
-        height: 185
+        x: 150
+        y: 63
+        width: 299
+        height: 376
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b440c1cfd9e2e3f0800000000000000
-      internalID: -872878230518872909
+      spriteID: 9e73058f8cd52bf60800000000000000
+      internalID: 8048598601805346793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Pocha_correr_1
+      name: Animacion correr_1
       rect:
         serializedVersion: 2
-        x: 164
-        y: 64
-        width: 112
-        height: 176
+        x: 495
+        y: 63
+        width: 299
+        height: 367
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7e2f7c2ee8302850800000000000000
-      internalID: 6350138070192303738
+      spriteID: dc9a5b0b285200d40800000000000000
+      internalID: 5548475984161122765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Pocha_correr_2
+      name: Animacion correr_2
       rect:
         serializedVersion: 2
-        x: 329
-        y: 62
-        width: 77
-        height: 171
+        x: 860
+        y: 65
+        width: 300
+        height: 374
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cec034572976113c0800000000000000
-      internalID: -4390614282979308308
+      spriteID: ff340662b128b0ec0800000000000000
+      internalID: -3599640424033008641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Pocha_correr_3
+      name: Animacion correr_3
       rect:
         serializedVersion: 2
-        x: 438
-        y: 64
-        width: 83
-        height: 170
+        x: 1244
+        y: 66
+        width: 298
+        height: 374
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f38459f84c7c2f50800000000000000
-      internalID: 6857992985440977909
+      spriteID: 890508746c3fdabc0800000000000000
+      internalID: -3770089280110571368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Pocha_correr_4
+      name: Animacion correr_4
       rect:
         serializedVersion: 2
-        x: 563
-        y: 62
-        width: 68
-        height: 172
+        x: 1577
+        y: 66
+        width: 296
+        height: 377
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b35c364ad1d99b20800000000000000
-      internalID: 3141772950479066038
+      spriteID: 46ee35648231b6d80800000000000000
+      internalID: -8256484428154147228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion correr_5
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 66
+        width: 303
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd02c28d0e16a700800000000000000
+      internalID: 551161047776628177
       vertices: []
       indices: 
       edges: []
@@ -225,7 +268,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 70b8774c7b8de2445a001fb6c8bc44ae
     internalID: 0
     vertices: []
     indices: 
@@ -234,7 +277,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Animacion correr_0: 8048598601805346793
+      Animacion correr_1: 5548475984161122765
+      Animacion correr_12: -343000480
+      Animacion correr_2: -3599640424033008641
+      Animacion correr_3: -3770089280110571368
+      Animacion correr_4: -8256484428154147228
+      Animacion correr_5: 551161047776628177
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
