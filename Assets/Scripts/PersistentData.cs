@@ -5,19 +5,20 @@ public class PersistentData
 {
     public static int connection_id = -1;
 
+    public static HashSet<int> collectedKeys = new();
 
-    private static readonly Dictionary<string, int> dictionaryNPC = new();
+    private static readonly Dictionary<string, int> objectPersistentState = new();
 
-    public static void SetNPC(string uid, int value)
+    public static void Set(string uid, int value)
     {
-        dictionaryNPC[uid] = value;
+        objectPersistentState[uid] = value;
     }
 
-    public static int GetNPC(string uid)
+    public static int Get(string uid)
     {
-        if (!dictionaryNPC.ContainsKey(uid)) return 0;
+        if (!objectPersistentState.ContainsKey(uid)) return 0;
 
-        return dictionaryNPC[uid];
+        return objectPersistentState[uid];
     }
 
 }

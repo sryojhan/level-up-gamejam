@@ -5,6 +5,12 @@ using UnityEngine.Events;
 [RequireComponent(typeof(UID))]
 public class Collectable : MonoBehaviour
 {
+
+    private enum CollectableState
+    {
+        NotCollected, Collected
+    }
+
     private string uid;
 
     public UnityEvent onPick;
@@ -13,7 +19,7 @@ public class Collectable : MonoBehaviour
     {
         uid = GetComponentInChildren<UID>().uid;
 
-        if(PersistentData.GetNPC(uid) != 0)
+        if(PersistentData.Get(uid) != (int)CollectableState.NotCollected)
         {
             Destroy(gameObject);
             return;
@@ -25,7 +31,7 @@ public class Collectable : MonoBehaviour
     {
         onPick?.Invoke();
 
-        PersistentData.SetNPC(uid, 1);
+        PersistentData.Set(uid, (int)CollectableState.Collected);
         Destroy(gameObject);
     }
 

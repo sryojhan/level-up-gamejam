@@ -14,7 +14,7 @@ public class DialogueTrigger : MonoBehaviour
     private void Awake()
     {
         entityUID = GetComponent<UID>().uid;
-        dialogueValue = PersistentData.GetNPC(entityUID);
+        dialogueValue = PersistentData.Get(entityUID);
     }
 
 
@@ -25,7 +25,7 @@ public class DialogueTrigger : MonoBehaviour
         if(dialogueValue < dialogues.Length - 1)
         {
             dialogueValue++;
-            PersistentData.SetNPC(entityUID, dialogueValue);
+            PersistentData.Set(entityUID, dialogueValue);
         }
     }
 
