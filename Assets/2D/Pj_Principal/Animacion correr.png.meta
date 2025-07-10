@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 46ba81e6fbe5d5a4884224663b191241
+guid: 081c5e66b005ed84a8705e31327895c7
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -38,12 +38,6 @@ TextureImporter:
   - first:
       213: 551161047776628177
     second: Animacion correr_11
-  - first:
-      213: 4749924511971973956
-    second: Animacion correr_12
-  - first:
-      213: -1482553551741107498
-    second: Animacion correr_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -90,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 370
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,7 +107,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -142,20 +136,20 @@ TextureImporter:
       name: Animacion correr_0
       rect:
         serializedVersion: 2
-        x: 387
-        y: 482
-        width: 8
-        height: 6
+        x: 85
+        y: 62
+        width: 299
+        height: 378
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dd1f2b33b87662e70800000000000000
-      internalID: 9090066745459405277
+      spriteID: de46f0d60599333448bd0d6517f54818
+      internalID: 8048598601805346793
       vertices: []
       indices: 
       edges: []
@@ -164,20 +158,20 @@ TextureImporter:
       name: Animacion correr_1
       rect:
         serializedVersion: 2
-        x: 1087
-        y: 484
-        width: 8
-        height: 6
+        x: 425
+        y: 65
+        width: 299
+        height: 367
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dea37bcf8f65f65c0800000000000000
-      internalID: -4220058698431120659
+      spriteID: d17883ec2f14a9643ab55022682d3ac5
+      internalID: 5548475984161122765
       vertices: []
       indices: 
       edges: []
@@ -186,20 +180,20 @@ TextureImporter:
       name: Animacion correr_2
       rect:
         serializedVersion: 2
-        x: 1446
-        y: 484
-        width: 8
-        height: 6
+        x: 783
+        y: 66
+        width: 299
+        height: 376
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 811d8fa18ab4b6610800000000000000
-      internalID: 1615468076721557784
+      spriteID: 238a0e4044c2f9b45bc3ea2fb47ff1fc
+      internalID: -3599640424033008641
       vertices: []
       indices: 
       edges: []
@@ -208,20 +202,20 @@ TextureImporter:
       name: Animacion correr_3
       rect:
         serializedVersion: 2
-        x: 2178
-        y: 487
-        width: 8
-        height: 6
+        x: 1143
+        y: 67
+        width: 299
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 890d873f9262d5650800000000000000
-      internalID: 6223172221716189336
+      spriteID: 921b65d645929e0499dbf42021b87f5e
+      internalID: -3770089280110571368
       vertices: []
       indices: 
       edges: []
@@ -230,20 +224,20 @@ TextureImporter:
       name: Animacion correr_4
       rect:
         serializedVersion: 2
-        x: 730
-        y: 474
-        width: 8
-        height: 6
+        x: 1511
+        y: 66
+        width: 299
+        height: 368
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4d0c5a05a71617870800000000000000
-      internalID: 8678825134886600916
+      spriteID: 1041ee5168edbd54180d9a5fcd9879f1
+      internalID: -8256484428154147228
       vertices: []
       indices: 
       edges: []
@@ -252,20 +246,20 @@ TextureImporter:
       name: Animacion correr_5
       rect:
         serializedVersion: 2
-        x: 1817
-        y: 476
-        width: 8
-        height: 6
+        x: 1876
+        y: 66
+        width: 295
+        height: 379
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5cc4ceb241453a9e0800000000000000
-      internalID: -1611351796055520059
+      spriteID: c4fc43bfc9e39604cbc9b5347fcd0045
+      internalID: 551161047776628177
       vertices: []
       indices: 
       edges: []
@@ -274,163 +268,9 @@ TextureImporter:
       name: Animacion correr_6
       rect:
         serializedVersion: 2
-        x: 2527
-        y: 477
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9e73058f8cd52bf60800000000000000
-      internalID: 8048598601805346793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Animacion correr_7
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 63
-        width: 299
-        height: 377
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dc9a5b0b285200d40800000000000000
-      internalID: 5548475984161122765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Animacion correr_8
-      rect:
-        serializedVersion: 2
-        x: 424
-        y: 64
-        width: 299
-        height: 367
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ff340662b128b0ec0800000000000000
-      internalID: -3599640424033008641
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Animacion correr_9
-      rect:
-        serializedVersion: 2
-        x: 783
-        y: 67
-        width: 300
-        height: 374
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 890508746c3fdabc0800000000000000
-      internalID: -3770089280110571368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Animacion correr_10
-      rect:
-        serializedVersion: 2
-        x: 1144
-        y: 67
-        width: 298
-        height: 375
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 46ee35648231b6d80800000000000000
-      internalID: -8256484428154147228
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Animacion correr_11
-      rect:
-        serializedVersion: 2
-        x: 1511
-        y: 66
-        width: 299
-        height: 367
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1dd02c28d0e16a700800000000000000
-      internalID: 551161047776628177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Animacion correr_12
-      rect:
-        serializedVersion: 2
-        x: 1876
-        y: 67
-        width: 296
-        height: 379
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 44b920e6d2f1be140800000000000000
-      internalID: 4749924511971973956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Animacion correr_13
-      rect:
-        serializedVersion: 2
         x: 2225
         y: 67
-        width: 303
+        width: 304
         height: 367
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -438,10 +278,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6d24afb4669ec6be0800000000000000
-      internalID: -1482553551741107498
+      spriteID: 94fc2dd5a74b8fd44948e577a96bfe96
+      internalID: 913735473
       vertices: []
       indices: 
       edges: []
@@ -450,7 +290,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 70b8774c7b8de2445a001fb6c8bc44ae
     internalID: 0
     vertices: []
     indices: 
@@ -459,7 +299,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Animacion correr_0: 8048598601805346793
+      Animacion correr_1: 5548475984161122765
+      Animacion correr_2: -3599640424033008641
+      Animacion correr_3: -3770089280110571368
+      Animacion correr_4: -8256484428154147228
+      Animacion correr_5: -343000480
+      Animacion correr_6: 913735473
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Belton_0: 288891828242979262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

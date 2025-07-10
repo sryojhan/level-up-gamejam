@@ -334,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IndicadorMontones_0: 7144328953248724514
+      IndicadorMontones_1: 8323530368032254775
+      IndicadorMontones_2: 6240171777680486705
+      IndicadorMontones_3: -8333846851712530875
+      IndicadorMontones_4: 7937550728273154662
+      IndicadorMontones_5: -6292003959529087204
+      IndicadorMontones_6: -60853856475306848
+      IndicadorMontones_7: 8108105828093654746
+      IndicadorMontones_8: -3434682744967725999
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
