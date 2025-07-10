@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: 2b7dec59-f3bd-468a-a923-4ae691addb9f
+  uid: 52086af5-6d4e-4c1d-926d-daaf9c17190d
 --- !u!61 &166214332
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1754,7 +1754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: 4730d99e-ae41-4487-83b5-68bbe4470137
+  uid: 1342715d-6071-4a16-9bf2-35725dadf559
 --- !u!114 &891760448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2201,7 +2201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: 0000cf52-3a9e-46fa-97b9-a6f6b0e94dad
+  uid: d7065706-440b-434c-98b9-775843fd1d8c
 --- !u!61 &1052478758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3896,7 +3896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: e82846da-33c3-4774-b477-e3e0af56a17d
+  uid: 7e9c5afd-20e2-4e2a-8a2f-1e03e760bab1
 --- !u!61 &1841993779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4041,7 +4041,7 @@ SpriteRenderer:
   m_Size: {x: 0.8125, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1841993782
@@ -4337,7 +4337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: 364c9f24-8ce8-47d0-b685-dcf6cb93a558
+  uid: 1fcdfb73-52c1-4673-a8bb-86a768b485b7
 --- !u!61 &1941086963
 BoxCollider2D:
   m_ObjectHideFlags: 0
