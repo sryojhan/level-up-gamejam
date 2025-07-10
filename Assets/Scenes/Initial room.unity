@@ -1225,7 +1225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: dd1c6e59-1c6b-4328-9eb3-75b368493805
+  uid: 849621d0-387a-4648-9132-db7adf50451b
 --- !u!114 &891760448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2109,7 +2109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: de83549d-50d4-45cf-8db4-cb721b1d1006
+  uid: 406456bf-7d7f-442d-9dc5-3c382f7b558d
 --- !u!61 &1841993779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2428,7 +2428,7 @@ GameObject:
   - component: {fileID: 1941086962}
   - component: {fileID: 1941086961}
   m_Layer: 0
-  m_Name: Euro
+  m_Name: Collectable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2475,7 +2475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: a0b8b3ca-73f0-4a4c-8a01-1bfc424583b7
+  uid: ee68c234-f8aa-4fe9-a8cb-57b99d938977
 --- !u!61 &1941086963
 BoxCollider2D:
   m_ObjectHideFlags: 0
