@@ -2,10 +2,26 @@ using UnityEngine;
 
 public class Rotate3DModels : MonoBehaviour
 {
-    public float rotationSpeed = 100;
+
+    public bool rotateToMouse = false;
+
+    public void SetRotation(float rotation)
+    {
+        transform.localRotation = Quaternion.Euler(new Vector3(0, rotation, 0));
+    }
 
     private void Update()
     {
-        transform.parent.Rotate(0, rotationSpeed * Time.deltaTime, 0);
+        if (!rotateToMouse) return;
+
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        Vector2 dir = (mousePosition - (Vector2)transform.position).normalized;
+
+        float angle = Mathf.Atan2(dir.y, dir.x) * -Mathf.Rad2Deg;
+
+        SetRotation(angle);
+
     }
+
 }
