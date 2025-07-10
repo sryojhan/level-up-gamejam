@@ -76,6 +76,9 @@ namespace SceneTransition
 
         private IEnumerator SceneSwap(string sceneName)
         {
+            var sceneLoadingData = SceneManager.LoadSceneAsync(sceneName);
+            sceneLoadingData.allowSceneActivation = false;
+
             Transition transition = forceTransition >= 0 ? transitions[forceTransition] : transitions[Random.Range(0, transitions.Length)];
 
             inTransition = true;
@@ -102,11 +105,16 @@ namespace SceneTransition
 
             material.SetTexture("_transitionGradient", transition.Out.gradientMask);
             //Load Scene
-            SceneManager.LoadScene(sceneName);
+            //SceneManager.LoadScene(sceneName);
 
 
             if (transition.middleScreenDuration > 0)
                 yield return new WaitForSeconds(transition.middleScreenDuration);
+
+            while (sceneLoadingData.progress < 0.9f) yield return null;
+
+            sceneLoadingData.allowSceneActivation = true;
+
 
             //Wait screen
 
