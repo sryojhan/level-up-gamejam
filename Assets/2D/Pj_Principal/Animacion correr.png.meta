@@ -1,49 +1,49 @@
 fileFormatVersion: 2
-guid: d4ce243c050c4884a9d553464c28bc66
+guid: 46ba81e6fbe5d5a4884224663b191241
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6655915061125045781
-    second: Animacion_Correr_Color_0
+      213: 9090066745459405277
+    second: Animacion correr_0
   - first:
-      213: 4493974817481485519
-    second: Animacion_Correr_Color_1
+      213: -4220058698431120659
+    second: Animacion correr_1
   - first:
-      213: -8906441367775487430
-    second: Animacion_Correr_Color_2
+      213: 1615468076721557784
+    second: Animacion correr_2
   - first:
-      213: -2259736574036044521
-    second: Animacion_Correr_Color_3
+      213: 6223172221716189336
+    second: Animacion correr_3
   - first:
-      213: -5852855222440810551
-    second: Animacion_Correr_Color_4
+      213: 8678825134886600916
+    second: Animacion correr_4
   - first:
-      213: -5660634000948809123
-    second: Animacion_Correr_Color_5
+      213: -1611351796055520059
+    second: Animacion correr_5
   - first:
-      213: -3848294464045409068
-    second: Animacion_Correr_Color_6
+      213: 8048598601805346793
+    second: Animacion correr_6
   - first:
-      213: 6632218962568020178
-    second: Animacion_Correr_Color_7
+      213: 5548475984161122765
+    second: Animacion correr_7
   - first:
-      213: 1979129985533065632
-    second: Animacion_Correr_Color_8
+      213: -3599640424033008641
+    second: Animacion correr_8
   - first:
-      213: 4325234074349353397
-    second: Animacion_Correr_Color_9
+      213: -3770089280110571368
+    second: Animacion correr_9
   - first:
-      213: 6768186745519148467
-    second: Animacion_Correr_Color_10
+      213: -8256484428154147228
+    second: Animacion correr_10
   - first:
-      213: -2395504165106722917
-    second: Animacion_Correr_Color_11
+      213: 551161047776628177
+    second: Animacion correr_11
   - first:
-      213: -1559193266368829735
-    second: Animacion_Correr_Color_12
+      213: 4749924511971973956
+    second: Animacion correr_12
   - first:
-      213: 4333641895232349578
-    second: Animacion_Correr_Color_13
+      213: -1482553551741107498
+    second: Animacion correr_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,50 +135,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Animacion_Correr_Color_0
+      name: Animacion correr_0
       rect:
         serializedVersion: 2
         x: 387
@@ -193,14 +154,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51ed789cb7f8e5c50800000000000000
-      internalID: 6655915061125045781
+      spriteID: dd1f2b33b87662e70800000000000000
+      internalID: 9090066745459405277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Correr_Color_1
+      name: Animacion correr_1
       rect:
         serializedVersion: 2
         x: 1087
@@ -215,14 +176,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fcce881594ecd5e30800000000000000
-      internalID: 4493974817481485519
+      spriteID: dea37bcf8f65f65c0800000000000000
+      internalID: -4220058698431120659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Correr_Color_2
+      name: Animacion correr_2
       rect:
         serializedVersion: 2
         x: 1446
@@ -237,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3ad5eca3c6f56480800000000000000
-      internalID: -8906441367775487430
+      spriteID: 811d8fa18ab4b6610800000000000000
+      internalID: 1615468076721557784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Correr_Color_3
+      name: Animacion correr_3
       rect:
         serializedVersion: 2
         x: 2178
@@ -259,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7159f9afe8dc3a0e0800000000000000
-      internalID: -2259736574036044521
+      spriteID: 890d873f9262d5650800000000000000
+      internalID: 6223172221716189336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Correr_Color_4
+      name: Animacion correr_4
       rect:
         serializedVersion: 2
         x: 730
@@ -281,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c720a85f2b76cea0800000000000000
-      internalID: -5852855222440810551
+      spriteID: 4d0c5a05a71617870800000000000000
+      internalID: 8678825134886600916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Correr_Color_5
+      name: Animacion correr_5
       rect:
         serializedVersion: 2
         x: 1817
@@ -303,14 +264,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d52b2f11e536171b0800000000000000
-      internalID: -5660634000948809123
+      spriteID: 5cc4ceb241453a9e0800000000000000
+      internalID: -1611351796055520059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Correr_Color_6
+      name: Animacion correr_6
       rect:
         serializedVersion: 2
         x: 2527
@@ -325,14 +286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4dc9877f29c189ac0800000000000000
-      internalID: -3848294464045409068
+      spriteID: 9e73058f8cd52bf60800000000000000
+      internalID: 8048598601805346793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Correr_Color_7
+      name: Animacion correr_7
       rect:
         serializedVersion: 2
         x: 85
@@ -347,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d00a78e1006a0c50800000000000000
-      internalID: 6632218962568020178
+      spriteID: dc9a5b0b285200d40800000000000000
+      internalID: 5548475984161122765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Correr_Color_8
+      name: Animacion correr_8
       rect:
         serializedVersion: 2
         x: 424
@@ -369,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a9b5086c38477b10800000000000000
-      internalID: 1979129985533065632
+      spriteID: ff340662b128b0ec0800000000000000
+      internalID: -3599640424033008641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Correr_Color_9
+      name: Animacion correr_9
       rect:
         serializedVersion: 2
         x: 783
@@ -391,14 +352,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b9320c7971560c30800000000000000
-      internalID: 4325234074349353397
+      spriteID: 890508746c3fdabc0800000000000000
+      internalID: -3770089280110571368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Correr_Color_10
+      name: Animacion correr_10
       rect:
         serializedVersion: 2
         x: 1144
@@ -413,14 +374,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3bd0d245cfd6ded50800000000000000
-      internalID: 6768186745519148467
+      spriteID: 46ee35648231b6d80800000000000000
+      internalID: -8256484428154147228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Correr_Color_11
+      name: Animacion correr_11
       rect:
         serializedVersion: 2
         x: 1511
@@ -435,14 +396,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9758dc57a571ced0800000000000000
-      internalID: -2395504165106722917
+      spriteID: 1dd02c28d0e16a700800000000000000
+      internalID: 551161047776628177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Correr_Color_12
+      name: Animacion correr_12
       rect:
         serializedVersion: 2
         x: 1876
@@ -457,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d6a7e53cf1ac5ae0800000000000000
-      internalID: -1559193266368829735
+      spriteID: 44b920e6d2f1be140800000000000000
+      internalID: 4749924511971973956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Animacion_Correr_Color_13
+      name: Animacion correr_13
       rect:
         serializedVersion: 2
         x: 2225
@@ -479,8 +440,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a852315d750342c30800000000000000
-      internalID: 4333641895232349578
+      spriteID: 6d24afb4669ec6be0800000000000000
+      internalID: -1482553551741107498
       vertices: []
       indices: 
       edges: []
@@ -498,21 +459,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Animacion_Correr_Color_0: 6655915061125045781
-      Animacion_Correr_Color_1: 4493974817481485519
-      Animacion_Correr_Color_10: 6768186745519148467
-      Animacion_Correr_Color_11: -2395504165106722917
-      Animacion_Correr_Color_12: -1559193266368829735
-      Animacion_Correr_Color_13: 4333641895232349578
-      Animacion_Correr_Color_2: -8906441367775487430
-      Animacion_Correr_Color_3: -2259736574036044521
-      Animacion_Correr_Color_4: -5852855222440810551
-      Animacion_Correr_Color_5: -5660634000948809123
-      Animacion_Correr_Color_6: -3848294464045409068
-      Animacion_Correr_Color_7: 6632218962568020178
-      Animacion_Correr_Color_8: 1979129985533065632
-      Animacion_Correr_Color_9: 4325234074349353397
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

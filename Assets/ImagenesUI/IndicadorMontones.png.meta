@@ -1,31 +1,34 @@
 fileFormatVersion: 2
-guid: 2cb8113645caeaa43b51ff7b66c1f038
+guid: 8b12bcb9988784043893dbb2ba8f9d00
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7783048189551779864
-    second: "Animaci\xF3n_Espaldas_0"
+      213: 7144328953248724514
+    second: IndicadorMontones_0
   - first:
-      213: 1807066472414928313
-    second: "Animaci\xF3n_Espaldas_1"
+      213: 8323530368032254775
+    second: IndicadorMontones_1
   - first:
-      213: -6197695427695407854
-    second: "Animaci\xF3n_Espaldas_2"
+      213: 6240171777680486705
+    second: IndicadorMontones_2
   - first:
-      213: -3342524409887327756
-    second: "Animaci\xF3n_Espaldas_3"
+      213: -8333846851712530875
+    second: IndicadorMontones_3
   - first:
-      213: -6507390392616277239
-    second: "Animaci\xF3n_Espaldas_4"
+      213: 7937550728273154662
+    second: IndicadorMontones_4
   - first:
-      213: 5213086909799630736
-    second: "Animaci\xF3n_Espaldas_5"
+      213: -6292003959529087204
+    second: IndicadorMontones_5
   - first:
-      213: -2558682834669874161
-    second: "Animaci\xF3n_Espaldas_6"
+      213: -60853856475306848
+    second: IndicadorMontones_6
   - first:
-      213: 1221363972299979365
-    second: "Animaci\xF3n_Espaldas_7"
+      213: 8108105828093654746
+    second: IndicadorMontones_7
+  - first:
+      213: -3434682744967725999
+    second: IndicadorMontones_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 370
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,7 +98,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -121,155 +124,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Animaci\xF3n_Espaldas_0"
+      name: IndicadorMontones_0
       rect:
         serializedVersion: 2
-        x: 101
-        y: 68
-        width: 271
-        height: 378
+        x: 19
+        y: 28
+        width: 460
+        height: 442
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8efd40078ee0df390800000000000000
-      internalID: -7783048189551779864
+      spriteID: 226bde8a451c52360800000000000000
+      internalID: 7144328953248724514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Animaci\xF3n_Espaldas_1"
+      name: IndicadorMontones_1
       rect:
         serializedVersion: 2
-        x: 447
-        y: 66
-        width: 273
-        height: 376
+        x: 668
+        y: 400
+        width: 126
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9bd5fc5e16df31910800000000000000
-      internalID: 1807066472414928313
+      spriteID: 73b2dbf05ce138370800000000000000
+      internalID: 8323530368032254775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Animaci\xF3n_Espaldas_2"
+      name: IndicadorMontones_2
       rect:
         serializedVersion: 2
-        x: 850
-        y: 65
-        width: 250
-        height: 368
+        x: 687
+        y: 391
+        width: 57
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21d072668dc5df9a0800000000000000
-      internalID: -6197695427695407854
+      spriteID: 13130128b2b899650800000000000000
+      internalID: 6240171777680486705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Animaci\xF3n_Espaldas_3"
+      name: IndicadorMontones_3
       rect:
         serializedVersion: 2
-        x: 1201
-        y: 68
-        width: 275
-        height: 367
+        x: 727
+        y: 359
+        width: 55
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f9f79732c7fc91d0800000000000000
-      internalID: -3342524409887327756
+      spriteID: 546ca27617a385c80800000000000000
+      internalID: -8333846851712530875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Animaci\xF3n_Espaldas_4"
+      name: IndicadorMontones_4
       rect:
         serializedVersion: 2
-        x: 1583
-        y: 67
-        width: 262
-        height: 366
+        x: 798
+        y: 374
+        width: 74
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 90b21516aea11b5a0800000000000000
-      internalID: -6507390392616277239
+      spriteID: 6625d591558d72e60800000000000000
+      internalID: 7937550728273154662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Animaci\xF3n_Espaldas_5"
+      name: IndicadorMontones_5
       rect:
         serializedVersion: 2
-        x: 1943
-        y: 66
-        width: 253
-        height: 361
+        x: 573
+        y: 300
+        width: 7
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09788d1acea985840800000000000000
-      internalID: 5213086909799630736
+      spriteID: c1fdaea3cbf4ea8a0800000000000000
+      internalID: -6292003959529087204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Animaci\xF3n_Espaldas_6"
+      name: IndicadorMontones_6
       rect:
         serializedVersion: 2
-        x: 2252
-        y: 66
-        width: 295
-        height: 371
+        x: 584
+        y: 60
+        width: 325
+        height: 292
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f04dc92b48bbd7cd0800000000000000
-      internalID: -2558682834669874161
+      spriteID: 0a4a39d6dbdc72ff0800000000000000
+      internalID: -60853856475306848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndicadorMontones_7
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 64
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6fbc4ca47c58070800000000000000
+      internalID: 8108105828093654746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IndicadorMontones_8
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 50
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15cf80ebd3e8550d0800000000000000
+      internalID: -3434682744967725999
       vertices: []
       indices: 
       edges: []
@@ -278,7 +325,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cc4cf39062d1a364da55b6f1d05d7907
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -287,15 +334,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "Animaci\xF3n_Espaldas_0": -7783048189551779864
-      "Animaci\xF3n_Espaldas_1": 1807066472414928313
-      "Animaci\xF3n_Espaldas_2": -6197695427695407854
-      "Animaci\xF3n_Espaldas_3": -3342524409887327756
-      "Animaci\xF3n_Espaldas_4": -6507390392616277239
-      "Animaci\xF3n_Espaldas_5": 5213086909799630736
-      "Animaci\xF3n_Espaldas_6": -2558682834669874161
-      "Animaci\xF3n_Espaldas_7": 1221363972299979365
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
