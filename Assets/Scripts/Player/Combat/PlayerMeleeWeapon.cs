@@ -127,6 +127,7 @@ public class PlayerMeleeWeapon : MonoBehaviour
             pillowSpriteRenderer.sprite = pillowAttack;
 
             pillowCollider.enabled = true;
+
         }
     }
     private void ManageAttackMovement()
