@@ -44,6 +44,9 @@ TagManager:
   - name: Grid
     uniqueID: 3979253261
     locked: 0
+  - name: Shadows
+    uniqueID: 3419525287
+    locked: 0
   - name: Elements
     uniqueID: 2335167685
     locked: 0
