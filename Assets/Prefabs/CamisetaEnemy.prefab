@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 8302776268204284021}
   - component: {fileID: 8866909815764624197}
   - component: {fileID: 4039570253177656342}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CamisetaEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.14297974}
+  m_Offset: {x: -0.042332888, y: 0.3953491}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -295,7 +295,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1113906, y: 1.0151889}
+  m_Size: {x: 0.88995683, y: 0.8360883}
   m_EdgeRadius: 0
 --- !u!114 &8866909815764624197
 MonoBehaviour:
@@ -338,6 +338,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2013087877080169313}
     m_Modifications:
+    - target: {fileID: -9068607887006088723, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -378,9 +382,81 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7303129283838717333, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -4540777055971378868, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -4237508984206929782, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -3757366102533557625, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -3278324355412535656, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2666615759895336112, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2531489836127960671, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2421198075771716670, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2330635873026691031, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2200974458909795738, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2146474396082880129, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -1172087148214260678, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -1130747873964489992, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
       propertyPath: m_Name
       value: camisa_animaciones
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550855033686653896, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1663428460300078493, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2209490136155750661, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470628670120143334, guid: f400728291d75054b8120f6ebc844d2b, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

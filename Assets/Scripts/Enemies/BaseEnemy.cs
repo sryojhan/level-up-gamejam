@@ -35,12 +35,29 @@ public class BaseEnemy : MonoBehaviour
     public virtual void CheckIfIdle() { }
 
     public virtual void OwnKnockback(Vector2 playerDirection, float force) { }
+
+    public void OnHurt()
+    {
+        TakeDamage(1);
+    }
+
+    private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
+    {
+        if (collision.gameObject != PlayerController.instance.gameObject) return;
+
+        PlayerController.instance.PlayerHealth.LoseHealth();
+    }
+
     public virtual void TakeDamage(int damage) 
     {
+        if (ownAnimator != null)
+        {
+            ownAnimator.Play("Atacado");
+        }
         health -= damage;
         if (health <= 0)
         {
-            Destroy(gameObject, 2f);
+            Destroy(gameObject, 0.5f);
         }
     }
     public void ChangeState(EnemyState state)
@@ -50,4 +67,6 @@ public class BaseEnemy : MonoBehaviour
             currentState = state;
         }
     }
+
+
 }

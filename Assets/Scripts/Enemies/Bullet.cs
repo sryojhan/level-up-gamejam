@@ -43,4 +43,16 @@ public class Bullet : MonoBehaviour
             timeSinceAlive += Time.deltaTime;
         }
     }
+
+    private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
+    {
+        if (collision.gameObject != PlayerController.instance.gameObject) return;
+
+        PlayerController.instance.PlayerHealth.LoseHealth();
+    }
+
+    public void OnHurt()
+    {
+        Destroy(gameObject);
+    }
 }
