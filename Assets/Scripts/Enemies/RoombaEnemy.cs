@@ -6,8 +6,8 @@ public class RoombaEnemy : BaseEnemy
     {
         base.CustomStart();
         currentState = EnemyState.attack;
-
         ownRigidbody.linearVelocity = ((Vector2)target.position - spawnPositionCoordinates) * moveSpeed;
+        enemyManager.AddEnemy();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -19,8 +19,8 @@ public class RoombaEnemy : BaseEnemy
         GetComponentInChildren<Rotate3DModels>().SetRotation(angle);
     }
 
-    public override void OwnKnockback(Vector2 playerDirection, float force)
+    public override void OwnKnockback()
     {
-        transform.position = (Vector2)transform.position + ((Vector2)transform.position - playerDirection).normalized * force;
+        transform.position = (Vector2)transform.position + ((Vector2)transform.position - (Vector2)target.position).normalized * knockBackForce;
     }
 }

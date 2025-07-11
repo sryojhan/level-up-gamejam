@@ -617,6 +617,7 @@ MonoBehaviour:
   baseAttack: 4
   alertRadius: 0
   moveSpeed: 3
+  knockBackForce: 1
 --- !u!114 &8793739825887105895
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,6 +8,8 @@ public class PantalonEnemy : BaseEnemy
     {
         base.CustomStart();
         ownAnimator.Play("Atacado");
+
+        enemyManager.AddEnemy();
     }
 
     void FixedUpdate()
@@ -75,8 +77,8 @@ public class PantalonEnemy : BaseEnemy
         }
     }
 
-    public override void OwnKnockback(Vector2 playerDirection, float force)
+    public override void OwnKnockback()
     {
-        ownRigidbody.linearVelocity = ((Vector2)transform.position - playerDirection).normalized * force;
+        ownRigidbody.linearVelocity = ((Vector2)transform.position - (Vector2)target.position).normalized * knockBackForce;
     }
 }
