@@ -93,8 +93,7 @@ public class DialogueManager : Singleton<DialogueManager>
         }
 
 
-
-        onEnd();
+        onEnd?.Invoke();
         dialogueParent.SetActive(false);
 
     }
