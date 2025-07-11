@@ -7,19 +7,34 @@ using Unity.VisualScripting;
 
 public class DialogueManager : Singleton<DialogueManager>
 {
-    public GameObject dialogueParent;
-
-    public TextMeshProUGUI dialogueSpeaker;
-    public Image speakerSprite;
-    public Image speakerTextBackground;
-
-    public TextMeshProUGUI dialogueContent;
-
     public delegate void OnDialogueEnd();
 
-    public Interpolation textRevealInterpolation;
+    public GameObject dialogueParent;
 
+    [Header("Main content")]
+    public Image background;
+    public TextMeshProUGUI dialogueContent;
+    public CoroutineAnimation revealDialogueBackground;
+    public Vector2 backgroundAnimationOrigin;
+
+    [Header("Speaker")]
+    public TextMeshProUGUI dialogueSpeaker;
+    public Image speakerTextBackground;
+    public CoroutineAnimation revealSpeaker;
+
+    [Header("Npc sprite")]
+    public Image speakerSprite;
+    public Transform npcPivot;
+    public CoroutineAnimation revealNpc;
+
+    [Header("Text reveal")]
+    public Interpolation textRevealInterpolation;
     public float revealDurationPerChar = 0.01f;
+
+
+    [Header("Highlight")]
+    public Image highlightElement;
+
 
 
     private void Start()
@@ -36,8 +51,9 @@ public class DialogueManager : Singleton<DialogueManager>
 
     private IEnumerator DialogueCoroutine(DialogueContent dialogue, OnDialogueEnd onEnd)
     {
+        bool hasSpeaker = !string.IsNullOrEmpty(dialogue.speaker);
 
-        if (string.IsNullOrEmpty(dialogue.speaker))
+        if (!hasSpeaker)
         {
             dialogueSpeaker.text = "";
             speakerSprite.enabled = false;
@@ -54,6 +70,11 @@ public class DialogueManager : Singleton<DialogueManager>
 
         dialogueContent.text = "";
 
+
+        //Initialise dialogue animation setup
+
+        RevealDialogueAnimation(hasSpeaker);
+        while (!IsRevealAnimationComplete()) yield return null;
 
         int currentDialoguePage = 0;
 
@@ -96,6 +117,57 @@ public class DialogueManager : Singleton<DialogueManager>
         onEnd?.Invoke();
         dialogueParent.SetActive(false);
 
+    }
+
+
+    private void RevealDialogueAnimation(bool hasSpeaker)
+    {
+        void RevealNpc(float i)
+        {
+            Quaternion A = Quaternion.Euler(0, 0, 179);
+            Quaternion B = Quaternion.identity;
+
+            npcPivot.localRotation = Quaternion.LerpUnclamped(A, B, i);
+        }
+
+        if (hasSpeaker)
+        {
+            RevealNpc(0);
+            revealNpc.Play(this, onUpdate: RevealNpc);
+        }
+
+
+        Vector2 destination = background.rectTransform.anchoredPosition;
+        background.rectTransform.anchoredPosition = backgroundAnimationOrigin;
+        revealDialogueBackground.Play(this, background.rectTransform, destination);
+
+        void RevealSpeaker(float i)
+        {
+            speakerTextBackground.transform.localScale = Vector2.one * i;
+        }
+
+        if (hasSpeaker)
+        {
+            RevealSpeaker(0);
+            revealSpeaker.Play(this, onUpdate: RevealSpeaker);
+        }
+
+    }
+
+
+    private bool IsRevealAnimationComplete()
+    {
+        return revealNpc.IsFinished() && revealDialogueBackground.IsFinished() && revealSpeaker.IsFinished();
+    }
+
+
+    IEnumerator HighlightElement()
+    {
+        while (true)
+        {
+
+            yield return null;
+        }
     }
 
 }

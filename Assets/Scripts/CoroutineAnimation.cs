@@ -19,7 +19,7 @@ public class CoroutineAnimation
 
     public virtual void Play(MonoBehaviour behaviour, OnValueUpdate onUpdate = null, Callback onBegin = null, Callback onEnd = null)
     {
-        if(coroutine != null)
+        if (coroutine != null)
         {
             behaviour.StopCoroutine(coroutine);
             coroutine = null;
@@ -30,15 +30,16 @@ public class CoroutineAnimation
 
     public IEnumerator Coroutine(OnValueUpdate update, Callback begin, Callback onFinish)
     {
-        yield return new WaitForSeconds(delay);
-        
+        if (delay > 0)
+            yield return new WaitForSeconds(delay);
+
         begin?.Invoke();
         update?.Invoke(interpolation.Interpolate(0));
 
         progress = 0;
         float invDuration = 1.0f / duration;
 
-        for(float i = 0; i < 1; i += invDuration * Time.deltaTime)
+        for (float i = 0; i < 1; i += invDuration * Time.deltaTime)
         {
             progress = i;
             update?.Invoke(interpolation.Interpolate(i));
@@ -64,7 +65,7 @@ public class CoroutineAnimation
 
     public void Stop(MonoBehaviour behaviour)
     {
-        if(coroutine != null)
+        if (coroutine != null)
         {
             behaviour.StopCoroutine(coroutine);
             coroutine = null;
@@ -97,7 +98,7 @@ public class CoroutineAnimation
 
         void OnUpdate(float i)
         {
-            if(local)
+            if (local)
                 tr.localPosition = Vector3.LerpUnclamped(initialPosition, finalPosition, i);
             else
                 tr.position = Vector3.LerpUnclamped(initialPosition, finalPosition, i);

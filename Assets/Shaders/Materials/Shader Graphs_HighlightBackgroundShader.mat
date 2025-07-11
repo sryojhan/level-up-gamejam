@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI_TransitionMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 3410d0822cf83374eac6a91e3f001950, type: 3}
+  m_Name: Shader Graphs_HighlightBackgroundShader
+  m_Shader: {fileID: -6465566751694194690, guid: 26ff0e6bfb801884e985c303f7439461, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -23,20 +23,8 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Background:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _TransitionGradient:
-        m_Texture: {fileID: 2800000, guid: ac4bc60fd5af4974dafde445f93d519f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _transitionGradient:
-        m_Texture: {fileID: 2800000, guid: ac16fb1d766d43049a5bc5dbde4c5319, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -53,7 +41,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaMask: 0.236
+    - _AngleWidth: 30
     - _ColorMask: 15
+    - _RotationSpeed: 1
+    - _Smoothness: 1
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -61,13 +53,9 @@ Material:
     - _StencilWriteMask: 255
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
-    - _inProgress: 1
-    - _invert: 0
-    - _inverted: 0
-    - _time: 0
     m_Colors:
-    - _BackgroundColor: {r: 1, g: 1, b: 1, a: 0}
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
-    - _backgroundColor: {r: 0, g: 0, b: 0, a: 1}
+    - _DarkColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LightColor: {r: 1, g: 0.7216981, b: 0.7216981, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
