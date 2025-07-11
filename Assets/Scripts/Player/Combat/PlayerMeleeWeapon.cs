@@ -32,6 +32,8 @@ public class PlayerMeleeWeapon : MonoBehaviour
     public float freezeFrameDuration = .2f;
     private float freezeFrameTimer = 0;
 
+    private bool isSouthAttack;
+
     private void Start()
     {
         pillowPivot.SetActive(false);
@@ -67,6 +69,7 @@ public class PlayerMeleeWeapon : MonoBehaviour
 
             pillowPivot.SetActive(true);
 
+            isSouthAttack = attackDirection.y <= 0;
         }
     }
 
@@ -130,6 +133,8 @@ public class PlayerMeleeWeapon : MonoBehaviour
     }
     private void ManageAttackMovement()
     {
+        pillowSpriteRenderer.sortingOrder = PlayerController.instance.SpriteRendererComponent.sortingOrder + (isSouthAttack ? 10 : -10);
+
         if (duringFreezeFrame)
         {
             freezeFrameTimer += Time.fixedDeltaTime;
@@ -141,7 +146,6 @@ public class PlayerMeleeWeapon : MonoBehaviour
 
             return;
         }
-
 
 
         float i = UpdateTimerState(attackDuration);

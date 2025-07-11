@@ -15,6 +15,9 @@ public class PillowHitboxDetection : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         onHit?.Invoke();
+        
+        Camera.main.GetComponent<SimpleShake>().Shake();
+
         collision.gameObject.BroadcastMessage("OnHurt");
     }
 }

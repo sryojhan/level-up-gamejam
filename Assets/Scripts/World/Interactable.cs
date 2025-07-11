@@ -5,7 +5,7 @@ public class Interactable : MonoBehaviour
 {
     public enum Type
     {
-        PickUpKey, PickUpCoin, Read, Inspect, Talk
+        PickUpKey, PickUpCoin, Read, Inspect, Talk, OpenDoor, PickUpLaundry
     }
 
     public Type type;
@@ -17,7 +17,7 @@ public class Interactable : MonoBehaviour
 
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
         mpb = new MaterialPropertyBlock();
 
@@ -35,6 +35,8 @@ public class Interactable : MonoBehaviour
             Type.Read => Localization.GetText("read"),
             Type.Inspect => Localization.GetText("inspect"),
             Type.Talk => Localization.GetText("talk"),
+            Type.OpenDoor => Localization.GetText("open_door"),
+            Type.PickUpLaundry => Localization.GetText("pick_laundry"),
             _ => Localization.GetText("interact")
         };
     }
@@ -70,6 +72,7 @@ public class Interactable : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+
         if (collision.gameObject != PlayerController.instance.gameObject) return;
 
         if (InteractableUI.IsInitialised())

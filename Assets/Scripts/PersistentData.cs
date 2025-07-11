@@ -5,7 +5,20 @@ public class PersistentData
 {
     public static int connection_id = -1;
 
+
+    //Player stats
+    public static int maxHealth = -1;
+    public static int currentHealth = -1;
+
+    //Laundry
+    public static bool[] collectedLaundry = new []{ false, false, false };
+
+
+    //Keys 
     public static HashSet<int> collectedKeys = new();
+
+
+    // Entities
 
     private static readonly Dictionary<string, int> objectPersistentState = new();
 

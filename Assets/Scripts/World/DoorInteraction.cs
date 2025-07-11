@@ -31,6 +31,7 @@ public class DoorInteraction : MonoBehaviour
     {
         if (!PersistentData.collectedKeys.Contains(id))
         {
+            GetComponentInChildren<SimpleShake>().Shake();
             return;
         }
 

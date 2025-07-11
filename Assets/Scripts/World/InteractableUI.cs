@@ -13,7 +13,6 @@ public class InteractableUI : Singleton<InteractableUI>
     public Vector2 hiddenPosition;
     public Vector2 visiblePosition;
 
-
     private void Start()
     {
         text.text = "";
@@ -23,11 +22,11 @@ public class InteractableUI : Singleton<InteractableUI>
     }
     public void Reveal(string message)
     {
+        revealCoroutine.Stop(this);
         hideCoroutine.Stop(this);
 
         text.rectTransform.anchoredPosition = hiddenPosition;
         text.text = message;
-
 
         revealCoroutine.Play(this, text.rectTransform, visiblePosition);
     }
@@ -35,6 +34,7 @@ public class InteractableUI : Singleton<InteractableUI>
     public void Hide()
     {
         revealCoroutine.Stop(this);
+        hideCoroutine.Stop(this);
 
         hideCoroutine.Play(this, text.rectTransform, hiddenPosition);
     }

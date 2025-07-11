@@ -18,6 +18,7 @@ public class PlayerController : Singleton<PlayerController>
     public PlayerSockLauncher SockLauncher { get; private set; }
 
     public PlayerMeleeWeapon MeleeWeapon { get; private set; }
+    public PlayerHealth PlayerHealth { get; private set; }
 
     /* Component references */
     public Collider2D ColliderComponent { get; private set; }
@@ -36,6 +37,7 @@ public class PlayerController : Singleton<PlayerController>
     {
         InitialiseCameraController();
         DisableCharacterControllerOnTransition();
+        InitialisePlayerHealth();
     }
 
     private void Update()
@@ -88,6 +90,7 @@ public class PlayerController : Singleton<PlayerController>
         InputManager = GetComponentInChildren<PlayerInputManager>();
         CameraController = GetComponentInChildren<PlayerCameraController>();
         Interactions = GetComponentInChildren<PlayerInteractions>();
+        PlayerHealth = GetComponentInChildren<PlayerHealth>();
 
         SockLauncher = GetComponentInChildren<PlayerSockLauncher>();
         MeleeWeapon = GetComponentInChildren<PlayerMeleeWeapon>();
@@ -111,6 +114,11 @@ public class PlayerController : Singleton<PlayerController>
             Movement.enabled = false;
             SceneTransitionManager.instance.onTransitionEndOnce += ReEnableMovement;
         }
+    }
+
+    private void InitialisePlayerHealth()
+    {
+        PlayerHealth.InitialiseHealth();
     }
 
     /* Update */
