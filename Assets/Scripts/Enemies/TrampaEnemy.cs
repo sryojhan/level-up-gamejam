@@ -5,10 +5,12 @@ public class TrampaEnemy : BaseEnemy
 {
     public float trapTime;
     public float cooldownTime;
+    public GameObject model;
 
     private bool inAnimation;
     private float lastTimeSinceAttack;
     private BoxCollider2D ownBoxCollider2d;
+    private Vector3 modelInitialPosition;
 
     void Start()
     {
@@ -17,6 +19,7 @@ public class TrampaEnemy : BaseEnemy
         ownBoxCollider2d = GetComponent<BoxCollider2D>();
         inAnimation = false;
         lastTimeSinceAttack = cooldownTime;
+        modelInitialPosition = model.transform.position;
     }
     void FixedUpdate()
     {
@@ -51,6 +54,7 @@ public class TrampaEnemy : BaseEnemy
         collider2D.enabled = true;
         currentState = EnemyState.attack;
         inAnimation = true; 
+        model.transform.position = model.transform.position + new Vector3(0, 1, 0);
 
         yield return new WaitForSeconds(time);
 
@@ -58,5 +62,6 @@ public class TrampaEnemy : BaseEnemy
         currentState = EnemyState.idle;
         inAnimation = false;
         lastTimeSinceAttack = 0;
+        model.transform.position = modelInitialPosition;
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2362282292827303828}
   - component: {fileID: 7272628402018791833}
   - component: {fileID: 75065065156568829}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shadow plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e161917f39b9604b9e22070775fcd5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 100
+  rotateToMouse: 0
 --- !u!1 &4203918247375792931
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 1902141726308013028}
   - component: {fileID: 1777333044278428674}
   - component: {fileID: 6432076397518163780}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PantalonEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e637187ed7c4e264ab3e50128265e236, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e637187ed7c4e264ab3e50128265e236, type: 3}
       propertyPath: m_LocalRotation.x
@@ -372,11 +372,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e637187ed7c4e264ab3e50128265e236, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e637187ed7c4e264ab3e50128265e236, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e637187ed7c4e264ab3e50128265e236, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -384,7 +384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e637187ed7c4e264ab3e50128265e236, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e637187ed7c4e264ab3e50128265e236, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -505,13 +505,43 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e637187ed7c4e264ab3e50128265e236, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 554495760348655341}
   m_SourcePrefab: {fileID: 100100000, guid: e637187ed7c4e264ab3e50128265e236, type: 3}
 --- !u!137 &36220254380569451 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -3817939910058994249, guid: e637187ed7c4e264ab3e50128265e236, type: 3}
   m_PrefabInstance: {fileID: 5441295855806228188}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5134723775177137037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e637187ed7c4e264ab3e50128265e236, type: 3}
+  m_PrefabInstance: {fileID: 5441295855806228188}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &554495760348655341
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5134723775177137037}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f6780280c57f7bd4d8b1bfc1704c8219, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &5479161922435662135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e637187ed7c4e264ab3e50128265e236, type: 3}

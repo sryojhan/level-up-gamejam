@@ -12,7 +12,11 @@ public class RoombaEnemy : BaseEnemy
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        ownRigidbody.linearVelocity = ((Vector2)target.position - (Vector2)transform.position) * moveSpeed;
+        Vector2 dir = ((Vector2)target.position - (Vector2)transform.position);
+        ownRigidbody.linearVelocity = dir * moveSpeed;
+
+        float angle = Mathf.Atan2(dir.y, dir.x) * -Mathf.Rad2Deg;
+        GetComponentInChildren<Rotate3DModels>().SetRotation(angle);
     }
 
     public override void OwnKnockback(Vector2 playerDirection, float force)

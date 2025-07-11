@@ -7,6 +7,7 @@ public class PantalonEnemy : BaseEnemy
     void Start()
     {
         base.CustomStart();
+        ownAnimator.Play("Atacado");
     }
 
     void FixedUpdate()
@@ -18,28 +19,37 @@ public class PantalonEnemy : BaseEnemy
     override public void CheckPlayerInRange()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, target.position);
+
+        Vector2 direction;
+
         if (distanceToPlayer <= alertRadius)
         {
-            Vector2 direction = (target.position - transform.position).normalized;
+            direction = (target.position - transform.position).normalized;
 
             Vector2 force = direction * moveSpeed;
 
             ownRigidbody.AddForce(force);
-
             CheckRigidbodyVelocity(direction);
 
+            float angle = Mathf.Atan2(direction.y, direction.x) * -Mathf.Rad2Deg;
+            GetComponentInChildren<Rotate3DModels>().SetRotation(angle);
+
+            ownAnimator.Play("Andar");
             ChangeState(EnemyState.attack);
         }
         else if (distanceToPlayer > alertRadius && currentState != EnemyState.idle) 
         {
-            Vector2 direction = (spawnPositionCoordinates - (Vector2)transform.position).normalized;
+            direction = (spawnPositionCoordinates - (Vector2)transform.position).normalized;
 
             Vector2 force = direction * moveSpeed;
 
             ownRigidbody.AddForce(force);
-
             CheckRigidbodyVelocity(direction);
 
+            float angle = Mathf.Atan2(direction.y, direction.x) * -Mathf.Rad2Deg;
+            GetComponentInChildren<Rotate3DModels>().SetRotation(angle);
+
+            ownAnimator.Play("Andar");
             ChangeState(EnemyState.walk);
         }
     }
@@ -52,6 +62,7 @@ public class PantalonEnemy : BaseEnemy
         if (distanceToSpawn <= margin * margin)
         { 
             ownRigidbody.linearVelocity = Vector2.zero;
+            ownAnimator.Play("Atacado");
             ChangeState(EnemyState.idle);
         }
     }

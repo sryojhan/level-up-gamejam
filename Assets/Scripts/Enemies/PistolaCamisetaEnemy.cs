@@ -28,8 +28,8 @@ public class PistolaCamisetaEnemy : BaseEnemy
 
             if (direction.magnitude > 0.1f)
             {
-                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.Euler(0f, 0f, angle); ;
+                float angle = Mathf.Atan2(direction.y, direction.x) * -Mathf.Rad2Deg;
+                GetComponentInChildren<Rotate3DModels>().SetRotation(angle);
             }
 
 

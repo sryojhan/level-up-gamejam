@@ -21,6 +21,7 @@ public class BaseEnemy : MonoBehaviour
     protected Rigidbody2D ownRigidbody;
     protected Transform target;
     protected Vector2 spawnPositionCoordinates;
+    protected Animator ownAnimator;
 
     public virtual void CustomStart()
     {
@@ -28,6 +29,7 @@ public class BaseEnemy : MonoBehaviour
         ownRigidbody = GetComponent<Rigidbody2D>();
         target = PlayerController.instance.transform;
         spawnPositionCoordinates = transform.position;
+        ownAnimator = GetComponentInChildren<Animator>();   
     }
     public virtual void CheckPlayerInRange() { }
     public virtual void CheckIfIdle() { }
