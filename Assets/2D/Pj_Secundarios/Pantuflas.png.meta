@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pantuflas_0: -4002838585996149880
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
