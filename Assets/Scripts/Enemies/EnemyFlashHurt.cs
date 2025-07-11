@@ -4,7 +4,7 @@ public class EnemyFlashHurt : MonoBehaviour
 {
     public float hurtFlashDuration = 0.2f;
 
-    public SkinnedMeshRenderer meshToFlash;
+    public Renderer meshToFlash;
 
     MaterialPropertyBlock mpb;
 

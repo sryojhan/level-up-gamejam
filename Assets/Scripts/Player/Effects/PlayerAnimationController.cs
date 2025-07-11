@@ -14,7 +14,7 @@ public class PlayerAnimationController : MonoBehaviour
 
         string dir = south ? "front" : "back";
 
-        sprRenderer.flipX = south ? east : !east;
+        sprRenderer.flipX = state == PlayerStateMachine.State.Iddle ? east :( south ? east : !east);
 
         string animationName = "";
 

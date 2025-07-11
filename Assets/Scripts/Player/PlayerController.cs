@@ -149,7 +149,7 @@ public class PlayerController : Singleton<PlayerController>
     {
         if (SockLauncher.CanShoot(InputManager.WantsToShoot())){
 
-            SockLauncher.Shoot(direction);
+            SockLauncher.Shoot(Movement.LastDirectionalInput());
         }
     }
 
@@ -164,7 +164,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private void PlayerBeginAttack()
     {
-        MeleeWeapon.BeginAttack(InputManager.WantsToAttack(), direction);
+        MeleeWeapon.BeginAttack(InputManager.WantsToAttack(), Movement.LastDirectionalInput());
     }
 
     private void ManagePlayerMeleeAtack()

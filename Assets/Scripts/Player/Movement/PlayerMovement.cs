@@ -13,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 input;
 
+    private Vector2 lastDirectionalInput = Vector2.right;
+
+
     /* Called from Update */
     public void UpdatePlayerInput(Vector2 leftStickInput)
     {
@@ -22,7 +25,10 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        input = leftStickInput.normalized;
+
+        input = Vector2.ClampMagnitude(leftStickInput, 1);
+
+        if (input != Vector2.zero) lastDirectionalInput = input.normalized;
     }
 
 
@@ -31,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isActiveAndEnabled) return;
 
-        Vector2 targetVelocity = input.normalized * maxMovementSpeed;
+        Vector2 targetVelocity = input * maxMovementSpeed;
 
         Vector2 velocityDiff = targetVelocity - rigidBody.linearVelocity;
 
@@ -75,6 +81,11 @@ public class PlayerMovement : MonoBehaviour
 
             playerDirection.UpdateWithSouthAndEastBooleanRepresentation(south, east);
         }
+    }
+
+    public Vector2 LastDirectionalInput()
+    {
+        return lastDirectionalInput;
     }
 
 }

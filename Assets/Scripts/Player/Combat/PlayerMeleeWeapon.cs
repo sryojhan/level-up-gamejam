@@ -42,15 +42,13 @@ public class PlayerMeleeWeapon : MonoBehaviour
         pillowPivot.transform.localRotation = maxRotation;
     }
 
-    public void BeginAttack(bool attackButtonPressed, PlayerDirection direction)
+    public void BeginAttack(bool attackButtonPressed, Vector2 attackDirection)
     {
         if (isAttaking) return;
 
         if (attackButtonPressed)
         {
             isAttaking = true;
-
-            Vector2 attackDirection = direction.GetVectorDirection();
 
             
             pillowPivot.transform.parent.SetLocalPositionAndRotation(

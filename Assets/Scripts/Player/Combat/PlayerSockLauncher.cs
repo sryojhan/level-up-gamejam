@@ -12,12 +12,14 @@ public class PlayerSockLauncher : MonoBehaviour
     public bool CanShoot(bool wantsToShoot)
     {
         float timebetweenshots = Time.time - lastShootTime;
-        return wantsToShoot && timebetweenshots > cooldown && ammo > 0;
+        return isActiveAndEnabled && wantsToShoot && timebetweenshots > cooldown && ammo > 0;
     }
 
-    public void Shoot(PlayerDirection direction)
+    public void Shoot(Vector2 direction)
     {
-        sockData.CreateSock(transform.position, direction.GetVectorDirection());
+        if (!isActiveAndEnabled) return;
+
+        sockData.CreateSock(transform.position, direction);
 
         ammo--;
         lastShootTime = Time.time;
