@@ -17,28 +17,34 @@ public class BaseEnemy : MonoBehaviour
     public int baseAttack;
     public float alertRadius;
     public float moveSpeed;
+    public float knockBackForce;
 
     protected Rigidbody2D ownRigidbody;
     protected Transform target;
     protected Vector2 spawnPositionCoordinates;
     protected Animator ownAnimator;
+    protected EnemyManager enemyManager;
 
+    private bool hasDied;
     public virtual void CustomStart()
     {
         currentState = EnemyState.idle;
         ownRigidbody = GetComponent<Rigidbody2D>();
         target = PlayerController.instance.transform;
         spawnPositionCoordinates = transform.position;
-        ownAnimator = GetComponentInChildren<Animator>();   
+        ownAnimator = GetComponentInChildren<Animator>();
+        enemyManager = EnemyManager.instance;
+        hasDied = false;
     }
     public virtual void CheckPlayerInRange() { }
     public virtual void CheckIfIdle() { }
 
-    public virtual void OwnKnockback(Vector2 playerDirection, float force) { }
+    public virtual void OwnKnockback() { }
 
     public void OnHurt()
     {
         TakeDamage(1);
+        OwnKnockback();
     }
 
     private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
@@ -50,6 +56,7 @@ public class BaseEnemy : MonoBehaviour
 
     public virtual void TakeDamage(int damage) 
     {
+        if (hasDied) return;
         if (ownAnimator != null)
         {
             ownAnimator.Play("Atacado");
@@ -57,7 +64,9 @@ public class BaseEnemy : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            hasDied = true;
             Destroy(gameObject, 0.5f);
+            enemyManager.EnemyDied();
         }
     }
     public void ChangeState(EnemyState state)

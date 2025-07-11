@@ -12,6 +12,7 @@ public class PistolaCamisetaEnemy : BaseEnemy
     {
         base.CustomStart();
         lastTimeSinceAttack = attackSpeed;
+        enemyManager.AddEnemy();
     }
 
     void FixedUpdate()

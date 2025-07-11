@@ -283,6 +283,7 @@ MonoBehaviour:
   baseAttack: 5
   alertRadius: 4
   moveSpeed: 8
+  knockBackForce: 4
   margin: 0.1
 --- !u!114 &6432076397518163780
 MonoBehaviour:
