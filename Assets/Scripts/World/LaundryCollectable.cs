@@ -12,6 +12,7 @@ public class LaundryCollectable : MonoBehaviour
     private void CollectLaundry()
     {
         PersistentData.collectedLaundry[laundryNumber] = true;
+        LaundryUI.instance.UpdateLaundryUI();
     }
 
 }

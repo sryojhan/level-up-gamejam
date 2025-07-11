@@ -1,16 +1,17 @@
 using UnityEngine;
 
-public class LaundryUI : MonoBehaviour
+public class LaundryUI : Singleton<LaundryUI>
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
-        
+        UpdateLaundryUI();    
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateLaundryUI()
     {
-        
+        for(int i = 0; i < 3; i++)
+        {
+            transform.GetChild(i).GetChild(0).gameObject.SetActive(PersistentData.collectedLaundry[i]);
+        }
     }
 }
