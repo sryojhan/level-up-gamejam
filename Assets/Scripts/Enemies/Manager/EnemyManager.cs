@@ -2,17 +2,23 @@ using UnityEngine;
 
 public class EnemyManager : Singleton<EnemyManager>
 {
-    public int enemiesAlive;
+    private int enemiesAlive;
     public GameObject[] walls;
 
     private void Awake()
     {
+        EnsureInitialised();
+        WallsSetActive(false);
+
         enemiesAlive = 0;
+
     }
 
     public void AddEnemy()
     {
         enemiesAlive++;
+
+        WallsSetActive(true);
     }
 
     public void EnemyDied()
@@ -20,10 +26,17 @@ public class EnemyManager : Singleton<EnemyManager>
         enemiesAlive--;
         if (enemiesAlive <= 0)
         {
-            foreach (GameObject go in walls)
-            {
-                go.SetActive(false);
-            }
+            WallsSetActive(false);
         }
     }
+
+
+    void WallsSetActive(bool value)
+    {
+        foreach (GameObject go in walls)
+        {
+            go.SetActive(value);
+        }
+    }
+
 }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   In:
     enabled: 1
-    gradientMask: {fileID: 2800000, guid: ac16fb1d766d43049a5bc5dbde4c5319, type: 3}
+    gradientMask: {fileID: 2800000, guid: 09f83992a461dd847ae8a6900ff3766f, type: 3}
     duration: 0.4
     invert: 0
     interpolation:
@@ -25,7 +25,7 @@ MonoBehaviour:
   middleScreenDuration: 0
   Out:
     enabled: 1
-    gradientMask: {fileID: 2800000, guid: ac16fb1d766d43049a5bc5dbde4c5319, type: 3}
+    gradientMask: {fileID: 2800000, guid: 09f83992a461dd847ae8a6900ff3766f, type: 3}
     duration: 0.4
     invert: 0
     interpolation:
