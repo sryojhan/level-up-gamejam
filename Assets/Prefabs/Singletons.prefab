@@ -2057,18 +2057,18 @@ MonoBehaviour:
   heartFilled: {r: 1, g: 0.29803923, b: 0.29803923, a: 1}
   heartEmpty: {r: 1, g: 1, b: 1, a: 1}
   revealNewHeart:
-    duration: 1
+    duration: 0.3
     delay: 0
     interpolation:
-      type: 3
-      mode: 0
+      type: 8
+      mode: 2
   heartAnimationVerticalOffset: 10
   healHeart:
-    duration: 1
+    duration: 0.15
     delay: 0
     interpolation:
-      type: 3
-      mode: 0
+      type: 0
+      mode: 2
 --- !u!1 &8189579727118011456
 GameObject:
   m_ObjectHideFlags: 0
