@@ -14,18 +14,21 @@ public class DialogueManager : Singleton<DialogueManager>
     [Header("Main content")]
     public Image background;
     public TextMeshProUGUI dialogueContent;
-    public CoroutineAnimation revealDialogueBackground;
     public Vector2 backgroundAnimationOrigin;
+    public CoroutineAnimation revealDialogueBackground;
+    public CoroutineAnimation hideDialogueBackground;
 
     [Header("Speaker")]
     public TextMeshProUGUI dialogueSpeaker;
     public Image speakerTextBackground;
     public CoroutineAnimation revealSpeaker;
+    public CoroutineAnimation hideSpeaker;
 
     [Header("Npc sprite")]
     public Image speakerSprite;
     public Transform npcPivot;
     public CoroutineAnimation revealNpc;
+    public CoroutineAnimation hideNpc;
 
     [Header("Text reveal")]
     public Interpolation textRevealInterpolation;
@@ -72,9 +75,10 @@ public class DialogueManager : Singleton<DialogueManager>
 
 
         //Initialise dialogue animation setup
-
         RevealDialogueAnimation(hasSpeaker);
         while (!IsRevealAnimationComplete()) yield return null;
+
+
 
         int currentDialoguePage = 0;
 
@@ -86,7 +90,10 @@ public class DialogueManager : Singleton<DialogueManager>
             float duration = textLength * revealDurationPerChar;
             float speed = 1.0f / duration;
 
-            for (float i = 0; i < 1; i += Time.deltaTime * speed)
+
+            bool skipped = false;
+
+            for (float i = 0; i < 1 && !skipped; i += Time.deltaTime * speed)
             {
                 float c = textRevealInterpolation.Interpolate(i);
 
@@ -94,15 +101,18 @@ public class DialogueManager : Singleton<DialogueManager>
 
                 if (PlayerController.instance.InputManager.WantsToInteract())
                 {
-                    break;
+                    skipped = true;
+                    dialogueContent.text = dialogue.content[currentDialoguePage];
                 }
 
                 yield return null;
             }
 
-            yield return new WaitForSeconds(.2f);
-
-            dialogueContent.text = dialogue.content[currentDialoguePage];
+            if (!skipped)
+            {
+                dialogueContent.text = dialogue.content[currentDialoguePage];
+                yield return new WaitForSeconds(.2f);
+            }
 
             while (!PlayerController.instance.InputManager.WantsToInteract())
             {
@@ -112,6 +122,11 @@ public class DialogueManager : Singleton<DialogueManager>
             currentDialoguePage++;
             yield return null;
         }
+
+
+        //Hide animation
+        HideDialogueAnimation(hasSpeaker);
+        while (!IsHideAnimationComplete()) yield return null;
 
 
         onEnd?.Invoke();
@@ -136,6 +151,7 @@ public class DialogueManager : Singleton<DialogueManager>
             revealNpc.Play(this, onUpdate: RevealNpc);
         }
 
+        background.gameObject.SetActive(true);
 
         Vector2 destination = background.rectTransform.anchoredPosition;
         background.rectTransform.anchoredPosition = backgroundAnimationOrigin;
@@ -155,9 +171,53 @@ public class DialogueManager : Singleton<DialogueManager>
     }
 
 
+    private void HideDialogueAnimation(bool hasSpeaker)
+    {
+        void HideNpc(float i)
+        {
+            Quaternion A = Quaternion.identity;
+            Quaternion B = Quaternion.Euler(0, 0, 181);
+
+            npcPivot.localRotation = Quaternion.LerpUnclamped(A, B, i);
+        }
+
+        if (hasSpeaker)
+        {
+            hideNpc.Play(this, onUpdate: HideNpc);
+        }
+
+        Vector2 currentPosition = background.rectTransform.anchoredPosition;
+
+        void OnBackgroundEnd()
+        {
+            background.gameObject.SetActive(false);
+            background.rectTransform.anchoredPosition = currentPosition;
+        }
+
+        hideDialogueBackground.Play(this, background.rectTransform, backgroundAnimationOrigin, onEnd: OnBackgroundEnd);
+
+        void RevealSpeaker(float i)
+        {
+            speakerTextBackground.transform.localScale = Vector2.one * Mathf.Lerp(1, 0, i);
+        }
+
+        if (hasSpeaker)
+        {
+            hideSpeaker.Play(this, onUpdate: RevealSpeaker);
+        }
+
+    }
+
+
+
     private bool IsRevealAnimationComplete()
     {
         return revealNpc.IsFinished() && revealDialogueBackground.IsFinished() && revealSpeaker.IsFinished();
+    }
+
+    private bool IsHideAnimationComplete()
+    {
+        return hideNpc.IsFinished() && hideDialogueBackground.IsFinished() && hideSpeaker.IsFinished();
     }
 
 

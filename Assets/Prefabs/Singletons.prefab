@@ -2222,13 +2222,19 @@ MonoBehaviour:
   dialogueParent: {fileID: 6876118970243478944}
   background: {fileID: 8649588823079308913}
   dialogueContent: {fileID: 2206673124327175633}
+  backgroundAnimationOrigin: {x: 0, y: -143}
   revealDialogueBackground:
     duration: 1
     delay: 0
     interpolation:
       type: 8
       mode: 2
-  backgroundAnimationOrigin: {x: 0, y: -143}
+  hideDialogueBackground:
+    duration: 1
+    delay: 0.4
+    interpolation:
+      type: 8
+      mode: 2
   dialogueSpeaker: {fileID: 3411918074349433255}
   speakerTextBackground: {fileID: 810350801938171844}
   revealSpeaker:
@@ -2237,11 +2243,23 @@ MonoBehaviour:
     interpolation:
       type: 8
       mode: 2
+  hideSpeaker:
+    duration: 0.7
+    delay: 0
+    interpolation:
+      type: 8
+      mode: 1
   speakerSprite: {fileID: 5206061204742206881}
   npcPivot: {fileID: 1691096199225083156}
   revealNpc:
     duration: 1
     delay: 0
+    interpolation:
+      type: 8
+      mode: 2
+  hideNpc:
+    duration: 1
+    delay: 0.4
     interpolation:
       type: 8
       mode: 2
