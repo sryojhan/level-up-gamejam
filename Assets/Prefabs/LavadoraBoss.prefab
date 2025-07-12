@@ -303,6 +303,9 @@ MonoBehaviour:
   animations:
   - AtaqueSwipeLeft
   - AtaqueSwipeRight
+  - Palmada
+  - Wiggly
+  - Push
   animatorList:
   - {fileID: 7542136910240986058}
   - {fileID: 7925011235428738967}
