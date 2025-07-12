@@ -7,7 +7,9 @@ public class RoombaEnemy : BaseEnemy
         base.CustomStart();
         currentState = EnemyState.attack;
         ownRigidbody.linearVelocity = ((Vector2)target.position - spawnPositionCoordinates) * moveSpeed;
-        enemyManager.AddEnemy();
+
+        if(enemyManager)
+            enemyManager.AddEnemy();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

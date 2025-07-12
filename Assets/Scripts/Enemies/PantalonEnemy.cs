@@ -9,7 +9,8 @@ public class PantalonEnemy : BaseEnemy
         base.CustomStart();
         ownAnimator.Play("Atacado");
 
-        enemyManager.AddEnemy();
+        if(enemyManager)
+            enemyManager.AddEnemy();
     }
 
     void FixedUpdate()

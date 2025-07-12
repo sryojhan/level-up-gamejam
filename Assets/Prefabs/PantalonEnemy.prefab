@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 1902141726308013028}
   - component: {fileID: 1777333044278428674}
   - component: {fileID: 6432076397518163780}
+  - component: {fileID: 474150888689289056}
   m_Layer: 9
   m_Name: PantalonEnemy
   m_TagString: Untagged
@@ -299,6 +300,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hurtFlashDuration: 0.2
   meshToFlash: {fileID: 36220254380569451}
+--- !u!114 &474150888689289056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4203918247375792931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uid: a2309f08-e88d-45fb-a284-61bacfaf4946
 --- !u!1 &7480735839366885126
 GameObject:
   m_ObjectHideFlags: 0

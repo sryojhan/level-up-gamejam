@@ -26,6 +26,19 @@ public class BaseEnemy : MonoBehaviour
     protected EnemyManager enemyManager;
 
     private bool hasDied;
+
+    string uid;
+
+    private void Awake()
+    {
+        uid = GetComponent<UID>().uid;
+
+        if(PersistentData.Get(uid) != 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     public virtual void CustomStart()
     {
         currentState = EnemyState.idle;
@@ -33,7 +46,7 @@ public class BaseEnemy : MonoBehaviour
         target = PlayerController.instance.transform;
         spawnPositionCoordinates = transform.position;
         ownAnimator = GetComponentInChildren<Animator>();
-        enemyManager = EnemyManager.instance;
+        enemyManager = EnemyManager.IsInitialised() ? EnemyManager.instance : null;
         hasDied = false;
     }
     public virtual void CheckPlayerInRange() { }
@@ -66,7 +79,12 @@ public class BaseEnemy : MonoBehaviour
         {
             hasDied = true;
             Destroy(gameObject, 0.5f);
-            enemyManager.EnemyDied();
+
+            if(enemyManager)
+                enemyManager.EnemyDied();
+
+
+            PersistentData.Set(uid, 1);
         }
     }
     public void ChangeState(EnemyState state)
