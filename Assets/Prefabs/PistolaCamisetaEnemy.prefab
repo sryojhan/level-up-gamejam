@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6975631087621983522}
   - component: {fileID: 6849498658337114133}
   - component: {fileID: 2992166648338069529}
+  - component: {fileID: 7955018463390434172}
   m_Layer: 9
   m_Name: PistolaCamisetaEnemy
   m_TagString: Untagged
@@ -100,6 +101,7 @@ MonoBehaviour:
   baseAttack: 3
   alertRadius: 10
   moveSpeed: 0
+  knockBackForce: 0
   bulletPrefab: {fileID: 7498594944733688523, guid: 9a2825aed4a82e342b227f2e9cb8de58, type: 3}
   attackSpeed: 2
   bulletSpeed: 8
@@ -117,6 +119,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hurtFlashDuration: 0.2
   meshToFlash: {fileID: 1594293638282433840}
+--- !u!114 &7955018463390434172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350130198608466232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uid: bac12ed5-e960-4a5d-a802-28b8591726a1
 --- !u!1 &3948379538223060872
 GameObject:
   m_ObjectHideFlags: 0

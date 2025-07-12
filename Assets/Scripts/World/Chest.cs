@@ -37,7 +37,8 @@ public class Chest : MonoBehaviour
 
         if(PersistentData.Get(uid) != (int)ChestState.Closed)
         {
-            OpenChest();
+            Destroy(interactable);
+            chestSpriteRenderer.sprite = openedChest;
             return;
         }
 

@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 8279007185593147480}
   - component: {fileID: 3730063444251349936}
   - component: {fileID: 8222872639335406479}
+  - component: {fileID: 633989563119620272}
   m_Layer: 9
   m_Name: TrapEnemy
   m_TagString: Untagged
@@ -286,9 +287,23 @@ MonoBehaviour:
   baseAttack: 5
   alertRadius: 2
   moveSpeed: 0
+  knockBackForce: 0
   trapTime: 2
   cooldownTime: 2
   model: {fileID: 4334858770445330151}
+--- !u!114 &633989563119620272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8702682769161596612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uid: 593780ae-1132-47fe-8ff8-00c365d4fda1
 --- !u!1001 &3524606312269503414
 PrefabInstance:
   m_ObjectHideFlags: 0
