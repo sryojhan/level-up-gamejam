@@ -133,8 +133,6 @@ public class PlayerMeleeWeapon : MonoBehaviour
     }
     private void ManageAttackMovement()
     {
-        pillowSpriteRenderer.sortingOrder = PlayerController.instance.SpriteRendererComponent.sortingOrder + (isSouthAttack ? 10 : -10);
-
         if (duringFreezeFrame)
         {
             freezeFrameTimer += Time.fixedDeltaTime;
