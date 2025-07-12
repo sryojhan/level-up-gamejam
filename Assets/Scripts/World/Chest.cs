@@ -80,7 +80,7 @@ public class Chest : MonoBehaviour
 
     private void BeginDialogue()
     {
-        DialogueManager.instance.BeginDialogue(unlockContent, AfterDialogue);
+        DialogueManager.instance.BeginDialogue(unlockContent, AfterDialogue, chestContentSprite);
     }
 
     private void AfterDialogue()

@@ -607,6 +607,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 285244377718930063, guid: 9c83391fb1fa88a419cbcffab1193bb5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 816717926591554250, guid: 9c83391fb1fa88a419cbcffab1193bb5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -830,6 +834,22 @@ PrefabInstance:
     - target: {fileID: 6744031120542927907, guid: 9c83391fb1fa88a419cbcffab1193bb5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876118970243478944, guid: 9c83391fb1fa88a419cbcffab1193bb5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145909281926174210, guid: 9c83391fb1fa88a419cbcffab1193bb5, type: 3}
+      propertyPath: elementRevealAnimation.duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145909281926174210, guid: 9c83391fb1fa88a419cbcffab1193bb5, type: 3}
+      propertyPath: elementHideAnimation.interpolation.mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145909281926174210, guid: 9c83391fb1fa88a419cbcffab1193bb5, type: 3}
+      propertyPath: elementHideAnimation.interpolation.type
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7467362725860229972, guid: 9c83391fb1fa88a419cbcffab1193bb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1932,7 +1952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: 27a8293b-2b91-4dce-8169-c2f360ddda21
+  uid: 6269ef09-4939-4c2a-bb52-9ebda020bc02
 --- !u!114 &891760448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1948,21 +1968,6 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: a32e174aa9e47b0449db80ff4afc205a, type: 2}
   - {fileID: 11400000, guid: a953b3cf2e3a91d43821ec5e0beae062, type: 2}
-  OnEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 891760446}
-        m_TargetAssemblyTypeName: Interactable, Assembly-CSharp
-        m_MethodName: EndInteraction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &891760449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2245,7 +2250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: 5313eb8e-08bb-4647-a694-536bfb09d695
+  uid: f9def62f-6af2-4471-a38f-0c58d14fa6bd
 --- !u!61 &1052478758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2886,7 +2891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: ab021e7e-8859-4cc9-8ed6-fa3cac647340
+  uid: e852273a-9298-44e0-a960-ac53cf4bfd01
 --- !u!114 &1270482497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3194,7 +3199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: 30134493-ce78-43fb-a0b4-e375055ea7a2
+  uid: 5e838a17-13d5-46f5-8d57-3d4accdc07ca
 --- !u!114 &1509790063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3665,7 +3670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: 72e4c4ee-bf9a-4385-8449-eb9ed21a9a89
+  uid: 52692f77-6eba-4d84-a273-080c81e9a3cd
 --- !u!61 &1841993779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3828,21 +3833,6 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: a32e174aa9e47b0449db80ff4afc205a, type: 2}
   - {fileID: 11400000, guid: a953b3cf2e3a91d43821ec5e0beae062, type: 2}
-  OnEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1841993783}
-        m_TargetAssemblyTypeName: Interactable, Assembly-CSharp
-        m_MethodName: EndInteraction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1841993783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3999,7 +3989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: 46797c15-08b4-4a9c-9383-f8fd17e9fb89
+  uid: f3b71c7d-091e-4e15-9703-b2be8809f5c9
 --- !u!114 &1941086967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4411,7 +4401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: c7e9086d-6aba-4ec4-b6db-b5bd68a672df
+  uid: baf4e9ce-60f7-4c22-b573-a275ae3c488a
 --- !u!114 &1993994092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4425,7 +4415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openedChest: {fileID: -5248003426595706104, guid: d04a051d4dc4a9344b10b88bb1a8d160, type: 3}
-  chestContentSprite: {fileID: 0}
+  chestContentSprite: {fileID: 5398230693474030073, guid: 3b54bbe2b4dcfab4eb625c70e8dbb4f7, type: 3}
   chestContent: 1
   unlockContent: {fileID: 11400000, guid: 9d8b6fc37ffaa7e49beebf1b588fdf37, type: 2}
 --- !u!1 &2037542204

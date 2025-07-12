@@ -485,7 +485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4575756188486140754
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2268,6 +2268,27 @@ MonoBehaviour:
     mode: 1
   revealDurationPerChar: 0.03
   highlightElement: {fileID: 4689593082318627671}
+  highlightBackground: {fileID: 6812087126727423030}
+  maxHighlightElementScale: 2
+  minHighlightAlphaMask: 0.3
+  alphaMaskCoroutine:
+    duration: 1
+    delay: 0
+    interpolation:
+      type: 3
+      mode: 0
+  elementRevealAnimation:
+    duration: 15
+    delay: 0
+    interpolation:
+      type: 5
+      mode: 2
+  elementHideAnimation:
+    duration: 1
+    delay: 0
+    interpolation:
+      type: 3
+      mode: 0
 --- !u!1001 &895642699398527087
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11,10 +11,16 @@ public class DialogueTrigger : MonoBehaviour
 
     private int dialogueValue;
 
+    Interactable interactable;
+
     private void Awake()
     {
         entityUID = GetComponent<UID>().uid;
         dialogueValue = PersistentData.Get(entityUID);
+
+        interactable = GetComponent<Interactable>();
+
+        interactable.onInteractionBegin += BeginDialogue;
     }
 
 
@@ -31,8 +37,6 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnDialogueEnd()
     {
-        OnEnd?.Invoke();
+        interactable.EndInteraction();
     }
-
-    public UnityEvent OnEnd;
 }

@@ -41,7 +41,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaMask: 0.236
+    - _AlphaMask: 1
     - _AngleWidth: 30
     - _ColorMask: 15
     - _RotationSpeed: 1

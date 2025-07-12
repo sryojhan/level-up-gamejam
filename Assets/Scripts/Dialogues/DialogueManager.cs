@@ -37,8 +37,18 @@ public class DialogueManager : Singleton<DialogueManager>
 
     [Header("Highlight")]
     public Image highlightElement;
+    public Image highlightBackground;
+
+    public float maxHighlightElementScale = 2;
+
+    public float minHighlightAlphaMask = 0.3f;
+    public CoroutineAnimation alphaMaskCoroutine;
+    public CoroutineAnimation elementRevealAnimation;
+    public CoroutineAnimation elementHideAnimation;
+    private Coroutine highlightCoroutineReference;
 
 
+    private bool dialogueInCourse = false;
 
     private void Start()
     {
@@ -46,14 +56,23 @@ public class DialogueManager : Singleton<DialogueManager>
     }
 
 
-    public void BeginDialogue(DialogueContent dialogue, OnDialogueEnd onEnd)
+    public void BeginDialogue(DialogueContent dialogue, OnDialogueEnd onEnd, Sprite highlightSprite = null)
     {
+        highlightElement.gameObject.SetActive(highlightSprite != null);
+
         dialogueParent.SetActive(true);
         StartCoroutine(DialogueCoroutine(dialogue, onEnd));
+
+        if (highlightSprite != null)
+        {
+            highlightCoroutineReference = StartCoroutine(HighlightElement(highlightSprite));
+        }
     }
 
     private IEnumerator DialogueCoroutine(DialogueContent dialogue, OnDialogueEnd onEnd)
     {
+        dialogueInCourse = true;
+
         bool hasSpeaker = !string.IsNullOrEmpty(dialogue.speaker);
 
         if (!hasSpeaker)
@@ -123,6 +142,7 @@ public class DialogueManager : Singleton<DialogueManager>
             yield return null;
         }
 
+        dialogueInCourse = false;
 
         //Hide animation
         HideDialogueAnimation(hasSpeaker);
@@ -132,6 +152,8 @@ public class DialogueManager : Singleton<DialogueManager>
         onEnd?.Invoke();
         dialogueParent.SetActive(false);
 
+        if (highlightCoroutineReference != null)
+            StopCoroutine(highlightCoroutineReference);
     }
 
 
@@ -212,7 +234,7 @@ public class DialogueManager : Singleton<DialogueManager>
             speakerTextBackground.transform.localScale = Vector2.one * Mathf.Lerp(1, 0, i);
         }
 
-        
+
 
         if (hasSpeaker)
         {
@@ -234,13 +256,63 @@ public class DialogueManager : Singleton<DialogueManager>
     }
 
 
-    IEnumerator HighlightElement()
+    IEnumerator HighlightElement(Sprite highlightSprite)
     {
-        while (true)
-        {
+        highlightElement.transform.localScale = Vector3.zero;
+        highlightElement.sprite = highlightSprite;
 
+        highlightBackground.material.SetFloat("_AlphaMask", 1);
+        void OnUpdateReveal(float i)
+        {
+            float value = Mathf.LerpUnclamped(1, minHighlightAlphaMask, i);
+
+            highlightBackground.material.SetFloat("_AlphaMask", value);
+        }
+
+        alphaMaskCoroutine.Play(this, onUpdate: OnUpdateReveal);
+
+
+        void RevealHighlightElementUpdate(float i)
+        {
+            highlightElement.transform.localScale = Mathf.LerpUnclamped(0, maxHighlightElementScale, i) * Vector3.one;
+        }
+
+        elementRevealAnimation.Play(this, onUpdate: RevealHighlightElementUpdate);
+
+        while (!alphaMaskCoroutine.IsFinished()) yield return null;
+
+        while (dialogueInCourse)
+        {
             yield return null;
         }
+
+        elementRevealAnimation.Stop(this);
+
+        void OnUpdateHide(float i)
+        {
+            float value = Mathf.LerpUnclamped(minHighlightAlphaMask, 1, i);
+
+            highlightBackground.material.SetFloat("_AlphaMask", value);
+        }
+
+        highlightBackground.material.SetFloat("_AlphaMask", 1);
+
+
+        float initialScale = highlightElement.transform.localScale.x;
+
+        void HideHighlightElementUpdate(float i)
+        {
+            highlightElement.transform.localScale = Mathf.LerpUnclamped(initialScale, 0, i) * Vector3.one;
+        }
+
+        elementHideAnimation.Play(this, onUpdate: HideHighlightElementUpdate);
+
+
+
+        alphaMaskCoroutine.Play(this, onUpdate: OnUpdateHide);
+        while (!alphaMaskCoroutine.IsFinished()) yield return null;
+
+        highlightCoroutineReference = null;
     }
 
 }
