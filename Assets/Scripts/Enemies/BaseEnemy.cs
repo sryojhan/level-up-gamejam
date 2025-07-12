@@ -24,6 +24,7 @@ public class BaseEnemy : MonoBehaviour
     protected Vector2 spawnPositionCoordinates;
     protected Animator ownAnimator;
     protected EnemyManager enemyManager;
+    protected bool hasDied;
 
     private bool hasDied;
 
@@ -61,6 +62,13 @@ public class BaseEnemy : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
+    {
+        if (collision.gameObject != PlayerController.instance.gameObject) return;
+
+        PlayerController.instance.PlayerHealth.LoseHealth();
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject != PlayerController.instance.gameObject) return;
 
