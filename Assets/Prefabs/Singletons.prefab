@@ -614,10 +614,17 @@ MonoBehaviour:
   forceTransition: -1
   material: {fileID: 2100000, guid: 9a6e3dba39961e64fa555b2826e5dc8a, type: 2}
   transitions:
-  - {fileID: 11400000, guid: 343a52b4d7e0c974c8eefbe08195e70d, type: 2}
+  - {fileID: 11400000, guid: 4acc506cb765daa44bdeab00a5b76ae0, type: 2}
+  - {fileID: 11400000, guid: a35342274d735304a853d7ee3d30c867, type: 2}
+  - {fileID: 11400000, guid: 573357a42c1646849924b9e631a7f3d2, type: 2}
+  - {fileID: 11400000, guid: 95c0cceadc3f5044898d63600b0c7698, type: 2}
   - {fileID: 11400000, guid: 0cb9bebb76a203f448d33031cb60a362, type: 2}
+  - {fileID: 11400000, guid: 60c28ad287d681c468ab60d5e698fb26, type: 2}
+  - {fileID: 11400000, guid: 343a52b4d7e0c974c8eefbe08195e70d, type: 2}
   - {fileID: 11400000, guid: 1fedcdde49f386f499d97dc87103e6cc, type: 2}
-  - {fileID: 11400000, guid: 008e892f5d57e2c41b3d5e1d90bc4cb1, type: 2}
+  - {fileID: 11400000, guid: c20ceae71757f444892f3402e70fe3dc, type: 2}
+  - {fileID: 11400000, guid: 32a4a66f580249944a405632eac9a9af, type: 2}
+  - {fileID: 11400000, guid: 6bde9feb15765fa42b06bc5554174097, type: 2}
   image: {fileID: 2320777566663500324}
 --- !u!1 &3502732174992396520
 GameObject:

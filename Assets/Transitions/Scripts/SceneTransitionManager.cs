@@ -89,7 +89,9 @@ namespace SceneTransition
 
             //Fade in
             material.SetFloat("_time", 0);
-            material.SetFloat("_invert", transition.In.invert ? 1 : 0);
+
+            //TODO: temp change
+            material.SetFloat("_invert", Random.value > 0.5f ? 1 : 0);
 
 
             if (transition.In.enabled)
@@ -101,7 +103,9 @@ namespace SceneTransition
                 }
 
             material.SetFloat("_time", 1);
-            material.SetFloat("_inverted", transition.Out.invert ? 1 : 0);
+
+            //TODO: temp change
+            material.SetFloat("_inverted", Random.value > 0.5f ? 1 : 0);
 
             material.SetTexture("_transitionGradient", transition.Out.gradientMask);
             //Load Scene
