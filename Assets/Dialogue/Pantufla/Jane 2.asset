@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bc94d5aaac94846ab65c38edede396, type: 3}
+  m_Name: Jane 2
+  m_EditorClassIdentifier: 
+  speakerSprite: {fileID: -4002838585996149880, guid: 403c8ee0e04dac941ad2b07b8f226f5c, type: 3}
+  speaker: Jane Slip
+  content:
+  - I don't know how I got here
+  - But Im too scared of the dark to try to leave on my own
+  - W- What?  Would you really walk me out? (AAAAAAAAAAA)
+  - No- no, don't worry. I don't want to bother you. I'll just wait here. I'm sure
+    they are looking for me anyways... They are just taking longer this time....
+    That's all...
+  - ....
