@@ -25,8 +25,8 @@ public class PlayerHealth : MonoBehaviour
         onHealthUpdate += UpdatePersistentHealth;
         onMaxHealthUpdate += UpdatePersistentMaxHealth;
 
-        onHealthUpdate(currentHealth);
         onMaxHealthUpdate(maxHealth);
+        onHealthUpdate(currentHealth);
     }
 
     private void UpdatePersistentHealth(int health)

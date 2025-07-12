@@ -1,10 +1,12 @@
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class UIDValidityChecker : Singleton<UIDValidityChecker>
 {
+#if UNITY_EDITOR
+
+
     protected override bool DestroyOnLoad => false;
 
     private UID[] GetAllUIDs()
@@ -72,4 +74,7 @@ public class UIDValidityChecker : Singleton<UIDValidityChecker>
             Debug.LogError($"Error on scene {scene.name}. Duplication of UID");
         }
     }
+
+#endif
+
 }

@@ -9,6 +9,13 @@ public class HealthUI : MonoBehaviour
     public Color heartEmpty = Color.white;
 
     int previousHealth = -1;
+    int previousMaxHealth = -1;
+
+    public CoroutineAnimation revealNewHeart;
+
+    public float heartAnimationVerticalOffset = 10;
+    public CoroutineAnimation healHeart;
+
 
     private void Awake()
     {
@@ -21,12 +28,44 @@ public class HealthUI : MonoBehaviour
         int idx = 1;
         foreach (Transform tr in transform)
         {
-            if(previousHealth > 0 && newHealth < previousHealth && idx == previousHealth)
+            bool updateColor = true;
+
+            if(previousHealth > 0)
             {
-                tr.GetComponentInChildren<ParticleSystem>().Play();
+                if(idx > newHealth && idx <= previousHealth)
+                {
+                    tr.GetComponentInChildren<ParticleSystem>().Play();
+                }
+
+                else if (idx > previousHealth && idx <= newHealth)
+                {
+
+                    RectTransform rt = tr.GetComponent<RectTransform>();
+
+                    Vector2 originalPosition = rt.anchoredPosition;
+
+                    void OnUpdate(float i)
+                    {
+                        if (i > 0.5f)
+                        {
+                            tr.GetComponentInChildren<Image>().color = heartFilled;
+                        }
+
+
+                        float offsetY = heartAnimationVerticalOffset * 4 * i * (1 - i);
+                        rt.anchoredPosition = originalPosition + new Vector2(0, offsetY);
+                    }
+
+                    healHeart.Play(this, onUpdate: OnUpdate);
+
+                    updateColor = false;
+                }
             }
 
-            tr.GetComponentInChildren<Image>().color = idx++ > newHealth ? heartEmpty : heartFilled;
+            if(updateColor)
+                tr.GetComponentInChildren<Image>().color = idx > newHealth ? heartEmpty : heartFilled;
+
+            idx++;
         }
 
         previousHealth = newHealth;
@@ -34,11 +73,33 @@ public class HealthUI : MonoBehaviour
 
     private void UpdateMaxHealth(int maxHealth)
     {
+
+        Interpolation inter = new Interpolation();
+        inter.mode = Interpolation.Mode.Out;
+        inter.type = Interpolation.Type.BounceBack;
+
+
         int idx = 1;
         foreach (Transform tr in transform)
         {
+
+            if(previousMaxHealth > 0 && idx == maxHealth)
+            {
+                void SetScale(float i)
+                {
+                    tr.localScale = Vector3.one * i;
+                }
+
+                revealNewHeart.Play(this, onUpdate: SetScale);
+            }
+
             tr.GetComponentInChildren<Image>().enabled = idx++ <= maxHealth;
         }
+
+        if (previousMaxHealth == previousHealth)
+            previousHealth = maxHealth;
+
+        previousMaxHealth = maxHealth;
     }
 
 

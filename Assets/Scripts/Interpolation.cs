@@ -60,16 +60,16 @@ public class Interpolation
 
         return type switch
         {
-            Type.Linear => LinearInterpolation(x),
-            Type.Sine => SineInterpolation(x),
-            Type.Quadratic => QuadraticInterpolation(x),
-            Type.Cubic => CubicInterpolation(x),
-            Type.Quartic => QuadraticInterpolation(x),
-            Type.Quintic => QuinticInterpolation(x),
-            Type.Exponencial => ExponencialInterpolation(x),
-            Type.Circular => CircularInterpolation(x),
-            Type.BounceBack => BounceBackInterpolation(x),
-            _ => LinearInterpolation(x)
+            Type.Linear => LinearInterpolation(x, mode),
+            Type.Sine => SineInterpolation(x, mode),
+            Type.Quadratic => QuadraticInterpolation(x, mode),
+            Type.Cubic => CubicInterpolation(x, mode),
+            Type.Quartic => QuadraticInterpolation(x, mode),
+            Type.Quintic => QuinticInterpolation(x, mode),
+            Type.Exponencial => ExponencialInterpolation(x, mode),
+            Type.Circular => CircularInterpolation(x, mode),
+            Type.BounceBack => BounceBackInterpolation(x, mode),
+            _ => LinearInterpolation(x, mode)
         };
 
     }
