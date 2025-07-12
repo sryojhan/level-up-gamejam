@@ -723,6 +723,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CamisetaEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8302776268204284021, guid: 570158cd9b03df3409680aee1d995d57, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9179195017230089835, guid: 570158cd9b03df3409680aee1d995d57, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.527
@@ -3518,6 +3522,63 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1673567383945934875
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1411692715503346498, guid: 151d2288218cbc1419148f351dc3ad58, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411692715503346498, guid: 151d2288218cbc1419148f351dc3ad58, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.482816
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411692715503346498, guid: 151d2288218cbc1419148f351dc3ad58, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.3920007
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411692715503346498, guid: 151d2288218cbc1419148f351dc3ad58, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411692715503346498, guid: 151d2288218cbc1419148f351dc3ad58, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411692715503346498, guid: 151d2288218cbc1419148f351dc3ad58, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411692715503346498, guid: 151d2288218cbc1419148f351dc3ad58, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411692715503346498, guid: 151d2288218cbc1419148f351dc3ad58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411692715503346498, guid: 151d2288218cbc1419148f351dc3ad58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411692715503346498, guid: 151d2288218cbc1419148f351dc3ad58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1747890524201762406, guid: 151d2288218cbc1419148f351dc3ad58, type: 3}
+      propertyPath: m_Name
+      value: LavadoraBoss
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 151d2288218cbc1419148f351dc3ad58, type: 3}
 --- !u!1001 &2729168691067938869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4095,3 +4156,4 @@ SceneRoots:
   - {fileID: 792753359}
   - {fileID: 563740660}
   - {fileID: 1788078215}
+  - {fileID: 1673567383945934875}

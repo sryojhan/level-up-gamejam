@@ -24,8 +24,9 @@ public class BaseEnemy : MonoBehaviour
     protected Vector2 spawnPositionCoordinates;
     protected Animator ownAnimator;
     protected EnemyManager enemyManager;
+    protected bool hasDied;
 
-    private bool hasDied;
+    protected bool isBoss;
     public virtual void CustomStart()
     {
         currentState = EnemyState.idle;
@@ -35,6 +36,7 @@ public class BaseEnemy : MonoBehaviour
         ownAnimator = GetComponentInChildren<Animator>();
         enemyManager = EnemyManager.instance;
         hasDied = false;
+        isBoss = false;
     }
     public virtual void CheckPlayerInRange() { }
     public virtual void CheckIfIdle() { }
