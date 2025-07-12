@@ -5,7 +5,7 @@ public class Interactable : MonoBehaviour
 {
     public enum Type
     {
-        PickUpKey, PickUpCoin, Read, Inspect, Talk, OpenDoor, PickUpLaundry
+        PickUpKey, PickUpCoin, Read, Inspect, Talk, OpenDoor, PickUpLaundry, OpenChest
     }
 
     public Type type;
@@ -14,6 +14,11 @@ public class Interactable : MonoBehaviour
     private MaterialPropertyBlock mpb;
 
     private float materialThickness;
+
+
+    public delegate void Callback();
+
+    public Callback onInteractionBegin;
 
     private void Start()
     {
@@ -37,6 +42,7 @@ public class Interactable : MonoBehaviour
             Type.Talk => Localization.GetText("talk"),
             Type.OpenDoor => Localization.GetText("open_door"),
             Type.PickUpLaundry => Localization.GetText("pick_laundry"),
+            Type.OpenChest => Localization.GetText("open_chest"),
             _ => Localization.GetText("interact")
         };
     }
@@ -117,10 +123,14 @@ public class Interactable : MonoBehaviour
     public void EndInteraction()
     {
         inInteraction = false;
-        onInteractionEnd?.Invoke();
         PlayerController.instance.SetAllControls(true);
     }
 
-    public UnityEvent onInteractionBegin;
-    public UnityEvent onInteractionEnd;
+
+    public void ClearOutline()
+    {
+        spriteRenderer.GetPropertyBlock(mpb);
+        mpb.SetFloat("_useOutline", 0);
+        spriteRenderer.SetPropertyBlock(mpb);
+    }
 }

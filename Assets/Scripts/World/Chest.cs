@@ -4,7 +4,6 @@ using UnityEngine.Events;
 
 
 [RequireComponent(typeof(UID))]
-[RequireComponent(typeof(Interactable))]
 public class Chest : MonoBehaviour
 {
     string uid;
@@ -14,13 +13,21 @@ public class Chest : MonoBehaviour
     }
 
     public Sprite openedChest;
-    public Sprite chestContent;
+    public Sprite chestContentSprite;
+
+    public enum ChestContent
+    {
+        Heal, Heart, MoveSpeed, Damage, Sock
+    }
+
+    public ChestContent chestContent;
+
 
     Interactable interactable;
 
     SpriteRenderer chestSpriteRenderer;
-
     public DialogueContent unlockContent;
+
 
     private void Start()
     {
@@ -34,11 +41,39 @@ public class Chest : MonoBehaviour
             return;
         }
 
-        interactable.onInteractionBegin.AddListener(BeginDialogue);
+        interactable.onInteractionBegin += BeginDialogue;
     }
 
     private void OpenChest()
     {
+        PersistentData.Set(uid, (int)ChestState.Opened);
+
+        interactable.EndInteraction();
+        interactable.ClearOutline();
+
+
+        switch (chestContent)
+        {
+            case ChestContent.Heal:
+                HealOneHeart();
+                break;
+            case ChestContent.Heart:
+                GainExtraHeart();
+                break;
+            case ChestContent.MoveSpeed:
+                GainMoveSpeed();
+                break;
+            case ChestContent.Damage:
+                GainDamageIncrease();
+                break;
+            case ChestContent.Sock:
+                GainExtraSock();
+                break;
+            default:
+                break;
+        }
+
+
         Destroy(interactable);
         chestSpriteRenderer.sprite = openedChest;
     }
@@ -50,8 +85,33 @@ public class Chest : MonoBehaviour
 
     private void AfterDialogue()
     {
-        unlockAfterDialogue?.Invoke();
+        OpenChest();
     }
 
-    public UnityEvent unlockAfterDialogue;
+
+
+    public void GainExtraHeart()
+    {
+        PlayerController.instance.PlayerHealth.AddMaxHealth();
+    }
+
+    public void HealOneHeart()
+    {
+        PlayerController.instance.PlayerHealth.RestoreHealth();
+    }
+
+    public void GainMoveSpeed()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void GainDamageIncrease()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void GainExtraSock()
+    {
+        throw new NotImplementedException();
+    }
 }

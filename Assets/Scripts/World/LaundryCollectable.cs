@@ -6,7 +6,7 @@ public class LaundryCollectable : MonoBehaviour
 
     private void Start()
     {
-        GetComponent<Collectable>().onPick.AddListener(CollectLaundry);
+        GetComponent<Collectable>().onPick += CollectLaundry;
     }
 
     private void CollectLaundry()

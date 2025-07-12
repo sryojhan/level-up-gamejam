@@ -14,6 +14,9 @@ public class DoorInteraction : MonoBehaviour
 
     private string uid;
 
+    private Interactable interactable;
+
+
     private void Start()
     {
         uid = GetComponent<UID>().uid;
@@ -23,8 +26,8 @@ public class DoorInteraction : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
-        GetComponent<Interactable>().onInteractionBegin.AddListener(OpenDoor);
+        interactable = GetComponent<Interactable>();
+        interactable.onInteractionBegin += OpenDoor;
     }
 
     private void OpenDoor()
@@ -32,11 +35,14 @@ public class DoorInteraction : MonoBehaviour
         if (!PersistentData.collectedKeys.Contains(id))
         {
             GetComponentInChildren<SimpleShake>().Shake();
+            interactable.EndInteraction();
             return;
         }
 
         PersistentData.Set(uid, (int)DoorState.Opened);
         Destroy(gameObject);
+
+        interactable.EndInteraction();
     }
 
 }

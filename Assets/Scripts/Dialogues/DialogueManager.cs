@@ -186,13 +186,24 @@ public class DialogueManager : Singleton<DialogueManager>
             hideNpc.Play(this, onUpdate: HideNpc);
         }
 
+
+        float previousDelay = hideDialogueBackground.delay;
+
+        if (!hasSpeaker)
+        {
+            hideDialogueBackground.delay = 0;
+        }
+
         Vector2 currentPosition = background.rectTransform.anchoredPosition;
 
         void OnBackgroundEnd()
         {
             background.gameObject.SetActive(false);
             background.rectTransform.anchoredPosition = currentPosition;
+
+            hideDialogueBackground.delay = previousDelay;
         }
+
 
         hideDialogueBackground.Play(this, background.rectTransform, backgroundAnimationOrigin, onEnd: OnBackgroundEnd);
 
@@ -200,6 +211,8 @@ public class DialogueManager : Singleton<DialogueManager>
         {
             speakerTextBackground.transform.localScale = Vector2.one * Mathf.Lerp(1, 0, i);
         }
+
+        
 
         if (hasSpeaker)
         {

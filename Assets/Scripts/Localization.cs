@@ -50,6 +50,7 @@ public class Localization : Singleton<Localization>
         CreateEntry("pick_coin", "Press <interact> to pick the coin", "Pulsa <interact> para coger la moneda", "Algo en catalan");
         CreateEntry("pick_laundry", "Press <interact> to pick up the laundry", "Pulsa <interact> para recoger la colada", "Algo en catalan");
         CreateEntry("open_door", "Press <interact> to open the door", "Pulsa <interact> para abrir la puerta", "Algo en catalan");
+        CreateEntry("open_chest", "Press <interact> to open the chest", "Pulsa <interact> para abrir el cofre", "Algo en catalan");
     }
 
     public static string GetText(string id)

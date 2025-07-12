@@ -8,7 +8,7 @@ public class KeyCollectable : MonoBehaviour
 
     private void Start()
     {
-        GetComponent<Collectable>().onPick.AddListener(StoreKeyData);
+        GetComponent<Collectable>().onPick += StoreKeyData;
     }
 
     private void StoreKeyData()

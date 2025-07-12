@@ -5,6 +5,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(UID))]
 public class Collectable : MonoBehaviour
 {
+    public Interactable.Callback onPick;
 
     private enum CollectableState
     {
@@ -13,7 +14,7 @@ public class Collectable : MonoBehaviour
 
     private string uid;
 
-    public UnityEvent onPick;
+    private Interactable interactable;
 
     private void Start()
     {
@@ -24,6 +25,9 @@ public class Collectable : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
+        interactable = GetComponent<Interactable>();
+        interactable.onInteractionBegin += Collect;
     }
 
 
@@ -33,6 +37,8 @@ public class Collectable : MonoBehaviour
 
         PersistentData.Set(uid, (int)CollectableState.Collected);
         Destroy(gameObject);
+
+        interactable.EndInteraction();
     }
 
 
