@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 0c9e4661c2826f04fb8a422c8b2e6024
+guid: 0765173d860ad73429f6081155c5d1f8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8383326178229461986
-    second: Wooden_House_Walls_Tilset_0
-  - first:
-      213: -5558002514471396697
-    second: Wooden_House_Walls_Tilset_1
+      213: -5597934770126472270
+    second: maceta 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -77,8 +74,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -99,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wooden_House_Walls_Tilset_0
+      name: maceta 2_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 0
-        width: 28
-        height: 48
+        x: 135
+        y: 109
+        width: 241
+        height: 291
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1c5666f14178ab80800000000000000
-      internalID: -8383326178229461986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wooden_House_Walls_Tilset_1
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 0
-        width: 33
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7aa543029220ed2b0800000000000000
-      internalID: -5558002514471396697
+      spriteID: 2bbbdc65cf32052b0800000000000000
+      internalID: -5597934770126472270
       vertices: []
       indices: 
       edges: []
@@ -159,9 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Wooden_House_Walls_Tilset_0: -8383326178229461986
-      Wooden_House_Walls_Tilset_1: -5558002514471396697
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
