@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Calcetin_3_0: -7405680724424773545
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

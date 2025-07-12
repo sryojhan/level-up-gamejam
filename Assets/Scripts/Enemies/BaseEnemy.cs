@@ -26,7 +26,6 @@ public class BaseEnemy : MonoBehaviour
     protected EnemyManager enemyManager;
     protected bool hasDied;
 
-    private bool hasDied;
 
     string uid;
 

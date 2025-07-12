@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cesto de ropa_0: 1101305283689054063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
