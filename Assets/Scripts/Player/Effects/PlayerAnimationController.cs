@@ -3,14 +3,25 @@ using UnityEngine;
 [AddComponentMenu("Player/Animation controller")]
 public class PlayerAnimationController : MonoBehaviour
 {
-    public void UpdateAnimation(Animator animator, SpriteRenderer sprRenderer, PlayerStateMachine playerState, PlayerDirection direction)
+    public float maxHorizontalSpeedToFrontRun = 0.3f;
+
+    public void UpdateAnimation(Animator animator, SpriteRenderer sprRenderer, PlayerStateMachine playerState, PlayerDirection direction, Vector2 movementDirection)
     {
-        if (!playerState.HasChanged() && !direction.HasChanged()) return;
 
         var state = playerState.state;
 
 
         (bool south, bool east) = direction.IsSouthAndEastBooleanRepresentation();
+
+
+        if(south && Mathf.Abs(movementDirection.x) < maxHorizontalSpeedToFrontRun && playerState.state == PlayerStateMachine.State.Run)
+        {
+            animator.Play("Run_forwards");
+            sprRenderer.flipX = false;
+            return;
+        }
+
+
 
         string dir = south ? "front" : "back";
 

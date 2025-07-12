@@ -73,12 +73,6 @@ public class HealthUI : MonoBehaviour
 
     private void UpdateMaxHealth(int maxHealth)
     {
-
-        Interpolation inter = new Interpolation();
-        inter.mode = Interpolation.Mode.Out;
-        inter.type = Interpolation.Type.BounceBack;
-
-
         int idx = 1;
         foreach (Transform tr in transform)
         {
