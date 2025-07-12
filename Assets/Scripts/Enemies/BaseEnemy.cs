@@ -26,7 +26,6 @@ public class BaseEnemy : MonoBehaviour
     protected EnemyManager enemyManager;
     protected bool hasDied;
 
-    protected bool isBoss;
     public virtual void CustomStart()
     {
         currentState = EnemyState.idle;
@@ -36,7 +35,6 @@ public class BaseEnemy : MonoBehaviour
         ownAnimator = GetComponentInChildren<Animator>();
         enemyManager = EnemyManager.instance;
         hasDied = false;
-        isBoss = false;
     }
     public virtual void CheckPlayerInRange() { }
     public virtual void CheckIfIdle() { }
@@ -50,6 +48,13 @@ public class BaseEnemy : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
+    {
+        if (collision.gameObject != PlayerController.instance.gameObject) return;
+
+        PlayerController.instance.PlayerHealth.LoseHealth();
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject != PlayerController.instance.gameObject) return;
 
