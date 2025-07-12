@@ -2104,6 +2104,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartFilled: {r: 1, g: 0.29803923, b: 0.29803923, a: 1}
   heartEmpty: {r: 1, g: 1, b: 1, a: 1}
+  revealNewHeart:
+    duration: 1
+    delay: 0
+    interpolation:
+      type: 3
+      mode: 0
+  heartAnimationVerticalOffset: 10
+  healHeart:
+    duration: 1
+    delay: 0
+    interpolation:
+      type: 3
+      mode: 0
 --- !u!1 &8189579727118011456
 GameObject:
   m_ObjectHideFlags: 0
