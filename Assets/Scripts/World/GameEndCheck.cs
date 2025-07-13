@@ -93,6 +93,6 @@ public class GameEndCheck : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("GANASTE!!");
+        SceneTransition.SceneTransitionManager.instance.ChangeScene("BossRoom");
     }
 }

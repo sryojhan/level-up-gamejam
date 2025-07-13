@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 1411692715503346498}
   - component: {fileID: 93344148843203651}
   - component: {fileID: 7543287974324917590}
+  - component: {fileID: 2097923880268864204}
   m_Layer: 9
   m_Name: LavadoraBoss
   m_TagString: Untagged
@@ -309,6 +310,19 @@ MonoBehaviour:
   animatorList:
   - {fileID: 7542136910240986058}
   - {fileID: 7925011235428738967}
+--- !u!114 &2097923880268864204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747890524201762406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uid: 7d71dc29-b354-4386-99b0-f229baaa8c20
 --- !u!1 &5871003346669063684
 GameObject:
   m_ObjectHideFlags: 0
