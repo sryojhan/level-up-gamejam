@@ -76,6 +76,8 @@ namespace SceneTransition
 
         private IEnumerator SceneSwap(string sceneName)
         {
+            PersistentData.currentHealthOnSceneLoad = PersistentData.currentHealth;
+
             var sceneLoadingData = SceneManager.LoadSceneAsync(sceneName);
             sceneLoadingData.allowSceneActivation = false;
 

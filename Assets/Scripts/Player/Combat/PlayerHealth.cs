@@ -49,9 +49,26 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth = 0;
             onPlayerDeath?.Invoke();
+
+            PlayerController.instance.SpriteRendererComponent.enabled = false;
+
+            Invoke(nameof(ReloadScene), 1f);
         }
 
         onHealthUpdate(currentHealth);
+    }
+
+
+    void ReloadScene()
+    {
+        PersistentData.connection_id = PersistentData.lastSceneConnection_id;
+        currentHealth = PersistentData.currentHealthOnSceneLoad;
+        PersistentData.currentHealth = PersistentData.currentHealthOnSceneLoad;
+
+        SceneTransition.SceneTransitionManager.instance.ChangeScene(
+
+            UnityEngine.SceneManagement.SceneManager.GetActiveScene().name
+        );
     }
 
     [EasyButtons.Button]
@@ -77,5 +94,10 @@ public class PlayerHealth : MonoBehaviour
         onMaxHealthUpdate(maxHealth);
         onHealthUpdate(currentHealth);
     }
+
+
+
+
+
 
 }
