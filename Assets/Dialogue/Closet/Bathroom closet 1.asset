@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1bc94d5aaac94846ab65c38edede396, type: 3}
-  m_Name: Bathroom closet 2
+  m_Name: Bathroom closet 1
   m_EditorClassIdentifier: 
   speakerSprite: {fileID: 0}
   speaker: ???
   content:
-  - MAN GET OUT OF HERE
+  - closet_occupied_2

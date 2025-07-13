@@ -15,6 +15,5 @@ MonoBehaviour:
   speakerSprite: {fileID: 7292168437988616927, guid: bf91dabf1a10441429b6c020cac21122, type: 3}
   speaker: Sockrates
   content:
-  - Im sorry, im not in the mood to talk right now...
-  - To think that I've come so far but I can't continue because I still need to find
-    the three laundry baskets....
+  - sockrates_kitchen_4
+  - sockrates_kitchen_5

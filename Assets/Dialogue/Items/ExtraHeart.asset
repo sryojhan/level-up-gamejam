@@ -15,4 +15,4 @@ MonoBehaviour:
   speakerSprite: {fileID: 0}
   speaker: 
   content:
-  - You have obtained an extra heart
+  - heart_item_obtained

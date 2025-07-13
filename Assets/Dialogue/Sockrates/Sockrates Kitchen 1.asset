@@ -15,7 +15,6 @@ MonoBehaviour:
   speakerSprite: {fileID: 7292168437988616927, guid: bf91dabf1a10441429b6c020cac21122, type: 3}
   speaker: Sockrates
   content:
-  - Oh! Hey man
-  - I've tried to help but I have not been able to locate all the 'Laundry Baskets'
-  - We are next to the door to the washing machine. Legends say that when you are
-    able to find all the baskets, the door to the washing machine will open
+  - sockrates_kitchen_1
+  - sockrates_kitchen_2
+  - sockrates_kitchen_3

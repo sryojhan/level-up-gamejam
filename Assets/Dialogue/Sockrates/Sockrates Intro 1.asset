@@ -15,13 +15,10 @@ MonoBehaviour:
   speakerSprite: {fileID: 7292168437988616927, guid: bf91dabf1a10441429b6c020cac21122, type: 3}
   speaker: Sockrates
   content:
-  - Oh man... Oh man...
-  - Do you happen to know anything about what happened in the kitchen??!
-  - Sorry. I'm just a little bit nervious....
-  - I haven't seen my brother Socky in about 3 days. All since the 'Washing Machine
-    Incident'
-  - You seem like a brave adventurer, will you lend me a hand?
-  - To defeat the Washing Machine, you will need to look for the three 'Laundry baskets' 
-    all around the house. It will be hard, but I know I can count on you. You watch
-    out for the dirty clothes and eveything will be alright
-  - Good luck
+  - sockrates_dialogue_1
+  - sockrates_dialogue_2
+  - sockrates_dialogue_3
+  - sockrates_dialogue_4
+  - sockrates_dialogue_5
+  - sockrates_dialogue_6
+  - sockrates_dialogue_7

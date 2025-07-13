@@ -25,6 +25,10 @@ public class SoundManager : Singleton<SoundManager>
     public float musicVolume = .7f;
     public float soundVolume = .7f;
 
+    private void Awake()
+    {
+        DestroyIfInitialised(this);
+    }
 
     private void Start()
     {

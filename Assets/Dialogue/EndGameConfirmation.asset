@@ -15,5 +15,4 @@ MonoBehaviour:
   speakerSprite: {fileID: 0}
   speaker: 
   content:
-  - Are you sure you want to go into the washing machine room? It is not possible
-    to go back
+  - enter_washing_machine_room_confirm
