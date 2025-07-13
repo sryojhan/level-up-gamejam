@@ -94,6 +94,7 @@ public class GameEndCheck : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        SoundManager.instance.PlayBossMusic();
         SceneTransition.SceneTransitionManager.instance.ChangeScene("BossRoom");
     }
 }

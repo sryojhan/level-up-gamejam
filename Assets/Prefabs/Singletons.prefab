@@ -2373,6 +2373,7 @@ MonoBehaviour:
   damageTaken: {fileID: 8300000, guid: 13b7975c266fb404785b54af00555316, type: 3}
   musicVolume: 0.3
   soundVolume: 0.7
+  bossMusic: {fileID: 8300000, guid: 1db0ea5552a8ace4a893e8c707de0b57, type: 3}
   maxStepPitchChange: 0.2
 --- !u!82 &7517935775347947080
 AudioSource:
