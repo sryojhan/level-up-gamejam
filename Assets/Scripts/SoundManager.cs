@@ -28,6 +28,9 @@ public class SoundManager : Singleton<SoundManager>
     public float musicVolume = .7f;
     public float soundVolume = .7f;
 
+
+    public AudioClip bossMusic;
+
     private void Awake()
     {
         DestroyIfInitialised(this);
@@ -115,4 +118,11 @@ public class SoundManager : Singleton<SoundManager>
     {
         soundEffects.PlayOneShot(damageTaken);
     }
+
+    public void PlayBossMusic()
+    {
+        music.clip = bossMusic;
+        music.Play();
+    }
+
 }
