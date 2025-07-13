@@ -3,7 +3,22 @@ guid: f400728291d75054b8120f6ebc844d2b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: camiseta
+    second: {fileID: 2100000, guid: 5ee2aacf78d6a3242bbd288853b18c3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ojos
+    second: {fileID: 2100000, guid: b4abc632bb0a2bb4ab0b13d693c34dd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: parpado
+    second: {fileID: 2100000, guid: 7cff5a1c273fa9a43ba3516083bb78dc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

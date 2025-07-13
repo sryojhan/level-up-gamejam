@@ -3,7 +3,27 @@ guid: 5c34103c4d0218549a75f6c07b0a0116
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blanco
+    second: {fileID: 2100000, guid: 7223fd650311fa745a0f658ae94ef7af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gris
+    second: {fileID: 2100000, guid: 5c79975a34e25b34983e2209b357d011, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: eb8cdda6189ef2742856214889225e88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: negro
+    second: {fileID: 2100000, guid: 8d067cbee0acb84438d49f7590848cbf, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
