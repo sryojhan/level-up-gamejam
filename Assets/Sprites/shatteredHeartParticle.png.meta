@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 95e7f7782a2bae04fbb21585b095e3d2
+guid: 848034e3c9f58a44ba768823887db700
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5211162573767157500
-    second: "Sof\xE1 salmon_0"
+      213: -3716109944258987740
+    second: shatteredHeartParticle_0
+  - first:
+      213: -7246675271475793140
+    second: shatteredHeartParticle_1
+  - first:
+      213: 3296410582049835555
+    second: shatteredHeartParticle_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,7 +54,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Sof\xE1 salmon_0"
+      name: shatteredHeartParticle_0
       rect:
         serializedVersion: 2
-        x: 65
-        y: 69
-        width: 383
-        height: 288
+        x: 12
+        y: 21
+        width: 88
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf6a33c30c4c15840800000000000000
-      internalID: 5211162573767157500
+      spriteID: 429752ac1b9bd6cc0800000000000000
+      internalID: -3716109944258987740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shatteredHeartParticle_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1
+        width: 64
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03f3113c33ae6b90800000000000000
+      internalID: -7246675271475793140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shatteredHeartParticle_2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 11
+        width: 67
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a4be095f33fbd20800000000000000
+      internalID: 3296410582049835555
       vertices: []
       indices: 
       edges: []
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Sof\xE1 salmon_0": 5211162573767157500
+      shatteredHeartParticle_0: -3716109944258987740
+      shatteredHeartParticle_1: -7246675271475793140
+      shatteredHeartParticle_2: 3296410582049835555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

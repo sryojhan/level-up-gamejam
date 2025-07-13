@@ -367,8 +367,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
-      minScalar: 1
+      scalar: 0.4
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1509,11 +1509,11 @@ ParticleSystem:
     enabled: 1
     mode: 1
     timeMode: 0
-    fps: 30
+    fps: 0.0001
     frameOverTime:
       serializedVersion: 2
-      minMaxState: 1
-      scalar: 0.9999
+      minMaxState: 0
+      scalar: 0
       minScalar: 0.9999
       maxCurve:
         serializedVersion: 2
@@ -1565,8 +1565,8 @@ ParticleSystem:
         m_RotationOrder: 4
     startFrame:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0
+      minMaxState: 3
+      scalar: 0.9999
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1621,11 +1621,13 @@ ParticleSystem:
     tilesY: 1
     animationType: 0
     rowIndex: 0
-    cycles: 1
+    cycles: 0.0001
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -1299068420, guid: 86d71e15ee4eb8d40a8fe5025aa1b761, type: 3}
+    - sprite: {fileID: -3716109944258987740, guid: 848034e3c9f58a44ba768823887db700, type: 3}
+    - sprite: {fileID: -7246675271475793140, guid: 848034e3c9f58a44ba768823887db700, type: 3}
+    - sprite: {fileID: 3296410582049835555, guid: 848034e3c9f58a44ba768823887db700, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4952,7 +4954,7 @@ ParticleSystemRenderer:
   m_ShadowBias: 0
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
-  m_Flip: {x: 0, y: 0, z: 0}
+  m_Flip: {x: 0.5, y: 0.5, z: 0}
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1

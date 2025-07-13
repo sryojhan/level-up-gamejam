@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
-  m_Name: Moquta
+  m_Name: Moqueta
   m_EditorClassIdentifier: 
   m_DefaultSprite: {fileID: 780672453, guid: 151e1069a66a7cd4aa7d4959ac5fb707, type: 3}
   m_DefaultGameObject: {fileID: 0}
@@ -101,9 +101,9 @@ MonoBehaviour:
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
     m_PerlinScale: 0.5
-    m_Output: 0
+    m_Output: 1
     m_ColliderType: 1
-    m_RandomTransform: 0
+    m_RandomTransform: 5
     m_Neighbors: 0100000001000000010000000100000001000000010000000100000001000000
     m_NeighborPositions:
     - {x: 0, y: -1, z: 0}
