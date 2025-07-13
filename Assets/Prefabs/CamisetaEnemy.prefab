@@ -317,7 +317,7 @@ MonoBehaviour:
   alertRadius: 8
   moveSpeed: 4
   knockBackForce: 4
-  margin: 0.1
+  leaveRadiusOnAttackMultiplier: 1.5
 --- !u!114 &4039570253177656342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: 6132c0af-3b38-415e-a100-a50851ac3f83
+  uid: 50d4f914-be5b-4b7a-958b-6c2352d22ae7
 --- !u!1001 &1094652702846340402
 PrefabInstance:
   m_ObjectHideFlags: 0

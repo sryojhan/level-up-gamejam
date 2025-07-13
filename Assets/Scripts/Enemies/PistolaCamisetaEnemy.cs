@@ -19,10 +19,10 @@ public class PistolaCamisetaEnemy : BaseEnemy
 
     void FixedUpdate()
     {
-        CheckPlayerInRange();
+        ManageStateLogic();
     }
 
-    public override void CheckPlayerInRange()
+    public override void ManageStateLogic()
     {
         if(Vector2.Distance(transform.position, target.position) < alertRadius)
         {

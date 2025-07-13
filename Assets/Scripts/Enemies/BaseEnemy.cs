@@ -2,10 +2,10 @@ using UnityEngine;
 
 public enum EnemyState
 {
-    idle, 
+    idle,
     walk,
     attack,
-    stagger, 
+    stagger,
     cooldown
 }
 public class BaseEnemy : MonoBehaviour
@@ -29,11 +29,13 @@ public class BaseEnemy : MonoBehaviour
 
     string uid;
 
+
+
     private void Awake()
     {
         uid = GetComponent<UID>().uid;
 
-        if(PersistentData.Get(uid) != 0)
+        if (PersistentData.Get(uid) != 0)
         {
             Destroy(gameObject);
         }
@@ -49,7 +51,7 @@ public class BaseEnemy : MonoBehaviour
         enemyManager = EnemyManager.IsInitialised() ? EnemyManager.instance : null;
         hasDied = false;
     }
-    public virtual void CheckPlayerInRange() { }
+    public virtual void ManageStateLogic() { }
     public virtual void CheckIfIdle() { }
 
     public virtual void OwnKnockback() { }
@@ -74,7 +76,7 @@ public class BaseEnemy : MonoBehaviour
         PlayerController.instance.PlayerHealth.LoseHealth();
     }
 
-    public virtual void TakeDamage(int damage) 
+    public virtual void TakeDamage(int damage)
     {
         if (hasDied) return;
         if (ownAnimator != null)
@@ -87,7 +89,7 @@ public class BaseEnemy : MonoBehaviour
             hasDied = true;
             Destroy(gameObject, 0.5f);
 
-            if(enemyManager)
+            if (enemyManager)
                 enemyManager.EnemyDied();
 
 
@@ -96,10 +98,7 @@ public class BaseEnemy : MonoBehaviour
     }
     public void ChangeState(EnemyState state)
     {
-        if (currentState != state)
-        {
-            currentState = state;
-        }
+        currentState = state;
     }
 
 

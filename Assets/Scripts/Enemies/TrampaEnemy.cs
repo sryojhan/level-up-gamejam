@@ -23,10 +23,10 @@ public class TrampaEnemy : BaseEnemy
     }
     void FixedUpdate()
     {
-        CheckPlayerInRange();
+        ManageStateLogic();
     }
 
-    public override void CheckPlayerInRange()
+    public override void ManageStateLogic()
     {
         if (inAnimation) return;
 

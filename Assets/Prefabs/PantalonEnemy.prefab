@@ -206,7 +206,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0.3
+  m_LinearDamping: 1
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -282,10 +282,11 @@ MonoBehaviour:
   health: 3
   enemyName: Pantalon
   baseAttack: 5
-  alertRadius: 4
+  alertRadius: 5.71
   moveSpeed: 8
   knockBackForce: 4
-  margin: 0.1
+  leaveRadiusOnAttackMultiplier: 1.5
+  steeringStrength: 1
 --- !u!114 &6432076397518163780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,7 +313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: a2309f08-e88d-45fb-a284-61bacfaf4946
+  uid: 0ce52147-e1c2-40e0-9afd-147934f361f3
 --- !u!1 &7480735839366885126
 GameObject:
   m_ObjectHideFlags: 0
