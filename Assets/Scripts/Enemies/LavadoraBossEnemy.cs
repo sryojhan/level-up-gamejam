@@ -22,7 +22,7 @@ public class LavadoraBossEnemy : BaseEnemy
 
         ShuffleStringList(animations);
         animationListCount = 0;
-        timeSinceLastAttack = attackCooldown;
+        timeSinceLastAttack = 0;
     }
 
     void FixedUpdate()
@@ -31,9 +31,14 @@ public class LavadoraBossEnemy : BaseEnemy
 
         if (animations.Count == 0) return;
 
-        if(timeSinceLastAttack >= attackCooldown)
+        if(timeSinceLastAttack < attackCooldown)
         {
             timeSinceLastAttack += Time.deltaTime;
+            return;
+        }
+        else
+        {
+            timeSinceLastAttack = 0;
         }
 
         ownAnimator.Play(animations[animationListCount]);
