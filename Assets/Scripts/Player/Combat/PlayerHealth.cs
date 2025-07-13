@@ -45,6 +45,10 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth--;
 
+        SoundManager.instance.PlayDamageTaken();
+        Camera.main.GetComponent<SimpleShake>().Shake();
+
+
         if(currentHealth <= 0)
         {
             currentHealth = 0;

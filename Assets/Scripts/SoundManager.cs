@@ -22,6 +22,9 @@ public class SoundManager : Singleton<SoundManager>
     public AudioClip lockedDoor;
     public AudioClip openDoor;
 
+
+    public AudioClip damageTaken;
+
     public float musicVolume = .7f;
     public float soundVolume = .7f;
 
@@ -106,5 +109,10 @@ public class SoundManager : Singleton<SoundManager>
     public void PlayOpenDoor()
     {
         soundEffects.PlayOneShot(openDoor);
+    }
+
+    public void PlayDamageTaken()
+    {
+        soundEffects.PlayOneShot(damageTaken);
     }
 }

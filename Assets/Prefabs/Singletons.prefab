@@ -2370,6 +2370,7 @@ MonoBehaviour:
   boing: {fileID: 8300000, guid: a3b10896da4ec2846a60c536190baedd, type: 3}
   lockedDoor: {fileID: 8300000, guid: c72d857c70c3aee4db9183f3c765e4e4, type: 3}
   openDoor: {fileID: 8300000, guid: 2c005d775e57321499eeb95b80c50d38, type: 3}
+  damageTaken: {fileID: 8300000, guid: 13b7975c266fb404785b54af00555316, type: 3}
   musicVolume: 0.3
   soundVolume: 0.7
   maxStepPitchChange: 0.2
