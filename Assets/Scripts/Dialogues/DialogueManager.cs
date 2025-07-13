@@ -107,6 +107,8 @@ public class DialogueManager : Singleton<DialogueManager>
 
         while (currentDialoguePage < dialogue.content.Length)
         {
+            SoundManager.instance.BeginDialogue();
+
             string localizedText = Localization.GetText(dialogue.content[currentDialoguePage]);
 
 
@@ -138,7 +140,9 @@ public class DialogueManager : Singleton<DialogueManager>
                 //yield return new WaitForSeconds(.2f);
             }
 
-            while (!PlayerController.instance.InputManager.WantsToInteract())
+            SoundManager.instance.EndDialogue();
+
+            while (!PlayerController.instance.InputManager.WantsToInteract() && !PlayerController.instance.InputManager.WantsToAttack())
             {
                 yield return null;
             }
