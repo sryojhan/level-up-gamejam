@@ -201,6 +201,8 @@ public class PlayerController : Singleton<PlayerController>
 
     public void SetAllControls(bool value)
     {
+        RigidBodyComponent.linearVelocity = Vector2.zero;
+
         Movement.enabled = value;
         SockLauncher.enabled = value;
     }

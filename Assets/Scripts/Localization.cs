@@ -283,6 +283,31 @@ public class Localization : Singleton<Localization>
     "Pensar que he llegado tan lejos y no puedo continuar porque todavía necesito encontrar las tres cestas de ropa sucia....",
     "Pensar que he arribat tan lluny i no puc continuar perquè encara he de trobar les tres cistelles de roba bruta....");
 
+
+
+
+        //MCClain
+
+        CreateEntry("mcclain_lost_salon",
+    "I once got lost in the living room after a movie marathon. I haven't seen sunlight since.",
+    "Me perdí una vez en el salón después de un maratón de pelis. No he vuelto a ver la luz del sol desde entonces.",
+    "Em vaig perdre un cop al saló després d’una marató de pel·lícules. No he tornat a veure la llum del sol des de llavors.");
+
+        CreateEntry("mcclain_exit_house",
+            "You can leave the house this way, but that's not what you're looking for right now.",
+            "Por aquí se sale de la casa, pero tú no estás buscando eso ahora.",
+            "Per aquí es surt de la casa, però tu ara no estàs buscant això.");
+
+        CreateEntry("mcclain_oppenheimer_debt",
+            "Don't trust Oppenheimer, he owes me 5 euros.",
+            "No te fíes de Oppenheimer, me debe 5 euros.",
+            "No et refiïs de l’Oppenheimer, em deu 5 euros.");
+
+        CreateEntry("mcclain_introduction",
+            "I'm McClain, nice to meet you.",
+            "Soy McClain, un placer.",
+            "Sóc McClain, un plaer.");
+
     }
 
     public static string GetText(string id)

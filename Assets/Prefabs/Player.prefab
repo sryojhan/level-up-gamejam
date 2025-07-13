@@ -1722,7 +1722,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 1500134969566573645, guid: 5a0f825c52f1a10448321ba3ea2aa53d, type: 3}
+    - sprite: {fileID: -4359950603665760168, guid: 3f7a4798bb60535459d2954a832cd561, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -5675,7 +5675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sockData: {fileID: 11400000, guid: 413fb0a1e53e27f43ba494239e7e4f84, type: 2}
-  simultaneousSocks: 2
+  simultaneousSocks: 0
   minTimeBetweenShots: 0.2
   timeToRecoverSock: 8
 --- !u!114 &4241948487983176102

@@ -40,13 +40,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3321354404517684919}
     m_Modifications:
+    - target: {fileID: 1874572275076471535, guid: 5ae2244ef6a3dd24aa4f972785d3fb7b, type: 3}
+      propertyPath: chestContent
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874572275076471535, guid: 5ae2244ef6a3dd24aa4f972785d3fb7b, type: 3}
+      propertyPath: chestContentSprite
+      value: 
+      objectReference: {fileID: 4072503881560645631, guid: b6f9b9510fc83a644ae1319c112673d7, type: 3}
     - target: {fileID: 1979474188520777790, guid: 5ae2244ef6a3dd24aa4f972785d3fb7b, type: 3}
       propertyPath: m_Name
       value: Chest
       objectReference: {fileID: 0}
     - target: {fileID: 2504074262937328184, guid: 5ae2244ef6a3dd24aa4f972785d3fb7b, type: 3}
       propertyPath: uid
-      value: d6e4baf0-4a9a-4fd8-8387-7eaad99969da
+      value: f36e0298-8778-4dde-8599-61e52b957a8a
       objectReference: {fileID: 0}
     - target: {fileID: 6238468556781909611, guid: 5ae2244ef6a3dd24aa4f972785d3fb7b, type: 3}
       propertyPath: m_LocalPosition.x

@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: 0a006bf8-a1b6-43de-92fb-fef996998315
+  uid: c2dd5931-e027-43e7-bd78-26d912b814df
 --- !u!114 &4661875443960120261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,7 +339,7 @@ SpriteRenderer:
   m_SortingLayerID: -1959799611
   m_SortingLayer: 3
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 1695d74e8e13ac54ab8a90ce48794666, type: 3}
+  m_Sprite: {fileID: -5122786757355938225, guid: cd7422d22f176c546bd196bca875e358, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

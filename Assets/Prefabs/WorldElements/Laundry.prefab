@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: d7d16cf0-68c4-422b-81bd-c6ed6341da95
+  uid: b98f1b4a-a788-4b42-b3c8-505da0e9ebd9
 --- !u!114 &7994692876265338774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +217,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.009500444, y: -0.2290422}
+  m_Offset: {x: 0.010382891, y: -0.3364132}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -227,7 +227,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.55309784, y: 0.2052229}
+  m_Size: {x: 0.6485386, y: 0.4199649}
   m_EdgeRadius: 0
 --- !u!61 &4994072830171363537
 BoxCollider2D:
@@ -353,7 +353,7 @@ SpriteRenderer:
   m_SortingLayerID: -1959799611
   m_SortingLayer: 3
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: b9d5c710003711d409d756cdc32aaf97, type: 3}
+  m_Sprite: {fileID: 1101305283689054063, guid: 9294481be96e6eb4da1f97f8c9a5382b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

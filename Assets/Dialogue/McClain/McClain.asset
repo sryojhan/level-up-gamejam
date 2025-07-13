@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bc94d5aaac94846ab65c38edede396, type: 3}
+  m_Name: McClain
+  m_EditorClassIdentifier: 
+  speakerSprite: {fileID: -2518987543455796024, guid: 2699cbd7ca0be2f47b219bfb42ccee7e, type: 3}
+  speaker: McClain
+  content:
+  - mcclain_lost_salon
+  - mcclain_exit_house
+  - "\u524D\u4EBA\u683D\u6811\uFF0C\u540E\u4EBA\u4E58\u51C9"

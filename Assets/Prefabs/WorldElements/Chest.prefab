@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: e73d1bd2-a95f-44c5-bb3c-83ea01832bcf
+  uid: 1b6e2e33-cc36-4673-88d1-1911ad3bec2d
 --- !u!114 &2935505990544619255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a9ce7144b3dffb4ebe83e9d5d539f6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openedChest: {fileID: -5248003426595706104, guid: d04a051d4dc4a9344b10b88bb1a8d160, type: 3}
+  openedChest: {fileID: -2598228451288179310, guid: cf7a38e1241c90d439095fd32814ba36, type: 3}
   chestContentSprite: {fileID: 5398230693474030073, guid: 3b54bbe2b4dcfab4eb625c70e8dbb4f7, type: 3}
   chestContent: 1
   unlockContent: {fileID: 11400000, guid: 9d8b6fc37ffaa7e49beebf1b588fdf37, type: 2}
@@ -119,7 +119,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.009500444, y: -0.2290422}
+  m_Offset: {x: -0.0194422, y: -0.22506559}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -129,7 +129,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.55309784, y: 0.2052229}
+  m_Size: {x: 1.3444622, y: 0.38019776}
   m_EdgeRadius: 0
 --- !u!61 &1486805755884121196
 BoxCollider2D:
@@ -205,8 +205,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.81, y: 1.81, z: 1.81}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6238468556781909611}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -254,7 +254,7 @@ SpriteRenderer:
   m_SortingLayerID: -1959799611
   m_SortingLayer: 3
   m_SortingOrder: 5
-  m_Sprite: {fileID: 5045073161074915229, guid: d04a051d4dc4a9344b10b88bb1a8d160, type: 3}
+  m_Sprite: {fileID: -4674981974113199854, guid: 48794d700124f0a4089baef1c9acb3e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

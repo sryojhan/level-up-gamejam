@@ -44,13 +44,17 @@ PrefabInstance:
       propertyPath: chestContent
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1874572275076471535, guid: 5ae2244ef6a3dd24aa4f972785d3fb7b, type: 3}
+      propertyPath: chestContentSprite
+      value: 
+      objectReference: {fileID: 6811450813863978841, guid: ff372847c61b6dc44ac2b59fad836153, type: 3}
     - target: {fileID: 1979474188520777790, guid: 5ae2244ef6a3dd24aa4f972785d3fb7b, type: 3}
       propertyPath: m_Name
       value: Chest
       objectReference: {fileID: 0}
     - target: {fileID: 2504074262937328184, guid: 5ae2244ef6a3dd24aa4f972785d3fb7b, type: 3}
       propertyPath: uid
-      value: 9ddba986-b9db-42d5-9a4b-8fefc4afc913
+      value: a344bde9-f552-47fa-aab5-f69c1f29f5d7
       objectReference: {fileID: 0}
     - target: {fileID: 6238468556781909611, guid: 5ae2244ef6a3dd24aa4f972785d3fb7b, type: 3}
       propertyPath: m_LocalPosition.x
