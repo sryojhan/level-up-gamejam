@@ -78,6 +78,9 @@ public class Interactable : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (!isActiveAndEnabled) return;
+        if (!collision.gameObject.activeSelf) return;
+
 
         if (collision.gameObject != PlayerController.instance.gameObject) return;
 

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1bc94d5aaac94846ab65c38edede396, type: 3}
   m_Name: Sockrates Intro 2
   m_EditorClassIdentifier: 
-  speakerSprite: {fileID: 2317328310562768060, guid: d79766617111d5a4fa84c841f3560a26, type: 3}
-  speaker: J. Robbert Oppenhimer
+  speakerSprite: {fileID: 7292168437988616927, guid: bf91dabf1a10441429b6c020cac21122, type: 3}
+  speaker: Sockrates
   content:
   - Any progress on the mission as for now?
   - Remember, to defeat the Washing Machine you will need to look for the three 'Laundry

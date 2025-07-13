@@ -63,7 +63,7 @@ Material:
     - _UIMaskSoftnessY: 1
     - _inProgress: 1
     - _invert: 1
-    - _inverted: 0
+    - _inverted: 1
     - _time: 0
     m_Colors:
     - _BackgroundColor: {r: 1, g: 1, b: 1, a: 0}

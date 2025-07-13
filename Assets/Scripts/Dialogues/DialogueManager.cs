@@ -88,6 +88,7 @@ public class DialogueManager : Singleton<DialogueManager>
 
             dialogueSpeaker.text = dialogue.speaker;
             speakerSprite.sprite = dialogue.speakerSprite;
+            speakerSprite.GetComponent<ImageMantainAspectRatio>().UpdateImageBasedOnSpriteAspectRatio();
         }
 
         dialogueContent.text = "";

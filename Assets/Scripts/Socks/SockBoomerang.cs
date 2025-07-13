@@ -34,5 +34,14 @@ public class SockBoomerang : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
+
+
+        BaseEnemy enemy = collision.gameObject.GetComponent<BaseEnemy>();
+
+        if (enemy) {
+
+            collision.gameObject.BroadcastMessage("OnHurt");
+        }
     }
 }
+
