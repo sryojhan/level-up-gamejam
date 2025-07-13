@@ -56,6 +56,8 @@ public class HealthUI : MonoBehaviour
                         rt.anchoredPosition = originalPosition + new Vector2(0, offsetY);
                     }
 
+                    SoundManager.instance.PlayUIBoing();
+
                     healHeart.Play(this, onUpdate: OnUpdate);
 
                     updateColor = false;

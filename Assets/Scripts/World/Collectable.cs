@@ -39,6 +39,9 @@ public class Collectable : MonoBehaviour
         Destroy(gameObject);
 
         interactable.EndInteraction();
+
+
+        SoundManager.instance.PlayCollectItem();
     }
 
 

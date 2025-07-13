@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 lastDirectionalInput = Vector2.right;
 
 
+    public float timeBetweenSteps = 0.2f;
+    private float lastStepTime;
+
     /* Called from Update */
     public void UpdatePlayerInput(Vector2 leftStickInput)
     {
@@ -50,6 +53,16 @@ public class PlayerMovement : MonoBehaviour
 
         Vector2 force = new Vector2(forceX, forceY);
         rigidBody.AddForce(force, ForceMode2D.Force);
+
+        if(rigidBody.linearVelocity.sqrMagnitude > 1)
+        {
+            if(Time.time - lastStepTime > timeBetweenSteps)
+            {
+                lastStepTime = Time.time;
+                SoundManager.instance.PlayStep();
+            }
+        }
+
     }
 
 

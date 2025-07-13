@@ -77,6 +77,9 @@ public class Chest : MonoBehaviour
 
         Destroy(interactable);
         chestSpriteRenderer.sprite = openedChest;
+
+
+        SoundManager.instance.PlayCollectItem();
     }
 
     private void BeginDialogue()

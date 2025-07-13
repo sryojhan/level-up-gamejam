@@ -20,6 +20,8 @@ public class EnemyFlashHurt : MonoBehaviour
         mpb.SetFloat("_isHurt", 1);
         meshToFlash.SetPropertyBlock(mpb);
 
+        SoundManager.instance.PlayHit();
+
         Invoke(nameof(RemoveHurt), hurtFlashDuration);
     }
 

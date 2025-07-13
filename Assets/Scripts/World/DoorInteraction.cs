@@ -36,6 +36,8 @@ public class DoorInteraction : MonoBehaviour
         {
             GetComponentInChildren<SimpleShake>().Shake();
             interactable.EndInteraction();
+
+            SoundManager.instance.PlayLockedDoor();
             return;
         }
 
@@ -43,6 +45,9 @@ public class DoorInteraction : MonoBehaviour
         Destroy(gameObject);
 
         interactable.EndInteraction();
+
+        SoundManager.instance.PlayOpenDoor();
+
     }
 
 }

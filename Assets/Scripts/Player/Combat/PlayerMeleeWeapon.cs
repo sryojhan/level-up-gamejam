@@ -129,6 +129,8 @@ public class PlayerMeleeWeapon : MonoBehaviour
 
             pillowCollider.enabled = true;
 
+
+            SoundManager.instance.PlayAttack();
         }
     }
     private void ManageAttackMovement()

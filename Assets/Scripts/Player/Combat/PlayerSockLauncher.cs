@@ -42,6 +42,9 @@ public class PlayerSockLauncher : MonoBehaviour
         lastShootTime = Time.time;
 
         onSockCountUpdate(currentSockNumber);
+
+        SoundManager.instance.PlayThrowBoomerang();
+
     }
 
 
@@ -58,6 +61,7 @@ public class PlayerSockLauncher : MonoBehaviour
         if(sockCooldown > timeToRecoverSock)
         {
             sockCooldown = 0;
+            SoundManager.instance.PlayUIBoing();
             onSockCountUpdate(++currentSockNumber);
         }
     }
@@ -66,6 +70,7 @@ public class PlayerSockLauncher : MonoBehaviour
     {
         if (currentSockNumber < simultaneousSocks)
         {
+            SoundManager.instance.PlayUIBoing();
             currentSockNumber++;
             onSockCountUpdate(currentSockNumber);
         }
