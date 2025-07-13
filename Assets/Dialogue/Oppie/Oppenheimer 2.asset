@@ -15,5 +15,5 @@ MonoBehaviour:
   speakerSprite: {fileID: 2317328310562768060, guid: d79766617111d5a4fa84c841f3560a26, type: 3}
   speaker: J. Robbert Oppenhimer
   content:
-  - moo.....
-  - leave me alone....
+  - oppenheimer_moo
+  - oppenheimer_leave_me_alone

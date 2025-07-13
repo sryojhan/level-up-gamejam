@@ -15,7 +15,7 @@ MonoBehaviour:
   speakerSprite: {fileID: -4002838585996149880, guid: 403c8ee0e04dac941ad2b07b8f226f5c, type: 3}
   speaker: Jane Slip
   content:
-  - H- Hello
-  - ..................
-  - ..................
-  - I'ts been cool talking to you!
+  - jane_dialogue_1
+  - jane_dialogue_2
+  - jane_dialogue_2
+  - jane_dialogue_3

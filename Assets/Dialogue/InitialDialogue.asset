@@ -15,5 +15,5 @@ MonoBehaviour:
   speakerSprite: {fileID: 0}
   speaker: Mom
   content:
-  - I'll be back in 20 minutes. When I'm back you'd better finished doing the laundry
-  - Ok?
+  - be_back_soon
+  - ok_question

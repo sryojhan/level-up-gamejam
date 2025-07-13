@@ -15,4 +15,4 @@ MonoBehaviour:
   speakerSprite: {fileID: 0}
   speaker: 
   content:
-  - Hmmm... It doesn't seem it can be opened right now
+  - door_cannot_open

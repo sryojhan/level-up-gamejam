@@ -15,7 +15,7 @@ MonoBehaviour:
   speakerSprite: {fileID: 288891828242979262, guid: 6cd23994b4cdd7647acc1efce2b32a41, type: 3}
   speaker: Belton
   content:
-  - I don't like to be a bad guy, you know?
-  - But you have to do what you have to do
-  - I'ts just like my chinese uncle used to say
+  - belton_bad_guy
+  - belton_have_to_do
+  - belton_chinese_uncle
   - "\u524D\u4EBA\u683D\u6811\uFF0C\u540E\u4EBA\u4E58\u51C9"

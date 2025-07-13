@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1bc94d5aaac94846ab65c38edede396, type: 3}
-  m_Name: Jane 3
+  m_Name: DamageItem
   m_EditorClassIdentifier: 
-  speakerSprite: {fileID: -4002838585996149880, guid: 403c8ee0e04dac941ad2b07b8f226f5c, type: 3}
-  speaker: Jane Slip
+  speakerSprite: {fileID: 0}
+  speaker: 
   content:
-  - jane_dialogue_8
+  - damage_item_obtained

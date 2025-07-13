@@ -15,6 +15,5 @@ MonoBehaviour:
   speakerSprite: {fileID: 7292168437988616927, guid: bf91dabf1a10441429b6c020cac21122, type: 3}
   speaker: Sockrates
   content:
-  - Any progress on the mission as for now?
-  - Remember, to defeat the Washing Machine you will need to look for the three 'Laundry
-    baskets'  all around the house. I will be hard, but I know I can count on you.
+  - sockrates_dialogue_8
+  - sockrates_dialogue_9

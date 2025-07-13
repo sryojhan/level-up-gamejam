@@ -15,10 +15,8 @@ MonoBehaviour:
   speakerSprite: {fileID: -4002838585996149880, guid: 403c8ee0e04dac941ad2b07b8f226f5c, type: 3}
   speaker: Jane Slip
   content:
-  - I don't know how I got here
-  - But Im too scared of the dark to try to leave on my own
-  - W- What?  Would you really walk me out? (AAAAAAAAAAA)
-  - No- no, don't worry. I don't want to bother you. I'll just wait here. I'm sure
-    they are looking for me anyways... They are just taking longer this time....
-    That's all...
-  - ....
+  - jane_dialogue_4
+  - jane_dialogue_5
+  - jane_dialogue_6
+  - jane_dialogue_7
+  - jane_dialogue_8

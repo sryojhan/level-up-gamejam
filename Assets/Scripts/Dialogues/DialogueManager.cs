@@ -104,9 +104,13 @@ public class DialogueManager : Singleton<DialogueManager>
 
         yield return new WaitForSeconds(.2f);
 
+
         while (currentDialoguePage < dialogue.content.Length)
         {
-            int textLength = dialogue.content[currentDialoguePage].Length;
+            string localizedText = Localization.GetText(dialogue.content[currentDialoguePage]);
+
+
+            int textLength = localizedText.Length;
             float duration = textLength * revealDurationPerChar;
             float speed = 1.0f / duration;
 
@@ -117,12 +121,12 @@ public class DialogueManager : Singleton<DialogueManager>
             {
                 float c = textRevealInterpolation.Interpolate(i);
 
-                dialogueContent.text = dialogue.content[currentDialoguePage][..Mathf.FloorToInt(c * textLength)];
+                dialogueContent.text = localizedText[..Mathf.FloorToInt(c * textLength)];
 
                 if (PlayerController.instance.InputManager.WantsToInteract())
                 {
                     skipped = true;
-                    dialogueContent.text = dialogue.content[currentDialoguePage];
+                    dialogueContent.text = localizedText;
                 }
 
                 yield return null;
@@ -130,7 +134,7 @@ public class DialogueManager : Singleton<DialogueManager>
 
             if (!skipped)
             {
-                dialogueContent.text = dialogue.content[currentDialoguePage];
+                dialogueContent.text = localizedText;
                 //yield return new WaitForSeconds(.2f);
             }
 
