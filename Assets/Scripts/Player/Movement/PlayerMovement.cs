@@ -11,13 +11,24 @@ public class PlayerMovement : MonoBehaviour
 
     public float accelerationPower = 1;
 
+
+    public float moreIncreaseWithUpgrade = 1f;
+
     private Vector2 input;
 
     private Vector2 lastDirectionalInput = Vector2.right;
 
 
+    private bool increaseSpeed = false;
+
     public float timeBetweenSteps = 0.2f;
     private float lastStepTime;
+
+
+    private void Start()
+    {
+        increaseSpeed = PersistentData.increaseSpeed;
+    }
 
     /* Called from Update */
     public void UpdatePlayerInput(Vector2 leftStickInput)
@@ -40,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isActiveAndEnabled) return;
 
-        Vector2 targetVelocity = input * maxMovementSpeed;
+        Vector2 targetVelocity = input * (increaseSpeed ? (maxMovementSpeed + moreIncreaseWithUpgrade) : maxMovementSpeed);
 
         Vector2 velocityDiff = targetVelocity - rigidBody.linearVelocity;
 
@@ -99,6 +110,13 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 LastDirectionalInput()
     {
         return lastDirectionalInput;
+    }
+
+
+    public void ApplyIncrease()
+    {
+        increaseSpeed = true;
+        PersistentData.increaseSpeed = true;
     }
 
 }

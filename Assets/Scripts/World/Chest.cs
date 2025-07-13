@@ -107,16 +107,16 @@ public class Chest : MonoBehaviour
 
     public void GainMoveSpeed()
     {
-        throw new NotImplementedException();
+        PlayerController.instance.Movement.ApplyIncrease();
     }
 
     public void GainDamageIncrease()
     {
-        throw new NotImplementedException();
+        PersistentData.damageIncrease = true;
     }
 
     public void GainExtraSock()
     {
-        throw new NotImplementedException();
+        PlayerController.instance.SockLauncher.AddOneMaxSock();
     }
 }

@@ -17,6 +17,10 @@ public class PersistentData
     public static int currentSockCount = -1;
 
 
+    public static bool increaseSpeed = false;
+
+    public static bool damageIncrease = false;
+
 
     //Laundry
     public static bool[] collectedLaundry = new []{ false, false, false };

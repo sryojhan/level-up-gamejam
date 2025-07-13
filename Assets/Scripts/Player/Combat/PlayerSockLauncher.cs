@@ -20,7 +20,16 @@ public class PlayerSockLauncher : MonoBehaviour
 
     public void InitialisePersistentData()
     {
-        currentSockNumber = simultaneousSocks;
+        if(PersistentData.maxSockCount > 0)
+        {
+            currentSockNumber = PersistentData.currentSockCount;
+            simultaneousSocks = PersistentData.maxSockCount;
+        }
+        else
+        {
+
+            currentSockNumber = simultaneousSocks;
+        }
 
 
         onSockCountUpdate += RecoverSock;
@@ -88,6 +97,9 @@ public class PlayerSockLauncher : MonoBehaviour
     public void AddOneMaxSock()
     {
         onMaxSockCountUpgrade?.Invoke(++simultaneousSocks);
+
+        PersistentData.maxSockCount = simultaneousSocks;
+
     }
 
 

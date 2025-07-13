@@ -58,7 +58,7 @@ public class BaseEnemy : MonoBehaviour
 
     public void OnHurt()
     {
-        TakeDamage(1);
+        TakeDamage(PersistentData.damageIncrease ? 1 : 2);
         OwnKnockback();
     }
 
