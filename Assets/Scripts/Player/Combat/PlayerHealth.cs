@@ -19,8 +19,10 @@ public class PlayerHealth : MonoBehaviour
             maxHealth = PersistentData.maxHealth;
             currentHealth = PersistentData.currentHealth;
         }
-
-        currentHealth = maxHealth;
+        else
+        {
+            currentHealth = maxHealth;
+        }
 
         onHealthUpdate += UpdatePersistentHealth;
         onMaxHealthUpdate += UpdatePersistentMaxHealth;

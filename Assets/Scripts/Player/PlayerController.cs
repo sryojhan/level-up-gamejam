@@ -31,13 +31,15 @@ public class PlayerController : Singleton<PlayerController>
         InitialisePlayerData();
         FetchUnityComponentes();
         FetchPlayerModules();
+
     }
 
     private void Start()
     {
         InitialiseCameraController();
         DisableCharacterControllerOnTransition();
-        InitialisePlayerHealth();
+
+        InitialisePersistentData();
     }
 
     private void Update()
@@ -116,9 +118,10 @@ public class PlayerController : Singleton<PlayerController>
         }
     }
 
-    private void InitialisePlayerHealth()
+    private void InitialisePersistentData()
     {
         PlayerHealth.InitialiseHealth();
+        SockLauncher.InitialisePersistentData();
     }
 
     /* Update */
@@ -155,6 +158,8 @@ public class PlayerController : Singleton<PlayerController>
 
     private void ManagePlayerSockLauncher()
     {
+        SockLauncher.UpdateSockCooldown();
+
         if (SockLauncher.CanShoot(InputManager.WantsToShoot())){
 
             SockLauncher.Shoot(Movement.LastDirectionalInput());

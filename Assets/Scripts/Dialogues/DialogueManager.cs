@@ -131,7 +131,7 @@ public class DialogueManager : Singleton<DialogueManager>
             if (!skipped)
             {
                 dialogueContent.text = dialogue.content[currentDialoguePage];
-                yield return new WaitForSeconds(.2f);
+                //yield return new WaitForSeconds(.2f);
             }
 
             while (!PlayerController.instance.InputManager.WantsToInteract())
@@ -262,6 +262,8 @@ public class DialogueManager : Singleton<DialogueManager>
     {
         highlightElement.transform.localScale = Vector3.zero;
         highlightElement.sprite = highlightSprite;
+
+        highlightElement.GetComponent<ImageMantainAspectRatio>().UpdateImageBasedOnSpriteAspectRatio();
 
         highlightBackground.material.SetFloat("_AlphaMask", 1);
         void OnUpdateReveal(float i)

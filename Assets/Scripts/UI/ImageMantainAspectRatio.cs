@@ -21,6 +21,8 @@ public class ImageMantainAspectRatio : MonoBehaviour
     {
         Image img = GetComponent<Image>();
 
+        if (img.sprite == null) return;
+
         Sprite spr = img.sprite;
 
         float aspect = scaleWith == ImageScale.Width ? spr.rect.height / spr.rect.width : spr.rect.width / spr.rect.height;

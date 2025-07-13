@@ -5674,8 +5674,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sockData: {fileID: 11400000, guid: 413fb0a1e53e27f43ba494239e7e4f84, type: 2}
-  ammo: 100
-  cooldown: 1
+  simultaneousSocks: 2
+  minTimeBetweenShots: 0.2
+  timeToRecoverSock: 8
 --- !u!114 &4241948487983176102
 MonoBehaviour:
   m_ObjectHideFlags: 0

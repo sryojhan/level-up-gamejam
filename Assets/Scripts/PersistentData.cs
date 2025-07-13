@@ -10,6 +10,12 @@ public class PersistentData
     public static int maxHealth = -1;
     public static int currentHealth = -1;
 
+
+    public static int maxSockCount = -1;
+    public static int currentSockCount = -1;
+
+
+
     //Laundry
     public static bool[] collectedLaundry = new []{ false, false, false };
 
