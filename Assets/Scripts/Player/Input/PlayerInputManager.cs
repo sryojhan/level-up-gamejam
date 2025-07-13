@@ -29,7 +29,7 @@ public class PlayerInputManager : MonoBehaviour
 
     public bool WantsToShoot()
     {
-        return inputMap.Player.LeftButton.WasPressedThisFrame();
+        return inputMap.Player.RightButton.WasPressedThisFrame();
     }
 
     public bool WantsToInteract()
@@ -39,6 +39,6 @@ public class PlayerInputManager : MonoBehaviour
 
     public bool WantsToAttack()
     {
-        return inputMap.Player.RightButton.WasPressedThisFrame();
+        return inputMap.Player.LeftButton.WasPressedThisFrame();
     }
 }
