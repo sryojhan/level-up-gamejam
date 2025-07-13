@@ -6,7 +6,10 @@ public class LavadoraBossEnemy : BaseEnemy
 {
     public List<string> animations;
     public Animator[] animatorList;
+    public float attackCooldown;
+
     private int animationListCount;
+    private float timeSinceLastAttack;
     void Start()
     {
         base.CustomStart();
@@ -19,6 +22,7 @@ public class LavadoraBossEnemy : BaseEnemy
 
         ShuffleStringList(animations);
         animationListCount = 0;
+        timeSinceLastAttack = 0;
     }
 
     void FixedUpdate()
@@ -26,6 +30,16 @@ public class LavadoraBossEnemy : BaseEnemy
         if (!ownAnimator.GetCurrentAnimatorStateInfo(0).IsName("Default")) return;
 
         if (animations.Count == 0) return;
+
+        if(timeSinceLastAttack < attackCooldown)
+        {
+            timeSinceLastAttack += Time.deltaTime;
+            return;
+        }
+        else
+        {
+            timeSinceLastAttack = 0;
+        }
 
         ownAnimator.Play(animations[animationListCount]);
         animationListCount++;
@@ -60,7 +74,7 @@ public class LavadoraBossEnemy : BaseEnemy
         {
             hasDied = true;
             Destroy(gameObject, 0.5f);
-            enemyManager.EnemyDied();
+            SceneTransition.SceneTransitionManager.instance.ChangeScene("VictoryScreen");
         }
     }
 }

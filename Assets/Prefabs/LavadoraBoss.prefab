@@ -311,6 +311,7 @@ MonoBehaviour:
   animatorList:
   - {fileID: 7542136910240986058}
   - {fileID: 7925011235428738967}
+  attackCooldown: 1
 --- !u!114 &2097923880268864204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,7 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e527e482b0b7064e91501684c8712f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uid: 6ab0a946-2ed9-4b26-a87f-023ba28c4805
+  uid: 185b17e0-ea64-4a55-9bc8-ccf73e85f669
 --- !u!114 &2292546484122430067
 MonoBehaviour:
   m_ObjectHideFlags: 0
