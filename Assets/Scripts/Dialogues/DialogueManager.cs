@@ -125,7 +125,7 @@ public class DialogueManager : Singleton<DialogueManager>
 
                 dialogueContent.text = localizedText[..Mathf.FloorToInt(c * textLength)];
 
-                if (PlayerController.instance.InputManager.WantsToInteract())
+                if (!PlayerController.instance.InputManager.WantsToInteract() && !PlayerController.instance.InputManager.WantsToAttack())
                 {
                     skipped = true;
                     dialogueContent.text = localizedText;
