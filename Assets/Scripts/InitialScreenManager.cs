@@ -33,9 +33,6 @@ public class InitialScreenManager : MonoBehaviour
         if (begin) return;
         begin = true;
 
-
-        zzz.gameObject.SetActive(false);
-
         StartCoroutine(Animation());
     }
 
@@ -65,13 +62,18 @@ public class InitialScreenManager : MonoBehaviour
     public Image backgroundImage;
     public Sprite secondFrame;
 
-    public CoroutineAnimation revealZZZ;
-    public Image zzz;
+    public Sprite z1;
+    public Sprite z2;
+    public Sprite z3;
+
+    public float timeBetweenZs = .2f;
 
     void OnDialogueEnd()
     {
         Invoke(nameof(ChangeFrame), changeFrameTime);
-        Invoke(nameof(BeginZZZ), beginZZZTime);
+        Invoke(nameof(BeginZ1), beginZZZTime);
+        Invoke(nameof(BeginZ2), beginZZZTime + timeBetweenZs);
+        Invoke(nameof(BeginZ3), beginZZZTime + timeBetweenZs * 2);
         Invoke(nameof(ChangeScene), changeSceneTime);
     }
 
@@ -80,17 +82,21 @@ public class InitialScreenManager : MonoBehaviour
         backgroundImage.sprite = secondFrame;
     }
 
-    void BeginZZZ()
+    void BeginZ1()
     {
-        zzz.gameObject.SetActive(true);
-
-        void Reveal(float i)
-        {
-            zzz.color = new Color(1, 1, 1, Mathf.Lerp(1, 0, i));
-        }
-
-        revealAnimation.Play(this, onUpdate: Reveal);
+        backgroundImage.sprite = z1;
     }
+
+    void BeginZ2()
+    {
+        backgroundImage.sprite = z2;
+    }
+
+    void BeginZ3()
+    {
+        backgroundImage.sprite = z3;
+    }
+
 
     void ChangeScene()
     {
