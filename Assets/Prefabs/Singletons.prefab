@@ -1454,8 +1454,8 @@ MonoBehaviour:
     delay: 0.2
     interpolation:
       type: 8
-      mode: 2
-  hiddenPosition: {x: 0, y: -591}
+      mode: 1
+  hiddenPosition: {x: 0, y: -78}
   visiblePosition: {x: 0, y: 0}
 --- !u!1 &5908413186795284049
 GameObject:
@@ -2217,7 +2217,7 @@ MonoBehaviour:
       mode: 2
   hideDialogueBackground:
     duration: 1
-    delay: 0.4
+    delay: 2
     interpolation:
       type: 8
       mode: 2

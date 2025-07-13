@@ -214,6 +214,7 @@ public class DialogueManager : Singleton<DialogueManager>
 
         if (!hasSpeaker)
         {
+            print("removed delay");
             hideDialogueBackground.delay = 0;
         }
 
