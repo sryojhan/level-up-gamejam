@@ -49,6 +49,7 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject != PlayerController.instance.gameObject) return;
 
         PlayerController.instance.PlayerHealth.LoseHealth();
+        Destroy(gameObject);
     }
 
     public void OnHurt()
