@@ -43,7 +43,9 @@ public class PlatformButtonTranslator : Singleton<PlatformButtonTranslator>
             xboxDictionary.Add(key, xbox);
         }
 
-        Add("interact", "e", "play_square", "xbox_x");
+        Add("interact", "e", "X", "A");
+        Add("attack", "space", "Square", "X");
+        Add("shoot", "c", "Circle", "B");
     }
 
     public static string TranslateButton(string baseString)

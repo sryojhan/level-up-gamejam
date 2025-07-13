@@ -1117,6 +1117,7 @@ GameObject:
   - component: {fileID: 5493018291991061786}
   - component: {fileID: 5829868103560724120}
   - component: {fileID: 7839216419327763514}
+  - component: {fileID: 6721794468812058856}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1171,7 +1172,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <Space> attack <b> Throw sock
+  m_text: <Space> attack <c> Throw sock
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1242,6 +1243,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6721794468812058856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5391802025483996382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46186f339d197ad49b3f08cc554e7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5668181544484904754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1954,7 +1967,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8748019135125191582
 RectTransform:
   m_ObjectHideFlags: 0

@@ -308,6 +308,10 @@ public class Localization : Singleton<Localization>
             "Soy McClain, un placer.",
             "Sóc McClain, un plaer.");
 
+
+
+        CreateEntry("controls", "attack <attack>   shoot <shoot>", "atacar <attack>   disparar <shoot>", "atacar <attack>   disparar <shoot>");
+
     }
 
     public static string GetText(string id)
