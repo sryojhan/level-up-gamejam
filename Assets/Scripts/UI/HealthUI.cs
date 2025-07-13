@@ -32,6 +32,8 @@ public class HealthUI : MonoBehaviour
 
             if(previousHealth > 0)
             {
+                print("se actualiza: " + previousHealth);
+
                 if(idx > newHealth && idx <= previousHealth)
                 {
                     tr.GetComponentInChildren<ParticleSystem>().Play();
@@ -92,7 +94,7 @@ public class HealthUI : MonoBehaviour
             tr.GetComponentInChildren<Image>().enabled = idx++ <= maxHealth;
         }
 
-        if (previousMaxHealth == previousHealth)
+        if (previousHealth > 0 && previousMaxHealth == previousHealth)
             previousHealth = maxHealth;
 
         previousMaxHealth = maxHealth;

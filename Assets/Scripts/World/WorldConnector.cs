@@ -104,6 +104,7 @@ public class WorldConnector : MonoBehaviour
         Connection connection = connectionDictionary[connectionUID];
 
         PersistentData.connection_id = connection.id;
+        PersistentData.lastSceneConnection_id = connection.id;
         SceneTransition.SceneTransitionManager.instance.ChangeScene(connection.scene);
     }
 

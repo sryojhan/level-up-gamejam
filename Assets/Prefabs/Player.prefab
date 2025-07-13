@@ -5585,6 +5585,7 @@ MonoBehaviour:
   accelerationRate: 10
   decelerationRate: 15
   accelerationPower: 1
+  timeBetweenSteps: 0.5
 --- !u!114 &8087399150862847518
 MonoBehaviour:
   m_ObjectHideFlags: 0

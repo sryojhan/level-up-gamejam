@@ -4,11 +4,13 @@ using UnityEngine;
 public class PersistentData 
 {
     public static int connection_id = -1;
+    public static int lastSceneConnection_id = -1;
 
 
     //Player stats
     public static int maxHealth = -1;
     public static int currentHealth = -1;
+    public static int currentHealthOnSceneLoad = -1;
 
 
     public static int maxSockCount = -1;
